@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-invalid-next-token-exception-structure.json",
+  "description": "InvalidNextTokenException schema from openapi",
+  "name": "InvalidNextTokenException"
+}

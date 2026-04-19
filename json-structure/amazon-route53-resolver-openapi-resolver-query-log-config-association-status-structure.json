@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-resolver-query-log-config-association-status-structure.json",
+  "description": "ResolverQueryLogConfigAssociationStatus schema from openapi",
+  "type": "string",
+  "enum": [
+    "CREATING",
+    "ACTIVE",
+    "ACTION_NEEDED",
+    "DELETING",
+    "FAILED"
+  ],
+  "name": "ResolverQueryLogConfigAssociationStatus"
+}

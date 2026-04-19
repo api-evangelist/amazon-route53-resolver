@@ -1,0 +1,9 @@
+{
+  "CreatorRequestId": "abc123",
+  "FirewallRuleGroupId": "abc123",
+  "VpcId": "abc123",
+  "Priority": "example-value",
+  "Name": "Example Resource",
+  "MutationProtection": "example-value",
+  "Tags": "example-value"
+}

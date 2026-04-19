@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-boolean-structure.json",
+  "description": "Boolean schema from openapi",
+  "type": "boolean",
+  "name": "Boolean"
+}

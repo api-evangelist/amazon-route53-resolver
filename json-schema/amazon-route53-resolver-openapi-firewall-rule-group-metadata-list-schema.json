@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-firewall-rule-group-metadata-list-schema.json",
+  "title": "FirewallRuleGroupMetadataList",
+  "description": "FirewallRuleGroupMetadataList schema from openapi",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/FirewallRuleGroupMetadata"
+  }
+}

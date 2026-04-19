@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-security-group-ids-structure.json",
+  "description": "SecurityGroupIds schema from openapi",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/ResourceId"
+  },
+  "name": "SecurityGroupIds"
+}

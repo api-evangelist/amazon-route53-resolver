@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-put-firewall-rule-group-policy-request-structure.json",
+  "description": "PutFirewallRuleGroupPolicyRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "Arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Arn"
+        },
+        {
+          "description": "The ARN (Amazon Resource Name) for the rule group that you want to share."
+        }
+      ]
+    },
+    "FirewallRuleGroupPolicy": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FirewallRuleGroupPolicy"
+        },
+        {
+          "description": "The Identity and Access Management (Amazon Web Services IAM) policy to attach to the rule group."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Arn",
+    "FirewallRuleGroupPolicy"
+  ],
+  "name": "PutFirewallRuleGroupPolicyRequest"
+}

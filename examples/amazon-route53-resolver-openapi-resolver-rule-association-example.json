@@ -1,0 +1,8 @@
+{
+  "Id": "abc123",
+  "ResolverRuleId": "abc123",
+  "Name": "Example Resource",
+  "VPCId": "abc123",
+  "Status": "ACTIVE",
+  "StatusMessage": "ACTIVE"
+}

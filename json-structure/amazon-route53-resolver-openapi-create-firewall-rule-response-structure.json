@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-create-firewall-rule-response-structure.json",
+  "description": "CreateFirewallRuleResponse schema from openapi",
+  "type": "object",
+  "properties": {
+    "FirewallRule": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FirewallRule"
+        },
+        {
+          "description": "The firewall rule that you just created. "
+        }
+      ]
+    }
+  },
+  "name": "CreateFirewallRuleResponse"
+}

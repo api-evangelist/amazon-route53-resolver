@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-delete-firewall-domain-list-response-schema.json",
+  "title": "DeleteFirewallDomainListResponse",
+  "description": "DeleteFirewallDomainListResponse schema from openapi",
+  "type": "object",
+  "properties": {
+    "FirewallDomainList": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FirewallDomainList"
+        },
+        {
+          "description": "The domain list that you just deleted. "
+        }
+      ]
+    }
+  }
+}

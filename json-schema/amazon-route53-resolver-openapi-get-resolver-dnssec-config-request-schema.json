@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-get-resolver-dnssec-config-request-schema.json",
+  "title": "GetResolverDnssecConfigRequest",
+  "description": "GetResolverDnssecConfigRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of the virtual private cloud (VPC) for the DNSSEC validation status."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceId"
+  ]
+}

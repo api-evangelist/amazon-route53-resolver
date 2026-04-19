@@ -1,0 +1,550 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "aws": "https://aws.amazon.com/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "AssociateFirewallRuleGroupRequest": "aws:AssociateFirewallRuleGroupRequest",
+    "AssociateFirewallRuleGroupResponse": "aws:AssociateFirewallRuleGroupResponse",
+    "AssociateResolverEndpointIpAddressRequest": "aws:AssociateResolverEndpointIpAddressRequest",
+    "AssociateResolverEndpointIpAddressResponse": "aws:AssociateResolverEndpointIpAddressResponse",
+    "AssociateResolverQueryLogConfigRequest": "aws:AssociateResolverQueryLogConfigRequest",
+    "AssociateResolverQueryLogConfigResponse": "aws:AssociateResolverQueryLogConfigResponse",
+    "AssociateResolverRuleRequest": "aws:AssociateResolverRuleRequest",
+    "AssociateResolverRuleResponse": "aws:AssociateResolverRuleResponse",
+    "CreateFirewallDomainListRequest": "aws:CreateFirewallDomainListRequest",
+    "CreateFirewallDomainListResponse": "aws:CreateFirewallDomainListResponse",
+    "CreateFirewallRuleGroupRequest": "aws:CreateFirewallRuleGroupRequest",
+    "CreateFirewallRuleGroupResponse": "aws:CreateFirewallRuleGroupResponse",
+    "CreateFirewallRuleRequest": "aws:CreateFirewallRuleRequest",
+    "CreateFirewallRuleResponse": "aws:CreateFirewallRuleResponse",
+    "CreateResolverEndpointRequest": "aws:CreateResolverEndpointRequest",
+    "CreateResolverEndpointResponse": "aws:CreateResolverEndpointResponse",
+    "CreateResolverQueryLogConfigRequest": "aws:CreateResolverQueryLogConfigRequest",
+    "CreateResolverQueryLogConfigResponse": "aws:CreateResolverQueryLogConfigResponse",
+    "CreateResolverRuleRequest": "aws:CreateResolverRuleRequest",
+    "CreateResolverRuleResponse": "aws:CreateResolverRuleResponse",
+    "DeleteFirewallDomainListRequest": "aws:DeleteFirewallDomainListRequest",
+    "DeleteFirewallDomainListResponse": "aws:DeleteFirewallDomainListResponse",
+    "DeleteFirewallRuleGroupRequest": "aws:DeleteFirewallRuleGroupRequest",
+    "DeleteFirewallRuleGroupResponse": "aws:DeleteFirewallRuleGroupResponse",
+    "DeleteFirewallRuleRequest": "aws:DeleteFirewallRuleRequest",
+    "DeleteFirewallRuleResponse": "aws:DeleteFirewallRuleResponse",
+    "DeleteResolverEndpointRequest": "aws:DeleteResolverEndpointRequest",
+    "DeleteResolverEndpointResponse": "aws:DeleteResolverEndpointResponse",
+    "DeleteResolverQueryLogConfigRequest": "aws:DeleteResolverQueryLogConfigRequest",
+    "DeleteResolverQueryLogConfigResponse": "aws:DeleteResolverQueryLogConfigResponse",
+    "DeleteResolverRuleRequest": "aws:DeleteResolverRuleRequest",
+    "DeleteResolverRuleResponse": "aws:DeleteResolverRuleResponse",
+    "DisassociateFirewallRuleGroupRequest": "aws:DisassociateFirewallRuleGroupRequest",
+    "DisassociateFirewallRuleGroupResponse": "aws:DisassociateFirewallRuleGroupResponse",
+    "DisassociateResolverEndpointIpAddressRequest": "aws:DisassociateResolverEndpointIpAddressRequest",
+    "DisassociateResolverEndpointIpAddressResponse": "aws:DisassociateResolverEndpointIpAddressResponse",
+    "DisassociateResolverQueryLogConfigRequest": "aws:DisassociateResolverQueryLogConfigRequest",
+    "DisassociateResolverQueryLogConfigResponse": "aws:DisassociateResolverQueryLogConfigResponse",
+    "DisassociateResolverRuleRequest": "aws:DisassociateResolverRuleRequest",
+    "DisassociateResolverRuleResponse": "aws:DisassociateResolverRuleResponse",
+    "Filter": "aws:Filter",
+    "FirewallConfig": {
+      "@id": "aws:FirewallConfig",
+      "@type": "xsd:string"
+    },
+    "FirewallDomainListMetadata": "aws:FirewallDomainListMetadata",
+    "FirewallDomainList": {
+      "@id": "aws:FirewallDomainList",
+      "@type": "xsd:string"
+    },
+    "FirewallRuleGroupAssociation": {
+      "@id": "aws:FirewallRuleGroupAssociation",
+      "@type": "xsd:string"
+    },
+    "FirewallRuleGroupMetadata": "aws:FirewallRuleGroupMetadata",
+    "FirewallRuleGroup": {
+      "@id": "aws:FirewallRuleGroup",
+      "@type": "xsd:string"
+    },
+    "FirewallRule": {
+      "@id": "aws:FirewallRule",
+      "@type": "xsd:string"
+    },
+    "GetFirewallConfigRequest": "aws:GetFirewallConfigRequest",
+    "GetFirewallConfigResponse": "aws:GetFirewallConfigResponse",
+    "GetFirewallDomainListRequest": "aws:GetFirewallDomainListRequest",
+    "GetFirewallDomainListResponse": "aws:GetFirewallDomainListResponse",
+    "GetFirewallRuleGroupAssociationRequest": "aws:GetFirewallRuleGroupAssociationRequest",
+    "GetFirewallRuleGroupAssociationResponse": "aws:GetFirewallRuleGroupAssociationResponse",
+    "GetFirewallRuleGroupPolicyRequest": "aws:GetFirewallRuleGroupPolicyRequest",
+    "GetFirewallRuleGroupPolicyResponse": "aws:GetFirewallRuleGroupPolicyResponse",
+    "GetFirewallRuleGroupRequest": "aws:GetFirewallRuleGroupRequest",
+    "GetFirewallRuleGroupResponse": "aws:GetFirewallRuleGroupResponse",
+    "GetResolverConfigRequest": "aws:GetResolverConfigRequest",
+    "GetResolverConfigResponse": "aws:GetResolverConfigResponse",
+    "GetResolverDnssecConfigRequest": "aws:GetResolverDnssecConfigRequest",
+    "GetResolverDnssecConfigResponse": "aws:GetResolverDnssecConfigResponse",
+    "GetResolverEndpointRequest": "aws:GetResolverEndpointRequest",
+    "GetResolverEndpointResponse": "aws:GetResolverEndpointResponse",
+    "GetResolverQueryLogConfigAssociationRequest": "aws:GetResolverQueryLogConfigAssociationRequest",
+    "GetResolverQueryLogConfigAssociationResponse": "aws:GetResolverQueryLogConfigAssociationResponse",
+    "GetResolverQueryLogConfigPolicyRequest": "aws:GetResolverQueryLogConfigPolicyRequest",
+    "GetResolverQueryLogConfigPolicyResponse": "aws:GetResolverQueryLogConfigPolicyResponse",
+    "GetResolverQueryLogConfigRequest": "aws:GetResolverQueryLogConfigRequest",
+    "GetResolverQueryLogConfigResponse": "aws:GetResolverQueryLogConfigResponse",
+    "GetResolverRuleAssociationRequest": "aws:GetResolverRuleAssociationRequest",
+    "GetResolverRuleAssociationResponse": "aws:GetResolverRuleAssociationResponse",
+    "GetResolverRulePolicyRequest": "aws:GetResolverRulePolicyRequest",
+    "GetResolverRulePolicyResponse": "aws:GetResolverRulePolicyResponse",
+    "GetResolverRuleRequest": "aws:GetResolverRuleRequest",
+    "GetResolverRuleResponse": "aws:GetResolverRuleResponse",
+    "ImportFirewallDomainsRequest": "aws:ImportFirewallDomainsRequest",
+    "ImportFirewallDomainsResponse": "aws:ImportFirewallDomainsResponse",
+    "IpAddressRequest": "aws:IpAddressRequest",
+    "IpAddressResponse": "aws:IpAddressResponse",
+    "IpAddressUpdate": "aws:IpAddressUpdate",
+    "ListFirewallConfigsRequest": "aws:ListFirewallConfigsRequest",
+    "ListFirewallConfigsResponse": "aws:ListFirewallConfigsResponse",
+    "ListFirewallDomainListsRequest": "aws:ListFirewallDomainListsRequest",
+    "ListFirewallDomainListsResponse": "aws:ListFirewallDomainListsResponse",
+    "ListFirewallDomainsRequest": "aws:ListFirewallDomainsRequest",
+    "ListFirewallDomainsResponse": "aws:ListFirewallDomainsResponse",
+    "ListFirewallRuleGroupAssociationsRequest": "aws:ListFirewallRuleGroupAssociationsRequest",
+    "ListFirewallRuleGroupAssociationsResponse": "aws:ListFirewallRuleGroupAssociationsResponse",
+    "ListFirewallRuleGroupsRequest": "aws:ListFirewallRuleGroupsRequest",
+    "ListFirewallRuleGroupsResponse": "aws:ListFirewallRuleGroupsResponse",
+    "ListFirewallRulesRequest": "aws:ListFirewallRulesRequest",
+    "ListFirewallRulesResponse": "aws:ListFirewallRulesResponse",
+    "ListResolverConfigsRequest": "aws:ListResolverConfigsRequest",
+    "ListResolverConfigsResponse": "aws:ListResolverConfigsResponse",
+    "ListResolverDnssecConfigsRequest": "aws:ListResolverDnssecConfigsRequest",
+    "ListResolverDnssecConfigsResponse": "aws:ListResolverDnssecConfigsResponse",
+    "ListResolverEndpointIpAddressesRequest": "aws:ListResolverEndpointIpAddressesRequest",
+    "ListResolverEndpointIpAddressesResponse": "aws:ListResolverEndpointIpAddressesResponse",
+    "ListResolverEndpointsRequest": "aws:ListResolverEndpointsRequest",
+    "ListResolverEndpointsResponse": "aws:ListResolverEndpointsResponse",
+    "ListResolverQueryLogConfigAssociationsRequest": "aws:ListResolverQueryLogConfigAssociationsRequest",
+    "ListResolverQueryLogConfigAssociationsResponse": "aws:ListResolverQueryLogConfigAssociationsResponse",
+    "ListResolverQueryLogConfigsRequest": "aws:ListResolverQueryLogConfigsRequest",
+    "ListResolverQueryLogConfigsResponse": "aws:ListResolverQueryLogConfigsResponse",
+    "ListResolverRuleAssociationsRequest": "aws:ListResolverRuleAssociationsRequest",
+    "ListResolverRuleAssociationsResponse": "aws:ListResolverRuleAssociationsResponse",
+    "ListResolverRulesRequest": "aws:ListResolverRulesRequest",
+    "ListResolverRulesResponse": "aws:ListResolverRulesResponse",
+    "ListTagsForResourceRequest": "aws:ListTagsForResourceRequest",
+    "ListTagsForResourceResponse": "aws:ListTagsForResourceResponse",
+    "PutFirewallRuleGroupPolicyRequest": "aws:PutFirewallRuleGroupPolicyRequest",
+    "PutFirewallRuleGroupPolicyResponse": "aws:PutFirewallRuleGroupPolicyResponse",
+    "PutResolverQueryLogConfigPolicyRequest": "aws:PutResolverQueryLogConfigPolicyRequest",
+    "PutResolverQueryLogConfigPolicyResponse": "aws:PutResolverQueryLogConfigPolicyResponse",
+    "PutResolverRulePolicyRequest": "aws:PutResolverRulePolicyRequest",
+    "PutResolverRulePolicyResponse": "aws:PutResolverRulePolicyResponse",
+    "ResolverConfig": {
+      "@id": "aws:ResolverConfig",
+      "@type": "xsd:string"
+    },
+    "ResolverDnssecConfig": "aws:ResolverDnssecConfig",
+    "ResolverEndpoint": {
+      "@id": "aws:ResolverEndpoint",
+      "@type": "xsd:string"
+    },
+    "ResolverQueryLogConfigAssociation": {
+      "@id": "aws:ResolverQueryLogConfigAssociation",
+      "@type": "xsd:string"
+    },
+    "ResolverQueryLogConfig": {
+      "@id": "aws:ResolverQueryLogConfig",
+      "@type": "xsd:string"
+    },
+    "ResolverRuleAssociation": {
+      "@id": "aws:ResolverRuleAssociation",
+      "@type": "xsd:string"
+    },
+    "ResolverRuleConfig": "aws:ResolverRuleConfig",
+    "ResolverRule": {
+      "@id": "aws:ResolverRule",
+      "@type": "xsd:string"
+    },
+    "TagResourceRequest": "aws:TagResourceRequest",
+    "TagResourceResponse": "aws:TagResourceResponse",
+    "Tag": "aws:Tag",
+    "TargetAddress": "aws:TargetAddress",
+    "UntagResourceRequest": "aws:UntagResourceRequest",
+    "UntagResourceResponse": "aws:UntagResourceResponse",
+    "UpdateFirewallConfigRequest": "aws:UpdateFirewallConfigRequest",
+    "UpdateFirewallConfigResponse": "aws:UpdateFirewallConfigResponse",
+    "UpdateFirewallDomainsRequest": "aws:UpdateFirewallDomainsRequest",
+    "UpdateFirewallDomainsResponse": "aws:UpdateFirewallDomainsResponse",
+    "UpdateFirewallRuleGroupAssociationRequest": "aws:UpdateFirewallRuleGroupAssociationRequest",
+    "UpdateFirewallRuleGroupAssociationResponse": "aws:UpdateFirewallRuleGroupAssociationResponse",
+    "UpdateFirewallRuleRequest": "aws:UpdateFirewallRuleRequest",
+    "UpdateFirewallRuleResponse": "aws:UpdateFirewallRuleResponse",
+    "UpdateIpAddress": "aws:UpdateIpAddress",
+    "UpdateResolverConfigRequest": "aws:UpdateResolverConfigRequest",
+    "UpdateResolverConfigResponse": "aws:UpdateResolverConfigResponse",
+    "UpdateResolverDnssecConfigRequest": "aws:UpdateResolverDnssecConfigRequest",
+    "UpdateResolverDnssecConfigResponse": "aws:UpdateResolverDnssecConfigResponse",
+    "UpdateResolverEndpointRequest": "aws:UpdateResolverEndpointRequest",
+    "UpdateResolverEndpointResponse": "aws:UpdateResolverEndpointResponse",
+    "UpdateResolverRuleRequest": "aws:UpdateResolverRuleRequest",
+    "UpdateResolverRuleResponse": "aws:UpdateResolverRuleResponse",
+    "CreatorRequestId": {
+      "@id": "aws:CreatorRequestId",
+      "@type": "xsd:string"
+    },
+    "FirewallRuleGroupId": {
+      "@id": "aws:FirewallRuleGroupId",
+      "@type": "xsd:string"
+    },
+    "VpcId": {
+      "@id": "aws:VpcId",
+      "@type": "xsd:string"
+    },
+    "Priority": {
+      "@id": "aws:Priority",
+      "@type": "xsd:string"
+    },
+    "Name": {
+      "@id": "aws:Name",
+      "@type": "xsd:string"
+    },
+    "MutationProtection": {
+      "@id": "aws:MutationProtection",
+      "@type": "xsd:string"
+    },
+    "Tags": {
+      "@id": "aws:Tags",
+      "@type": "xsd:string"
+    },
+    "ResolverEndpointId": {
+      "@id": "aws:ResolverEndpointId",
+      "@type": "xsd:string"
+    },
+    "IpAddress": {
+      "@id": "aws:IpAddress",
+      "@type": "xsd:string"
+    },
+    "ResolverQueryLogConfigId": {
+      "@id": "aws:ResolverQueryLogConfigId",
+      "@type": "xsd:string"
+    },
+    "ResourceId": {
+      "@id": "aws:ResourceId",
+      "@type": "xsd:string"
+    },
+    "ResolverRuleId": {
+      "@id": "aws:ResolverRuleId",
+      "@type": "xsd:string"
+    },
+    "VPCId": {
+      "@id": "aws:VPCId",
+      "@type": "xsd:string"
+    },
+    "FirewallDomainListId": {
+      "@id": "aws:FirewallDomainListId",
+      "@type": "xsd:string"
+    },
+    "Action": {
+      "@id": "aws:Action",
+      "@type": "xsd:string"
+    },
+    "BlockResponse": {
+      "@id": "aws:BlockResponse",
+      "@type": "xsd:string"
+    },
+    "BlockOverrideDomain": {
+      "@id": "aws:BlockOverrideDomain",
+      "@type": "xsd:string"
+    },
+    "BlockOverrideDnsType": {
+      "@id": "aws:BlockOverrideDnsType",
+      "@type": "xsd:string"
+    },
+    "BlockOverrideTtl": {
+      "@id": "aws:BlockOverrideTtl",
+      "@type": "xsd:string"
+    },
+    "SecurityGroupIds": {
+      "@id": "aws:SecurityGroupIds",
+      "@type": "xsd:string"
+    },
+    "Direction": {
+      "@id": "aws:Direction",
+      "@type": "xsd:string"
+    },
+    "IpAddresses": {
+      "@id": "aws:IpAddresses",
+      "@type": "xsd:string"
+    },
+    "ResolverEndpointType": {
+      "@id": "aws:ResolverEndpointType",
+      "@type": "xsd:string"
+    },
+    "DestinationArn": {
+      "@id": "aws:DestinationArn",
+      "@type": "xsd:string"
+    },
+    "RuleType": {
+      "@id": "aws:RuleType",
+      "@type": "xsd:string"
+    },
+    "DomainName": {
+      "@id": "aws:DomainName",
+      "@type": "xsd:string"
+    },
+    "TargetIps": {
+      "@id": "aws:TargetIps",
+      "@type": "xsd:string"
+    },
+    "FirewallRuleGroupAssociationId": {
+      "@id": "aws:FirewallRuleGroupAssociationId",
+      "@type": "xsd:string"
+    },
+    "Values": {
+      "@id": "aws:Values",
+      "@type": "xsd:string"
+    },
+    "Id": {
+      "@id": "aws:Id",
+      "@type": "xsd:string"
+    },
+    "OwnerId": {
+      "@id": "aws:OwnerId",
+      "@type": "xsd:string"
+    },
+    "FirewallFailOpen": {
+      "@id": "aws:FirewallFailOpen",
+      "@type": "xsd:string"
+    },
+    "Arn": {
+      "@id": "aws:Arn",
+      "@type": "xsd:string"
+    },
+    "ManagedOwnerName": {
+      "@id": "aws:ManagedOwnerName",
+      "@type": "xsd:string"
+    },
+    "DomainCount": {
+      "@id": "aws:DomainCount",
+      "@type": "xsd:string"
+    },
+    "Status": {
+      "@id": "aws:Status",
+      "@type": "xsd:string"
+    },
+    "StatusMessage": {
+      "@id": "aws:StatusMessage",
+      "@type": "xsd:string"
+    },
+    "CreationTime": {
+      "@id": "aws:CreationTime",
+      "@type": "xsd:string"
+    },
+    "ModificationTime": {
+      "@id": "aws:ModificationTime",
+      "@type": "xsd:string"
+    },
+    "ShareStatus": {
+      "@id": "aws:ShareStatus",
+      "@type": "xsd:string"
+    },
+    "RuleCount": {
+      "@id": "aws:RuleCount",
+      "@type": "xsd:string"
+    },
+    "FirewallRuleGroupPolicy": {
+      "@id": "aws:FirewallRuleGroupPolicy",
+      "@type": "xsd:string"
+    },
+    "ResolverDNSSECConfig": {
+      "@id": "aws:ResolverDNSSECConfig",
+      "@type": "xsd:string"
+    },
+    "ResolverQueryLogConfigAssociationId": {
+      "@id": "aws:ResolverQueryLogConfigAssociationId",
+      "@type": "xsd:string"
+    },
+    "ResolverQueryLogConfigPolicy": {
+      "@id": "aws:ResolverQueryLogConfigPolicy",
+      "@type": "xsd:string"
+    },
+    "ResolverRuleAssociationId": {
+      "@id": "aws:ResolverRuleAssociationId",
+      "@type": "xsd:string"
+    },
+    "ResolverRulePolicy": {
+      "@id": "aws:ResolverRulePolicy",
+      "@type": "xsd:string"
+    },
+    "Operation": {
+      "@id": "aws:Operation",
+      "@type": "xsd:string"
+    },
+    "DomainFileUrl": {
+      "@id": "aws:DomainFileUrl",
+      "@type": "xsd:string"
+    },
+    "SubnetId": {
+      "@id": "aws:SubnetId",
+      "@type": "xsd:string"
+    },
+    "Ip": {
+      "@id": "aws:Ip",
+      "@type": "xsd:string"
+    },
+    "Ipv6": {
+      "@id": "aws:Ipv6",
+      "@type": "xsd:string"
+    },
+    "IpId": {
+      "@id": "aws:IpId",
+      "@type": "xsd:string"
+    },
+    "MaxResults": {
+      "@id": "aws:MaxResults",
+      "@type": "xsd:string"
+    },
+    "NextToken": {
+      "@id": "aws:NextToken",
+      "@type": "xsd:string"
+    },
+    "FirewallConfigs": {
+      "@id": "aws:FirewallConfigs",
+      "@type": "xsd:string"
+    },
+    "FirewallDomainLists": {
+      "@id": "aws:FirewallDomainLists",
+      "@type": "xsd:string"
+    },
+    "Domains": {
+      "@id": "aws:Domains",
+      "@type": "xsd:string"
+    },
+    "FirewallRuleGroupAssociations": {
+      "@id": "aws:FirewallRuleGroupAssociations",
+      "@type": "xsd:string"
+    },
+    "FirewallRuleGroups": {
+      "@id": "aws:FirewallRuleGroups",
+      "@type": "xsd:string"
+    },
+    "FirewallRules": {
+      "@id": "aws:FirewallRules",
+      "@type": "xsd:string"
+    },
+    "ResolverConfigs": {
+      "@id": "aws:ResolverConfigs",
+      "@type": "xsd:string"
+    },
+    "Filters": {
+      "@id": "aws:Filters",
+      "@type": "xsd:string"
+    },
+    "ResolverDnssecConfigs": {
+      "@id": "aws:ResolverDnssecConfigs",
+      "@type": "xsd:string"
+    },
+    "ResolverEndpoints": {
+      "@id": "aws:ResolverEndpoints",
+      "@type": "xsd:string"
+    },
+    "SortBy": {
+      "@id": "aws:SortBy",
+      "@type": "xsd:string"
+    },
+    "SortOrder": {
+      "@id": "aws:SortOrder",
+      "@type": "xsd:string"
+    },
+    "TotalCount": {
+      "@id": "aws:TotalCount",
+      "@type": "xsd:string"
+    },
+    "TotalFilteredCount": {
+      "@id": "aws:TotalFilteredCount",
+      "@type": "xsd:string"
+    },
+    "ResolverQueryLogConfigAssociations": {
+      "@id": "aws:ResolverQueryLogConfigAssociations",
+      "@type": "xsd:string"
+    },
+    "ResolverQueryLogConfigs": {
+      "@id": "aws:ResolverQueryLogConfigs",
+      "@type": "xsd:string"
+    },
+    "ResolverRuleAssociations": {
+      "@id": "aws:ResolverRuleAssociations",
+      "@type": "xsd:string"
+    },
+    "ResolverRules": {
+      "@id": "aws:ResolverRules",
+      "@type": "xsd:string"
+    },
+    "ResourceArn": {
+      "@id": "aws:ResourceArn",
+      "@type": "xsd:string"
+    },
+    "ReturnValue": {
+      "@id": "aws:ReturnValue",
+      "@type": "xsd:string"
+    },
+    "AutodefinedReverse": {
+      "@id": "aws:AutodefinedReverse",
+      "@type": "xsd:string"
+    },
+    "ValidationStatus": {
+      "@id": "aws:ValidationStatus",
+      "@type": "xsd:string"
+    },
+    "IpAddressCount": {
+      "@id": "aws:IpAddressCount",
+      "@type": "xsd:string"
+    },
+    "HostVPCId": {
+      "@id": "aws:HostVPCId",
+      "@type": "xsd:string"
+    },
+    "Error": {
+      "@id": "aws:Error",
+      "@type": "xsd:string"
+    },
+    "ErrorMessage": {
+      "@id": "aws:ErrorMessage",
+      "@type": "xsd:string"
+    },
+    "AssociationCount": {
+      "@id": "aws:AssociationCount",
+      "@type": "xsd:string"
+    },
+    "Key": {
+      "@id": "aws:Key",
+      "@type": "xsd:string"
+    },
+    "Value": {
+      "@id": "aws:Value",
+      "@type": "xsd:string"
+    },
+    "Port": {
+      "@id": "aws:Port",
+      "@type": "xsd:string"
+    },
+    "TagKeys": {
+      "@id": "aws:TagKeys",
+      "@type": "xsd:string"
+    },
+    "AutodefinedReverseFlag": {
+      "@id": "aws:AutodefinedReverseFlag",
+      "@type": "xsd:string"
+    },
+    "Validation": {
+      "@id": "aws:Validation",
+      "@type": "xsd:string"
+    },
+    "UpdateIpAddresses": {
+      "@id": "aws:UpdateIpAddresses",
+      "@type": "xsd:string"
+    },
+    "Config": {
+      "@id": "aws:Config",
+      "@type": "xsd:string"
+    }
+  }
+}

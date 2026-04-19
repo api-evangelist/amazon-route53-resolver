@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-firewall-rule-group-schema.json",
+  "title": "FirewallRuleGroup",
+  "description": "High-level information for a firewall rule group. A firewall rule group is a collection of rules that DNS Firewall uses to filter DNS network traffic for a VPC. To retrieve the rules for the rule group, call <a>ListFirewallRules</a>.",
+  "type": "object",
+  "properties": {
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of the rule group. "
+        }
+      ]
+    },
+    "Arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Arn"
+        },
+        {
+          "description": "The ARN (Amazon Resource Name) of the rule group."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Name"
+        },
+        {
+          "description": "The name of the rule group."
+        }
+      ]
+    },
+    "RuleCount": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Unsigned"
+        },
+        {
+          "description": "The number of rules in the rule group."
+        }
+      ]
+    },
+    "Status": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FirewallRuleGroupStatus"
+        },
+        {
+          "description": "The status of the domain list. "
+        }
+      ]
+    },
+    "StatusMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StatusMessage"
+        },
+        {
+          "description": "Additional information about the status of the rule group, if available."
+        }
+      ]
+    },
+    "OwnerId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccountId"
+        },
+        {
+          "description": "The Amazon Web Services account ID for the account that created the rule group. When a rule group is shared with your account, this is the account that has shared the rule group with you. "
+        }
+      ]
+    },
+    "CreatorRequestId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CreatorRequestId"
+        },
+        {
+          "description": "A unique string defined by you to identify the request. This allows you to retry failed requests without the risk of running the operation twice. This can be any unique string, for example, a timestamp. "
+        }
+      ]
+    },
+    "ShareStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ShareStatus"
+        },
+        {
+          "description": "Whether the rule group is shared with other Amazon Web Services accounts, or was shared with the current account by another Amazon Web Services account. Sharing is configured through Resource Access Manager (RAM)."
+        }
+      ]
+    },
+    "CreationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Rfc3339TimeString"
+        },
+        {
+          "description": "The date and time that the rule group was created, in Unix time format and Coordinated Universal Time (UTC). "
+        }
+      ]
+    },
+    "ModificationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Rfc3339TimeString"
+        },
+        {
+          "description": "The date and time that the rule group was last modified, in Unix time format and Coordinated Universal Time (UTC)."
+        }
+      ]
+    }
+  }
+}

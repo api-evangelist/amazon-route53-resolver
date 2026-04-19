@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-disassociate-resolver-endpoint-ip-address-response-schema.json",
+  "title": "DisassociateResolverEndpointIpAddressResponse",
+  "description": "DisassociateResolverEndpointIpAddressResponse schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResolverEndpoint": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResolverEndpoint"
+        },
+        {
+          "description": "The response to an <code>DisassociateResolverEndpointIpAddress</code> request."
+        }
+      ]
+    }
+  }
+}

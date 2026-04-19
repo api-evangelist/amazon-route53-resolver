@@ -1,0 +1,6 @@
+{
+  "IpId": "abc123",
+  "SubnetId": "abc123",
+  "Ip": "10.0.1.100",
+  "Ipv6": "example-value"
+}

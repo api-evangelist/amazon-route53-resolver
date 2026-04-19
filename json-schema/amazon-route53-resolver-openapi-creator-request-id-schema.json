@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-creator-request-id-schema.json",
+  "title": "CreatorRequestId",
+  "description": "CreatorRequestId schema from openapi",
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 255
+}

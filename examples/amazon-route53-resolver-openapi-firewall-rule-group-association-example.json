@@ -1,0 +1,12 @@
+{
+  "Id": "abc123",
+  "Arn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "FirewallRuleGroupId": "abc123",
+  "VpcId": "abc123",
+  "Name": "Example Resource",
+  "Priority": "example-value",
+  "MutationProtection": "example-value",
+  "ManagedOwnerName": "Example Resource",
+  "Status": "ACTIVE",
+  "StatusMessage": "ACTIVE"
+}

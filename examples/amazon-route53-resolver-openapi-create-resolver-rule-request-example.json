@@ -1,0 +1,9 @@
+{
+  "CreatorRequestId": "abc123",
+  "Name": "Example Resource",
+  "RuleType": "example-value",
+  "DomainName": "example.com",
+  "TargetIps": "example-value",
+  "ResolverEndpointId": "abc123",
+  "Tags": "example-value"
+}

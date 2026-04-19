@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-get-resolver-rule-policy-request-structure.json",
+  "description": "GetResolverRulePolicyRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "Arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Arn"
+        },
+        {
+          "description": "The ID of the Resolver rule that you want to get the Resolver rule policy for."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Arn"
+  ],
+  "name": "GetResolverRulePolicyRequest"
+}

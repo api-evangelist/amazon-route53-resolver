@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-resolver-dnssec-validation-status-structure.json",
+  "description": "ResolverDNSSECValidationStatus schema from openapi",
+  "type": "string",
+  "enum": [
+    "ENABLING",
+    "ENABLED",
+    "DISABLING",
+    "DISABLED",
+    "UPDATING_TO_USE_LOCAL_RESOURCE_SETTING",
+    "USE_LOCAL_RESOURCE_SETTING"
+  ],
+  "name": "ResolverDNSSECValidationStatus"
+}

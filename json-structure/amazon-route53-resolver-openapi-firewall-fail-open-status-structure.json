@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-firewall-fail-open-status-structure.json",
+  "description": "FirewallFailOpenStatus schema from openapi",
+  "type": "string",
+  "enum": [
+    "ENABLED",
+    "DISABLED",
+    "USE_LOCAL_RESOURCE_SETTING"
+  ],
+  "name": "FirewallFailOpenStatus"
+}

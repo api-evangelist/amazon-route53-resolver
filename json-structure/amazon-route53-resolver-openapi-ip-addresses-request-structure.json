@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-ip-addresses-request-structure.json",
+  "description": "IpAddressesRequest schema from openapi",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/IpAddressRequest"
+  },
+  "minItems": 1,
+  "maxItems": 20,
+  "name": "IpAddressesRequest"
+}

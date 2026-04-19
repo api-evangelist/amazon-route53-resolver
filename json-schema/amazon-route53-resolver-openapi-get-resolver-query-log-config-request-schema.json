@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-get-resolver-query-log-config-request-schema.json",
+  "title": "GetResolverQueryLogConfigRequest",
+  "description": "GetResolverQueryLogConfigRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResolverQueryLogConfigId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of the Resolver query logging configuration that you want to get information about."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResolverQueryLogConfigId"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-delete-firewall-rule-group-request-schema.json",
+  "title": "DeleteFirewallRuleGroupRequest",
+  "description": "DeleteFirewallRuleGroupRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "FirewallRuleGroupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The unique identifier of the firewall rule group that you want to delete. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "FirewallRuleGroupId"
+  ]
+}

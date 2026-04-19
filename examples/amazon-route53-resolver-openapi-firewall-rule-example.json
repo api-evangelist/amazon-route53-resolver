@@ -1,0 +1,12 @@
+{
+  "FirewallRuleGroupId": "abc123",
+  "FirewallDomainListId": "example.com",
+  "Name": "Example Resource",
+  "Priority": "example-value",
+  "Action": "example-value",
+  "BlockResponse": "example-value",
+  "BlockOverrideDomain": "example.com",
+  "BlockOverrideDnsType": "example-value",
+  "BlockOverrideTtl": "example-value",
+  "CreatorRequestId": "abc123"
+}

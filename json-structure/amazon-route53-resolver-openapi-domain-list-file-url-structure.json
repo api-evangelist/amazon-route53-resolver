@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-domain-list-file-url-structure.json",
+  "description": "DomainListFileUrl schema from openapi",
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 1024,
+  "name": "DomainListFileUrl"
+}

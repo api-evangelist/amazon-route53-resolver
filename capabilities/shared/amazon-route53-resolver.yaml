@@ -1,0 +1,275 @@
+naftiko: 1.0.0-alpha1
+info:
+  label: Amazon Route 53 Resolver
+  description: <p>When you create a VPC using Amazon VPC, you automatically get DNS resolution within the VPC from Route 53 Resolver. By default, Resolver answers DNS queries for VPC domain names such
+    as domain names for EC2 instances or Elastic Load Balancing load balancers. Resolver performs recursive lookups against public name servers for all other domain names.</p> <p>You can also 
+    configure DNS resolution between your VPC and your network over a Direct Connect or VPN connection:</p> <p> <b>Forward DNS queries from resolvers on your network to Route 53 Resolver</b> </p> 
+    <p>DNS resolvers on your network can forward DNS queries to Resolver in a specified VPC. This allows your DNS resolvers to easily resolve domain names for Amazon Web Services resources such as EC2
+    instances or records in a Route 53 private hosted zone. For more information, see <a 
+    href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-network-to-vpc">How DNS Resolvers on Your Network Forward DNS Queries to Route 53 
+    Resolver</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p> <b>Conditionally forward queries from a VPC to resolvers on your network</b> </p> <p>You can configure Resolver to forward 
+    queries that it receives from EC2 instances in your VPCs to DNS resolvers on your network. To forward selected queries, you create Resolver rules that specify the domain names for the DNS queries 
+    that you want to forward (such as example.com), and the IP addresses of the DNS resolvers on your network that you want to forward the queries to. If a query matches multiple rules (example.com, 
+    acme.example.com), Resolver chooses the rule with the most specific match (acme.example.com) and forwards the query to the IP addresses that you specified in that rule. For more information, see 
+    <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-vpc-to-network">How Route 53 Resolver Forwards DNS Queries from Your VPCs to Your 
+    Network</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p>Like Amazon VPC, Resolver is Regional. In each Region where you have VPCs, you can choose whether to forward queries from your 
+    VPCs to your network (outbound queries), from your network to your VPCs (inbound queries), or both.</p>
+  tags:
+  - Amazon Route53 Resolver
+  - AWS
+  created: '2026-04-19'
+  modified: '2026-04-19'
+binds:
+- namespace: env
+  keys:
+    AMAZON_ROUTE53_RESOLVER_API_KEY: AMAZON_ROUTE53_RESOLVER_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: amazon-route53-resolver
+    baseUri: http://route53resolver.{region}.amazonaws.com
+    description: Amazon Route 53 Resolver
+    authentication:
+      type: bearer
+      token: '{{AWS_ACCESS_KEY}}'
+    resources:
+    - name: '#X-Amz-Target=Route53Resolver.AssociateFirewallRuleGroup'
+      path: /#X-Amz-Target=Route53Resolver.AssociateFirewallRuleGroup
+      description: '#X-Amz-Target=Route53Resolver.AssociateFirewallRuleGroup operations'
+      operations:
+      - name: AssociateFirewallRuleGroup
+        method: POST
+        description: AssociateFirewallRuleGroup
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.AssociateResolverEndpointIpAddress'
+      path: /#X-Amz-Target=Route53Resolver.AssociateResolverEndpointIpAddress
+      description: '#X-Amz-Target=Route53Resolver.AssociateResolverEndpointIpAddress operations'
+      operations:
+      - name: AssociateResolverEndpointIpAddress
+        method: POST
+        description: AssociateResolverEndpointIpAddress
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.AssociateResolverQueryLogConfig'
+      path: /#X-Amz-Target=Route53Resolver.AssociateResolverQueryLogConfig
+      description: '#X-Amz-Target=Route53Resolver.AssociateResolverQueryLogConfig operations'
+      operations:
+      - name: AssociateResolverQueryLogConfig
+        method: POST
+        description: AssociateResolverQueryLogConfig
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.AssociateResolverRule'
+      path: /#X-Amz-Target=Route53Resolver.AssociateResolverRule
+      description: '#X-Amz-Target=Route53Resolver.AssociateResolverRule operations'
+      operations:
+      - name: AssociateResolverRule
+        method: POST
+        description: AssociateResolverRule
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.CreateFirewallDomainList'
+      path: /#X-Amz-Target=Route53Resolver.CreateFirewallDomainList
+      description: '#X-Amz-Target=Route53Resolver.CreateFirewallDomainList operations'
+      operations:
+      - name: CreateFirewallDomainList
+        method: POST
+        description: CreateFirewallDomainList
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.CreateFirewallRule'
+      path: /#X-Amz-Target=Route53Resolver.CreateFirewallRule
+      description: '#X-Amz-Target=Route53Resolver.CreateFirewallRule operations'
+      operations:
+      - name: CreateFirewallRule
+        method: POST
+        description: CreateFirewallRule
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.CreateFirewallRuleGroup'
+      path: /#X-Amz-Target=Route53Resolver.CreateFirewallRuleGroup
+      description: '#X-Amz-Target=Route53Resolver.CreateFirewallRuleGroup operations'
+      operations:
+      - name: CreateFirewallRuleGroup
+        method: POST
+        description: CreateFirewallRuleGroup
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.CreateResolverEndpoint'
+      path: /#X-Amz-Target=Route53Resolver.CreateResolverEndpoint
+      description: '#X-Amz-Target=Route53Resolver.CreateResolverEndpoint operations'
+      operations:
+      - name: CreateResolverEndpoint
+        method: POST
+        description: CreateResolverEndpoint
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.CreateResolverQueryLogConfig'
+      path: /#X-Amz-Target=Route53Resolver.CreateResolverQueryLogConfig
+      description: '#X-Amz-Target=Route53Resolver.CreateResolverQueryLogConfig operations'
+      operations:
+      - name: CreateResolverQueryLogConfig
+        method: POST
+        description: CreateResolverQueryLogConfig
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.CreateResolverRule'
+      path: /#X-Amz-Target=Route53Resolver.CreateResolverRule
+      description: '#X-Amz-Target=Route53Resolver.CreateResolverRule operations'
+      operations:
+      - name: CreateResolverRule
+        method: POST
+        description: CreateResolverRule
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.DeleteFirewallDomainList'
+      path: /#X-Amz-Target=Route53Resolver.DeleteFirewallDomainList
+      description: '#X-Amz-Target=Route53Resolver.DeleteFirewallDomainList operations'
+      operations:
+      - name: DeleteFirewallDomainList
+        method: POST
+        description: DeleteFirewallDomainList
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.DeleteFirewallRule'
+      path: /#X-Amz-Target=Route53Resolver.DeleteFirewallRule
+      description: '#X-Amz-Target=Route53Resolver.DeleteFirewallRule operations'
+      operations:
+      - name: DeleteFirewallRule
+        method: POST
+        description: DeleteFirewallRule
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.DeleteFirewallRuleGroup'
+      path: /#X-Amz-Target=Route53Resolver.DeleteFirewallRuleGroup
+      description: '#X-Amz-Target=Route53Resolver.DeleteFirewallRuleGroup operations'
+      operations:
+      - name: DeleteFirewallRuleGroup
+        method: POST
+        description: DeleteFirewallRuleGroup
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.DeleteResolverEndpoint'
+      path: /#X-Amz-Target=Route53Resolver.DeleteResolverEndpoint
+      description: '#X-Amz-Target=Route53Resolver.DeleteResolverEndpoint operations'
+      operations:
+      - name: DeleteResolverEndpoint
+        method: POST
+        description: DeleteResolverEndpoint
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.DeleteResolverQueryLogConfig'
+      path: /#X-Amz-Target=Route53Resolver.DeleteResolverQueryLogConfig
+      description: '#X-Amz-Target=Route53Resolver.DeleteResolverQueryLogConfig operations'
+      operations:
+      - name: DeleteResolverQueryLogConfig
+        method: POST
+        description: DeleteResolverQueryLogConfig
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.DeleteResolverRule'
+      path: /#X-Amz-Target=Route53Resolver.DeleteResolverRule
+      description: '#X-Amz-Target=Route53Resolver.DeleteResolverRule operations'
+      operations:
+      - name: DeleteResolverRule
+        method: POST
+        description: DeleteResolverRule
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.DisassociateFirewallRuleGroup'
+      path: /#X-Amz-Target=Route53Resolver.DisassociateFirewallRuleGroup
+      description: '#X-Amz-Target=Route53Resolver.DisassociateFirewallRuleGroup operations'
+      operations:
+      - name: DisassociateFirewallRuleGroup
+        method: POST
+        description: DisassociateFirewallRuleGroup
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.DisassociateResolverEndpointIpAddress'
+      path: /#X-Amz-Target=Route53Resolver.DisassociateResolverEndpointIpAddress
+      description: '#X-Amz-Target=Route53Resolver.DisassociateResolverEndpointIpAddress operations'
+      operations:
+      - name: DisassociateResolverEndpointIpAddress
+        method: POST
+        description: DisassociateResolverEndpointIpAddress
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.DisassociateResolverQueryLogConfig'
+      path: /#X-Amz-Target=Route53Resolver.DisassociateResolverQueryLogConfig
+      description: '#X-Amz-Target=Route53Resolver.DisassociateResolverQueryLogConfig operations'
+      operations:
+      - name: DisassociateResolverQueryLogConfig
+        method: POST
+        description: DisassociateResolverQueryLogConfig
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: '#X-Amz-Target=Route53Resolver.DisassociateResolverRule'
+      path: /#X-Amz-Target=Route53Resolver.DisassociateResolverRule
+      description: '#X-Amz-Target=Route53Resolver.DisassociateResolverRule operations'
+      operations:
+      - name: DisassociateResolverRule
+        method: POST
+        description: DisassociateResolverRule
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.

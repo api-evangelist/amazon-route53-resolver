@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-get-firewall-rule-group-request-structure.json",
+  "description": "GetFirewallRuleGroupRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "FirewallRuleGroupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The unique identifier of the firewall rule group. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "FirewallRuleGroupId"
+  ],
+  "name": "GetFirewallRuleGroupRequest"
+}

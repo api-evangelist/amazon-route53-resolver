@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-update-resolver-endpoint-request-schema.json",
+  "title": "UpdateResolverEndpointRequest",
+  "description": "UpdateResolverEndpointRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResolverEndpointId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of the Resolver endpoint that you want to update."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Name"
+        },
+        {
+          "description": "The name of the Resolver endpoint that you want to update."
+        }
+      ]
+    },
+    "ResolverEndpointType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResolverEndpointType"
+        },
+        {
+          "description": " Specifies the endpoint type for what type of IP address the endpoint uses to forward DNS queries. "
+        }
+      ]
+    },
+    "UpdateIpAddresses": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UpdateIpAddresses"
+        },
+        {
+          "description": " Updates the Resolver endpoint type to IpV4, Ipv6, or dual-stack. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResolverEndpointId"
+  ]
+}

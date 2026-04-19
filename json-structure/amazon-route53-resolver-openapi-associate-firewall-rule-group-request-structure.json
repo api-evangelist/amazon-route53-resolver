@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-associate-firewall-rule-group-request-structure.json",
+  "description": "AssociateFirewallRuleGroupRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "CreatorRequestId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CreatorRequestId"
+        },
+        {
+          "description": "A unique string that identifies the request and that allows failed requests to be retried without the risk of running the operation twice. <code>CreatorRequestId</code> can be any unique string, for example, a date/time stamp. "
+        }
+      ]
+    },
+    "FirewallRuleGroupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The unique identifier of the firewall rule group. "
+        }
+      ]
+    },
+    "VpcId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The unique identifier of the VPC that you want to associate with the rule group. "
+        }
+      ]
+    },
+    "Priority": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Priority"
+        },
+        {
+          "description": "<p>The setting that determines the processing order of the rule group among the rule groups that you associate with the specified VPC. DNS Firewall filters VPC traffic starting from the rule group with the lowest numeric priority setting. </p> <p>You must specify a unique priority for each rule group that you associate with a single VPC. To make it easier to insert rule groups later, leave space between the numbers, for example, use 101, 200, and so on. You can change the priority setting for a rule group association after you create it.</p> <p>The allowed values for <code>Priority</code> are between 100 and 9900.</p>"
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Name"
+        },
+        {
+          "description": "A name that lets you identify the association, to manage and use it."
+        }
+      ]
+    },
+    "MutationProtection": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MutationProtectionStatus"
+        },
+        {
+          "description": "If enabled, this setting disallows modification or removal of the association, to help prevent against accidentally altering DNS firewall protections. When you create the association, the default setting is <code>DISABLED</code>. "
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "A list of the tag keys and values that you want to associate with the rule group association. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "CreatorRequestId",
+    "FirewallRuleGroupId",
+    "VpcId",
+    "Priority",
+    "Name"
+  ],
+  "name": "AssociateFirewallRuleGroupRequest"
+}

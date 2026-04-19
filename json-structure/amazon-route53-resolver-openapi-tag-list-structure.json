@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-tag-list-structure.json",
+  "description": "TagList schema from openapi",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/Tag"
+  },
+  "maxItems": 200,
+  "name": "TagList"
+}

@@ -1,0 +1,8 @@
+{
+  "FirewallRuleGroupId": "abc123",
+  "VpcId": "abc123",
+  "Priority": "example-value",
+  "Status": "ACTIVE",
+  "MaxResults": "example-value",
+  "NextToken": "example-value"
+}

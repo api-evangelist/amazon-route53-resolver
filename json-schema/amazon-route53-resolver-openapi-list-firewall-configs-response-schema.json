@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-list-firewall-configs-response-schema.json",
+  "title": "ListFirewallConfigsResponse",
+  "description": "ListFirewallConfigsResponse schema from openapi",
+  "type": "object",
+  "properties": {
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NextToken"
+        },
+        {
+          "description": "If objects are still available for retrieval, Resolver returns this token in the response. To retrieve the next batch of objects, provide this token in your next request."
+        }
+      ]
+    },
+    "FirewallConfigs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FirewallConfigList"
+        },
+        {
+          "description": "The configurations for the firewall behavior provided by DNS Firewall for VPCs from Amazon Virtual Private Cloud (Amazon VPC). "
+        }
+      ]
+    }
+  }
+}

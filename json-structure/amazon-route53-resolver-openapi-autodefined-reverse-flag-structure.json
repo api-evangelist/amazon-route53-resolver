@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-autodefined-reverse-flag-structure.json",
+  "description": "AutodefinedReverseFlag schema from openapi",
+  "type": "string",
+  "enum": [
+    "ENABLE",
+    "DISABLE",
+    "USE_LOCAL_RESOURCE_SETTING"
+  ],
+  "name": "AutodefinedReverseFlag"
+}

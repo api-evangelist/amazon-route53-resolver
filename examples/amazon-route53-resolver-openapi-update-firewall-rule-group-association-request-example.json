@@ -1,0 +1,6 @@
+{
+  "FirewallRuleGroupAssociationId": "abc123",
+  "Priority": "example-value",
+  "MutationProtection": "example-value",
+  "Name": "Example Resource"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-put-firewall-rule-group-policy-response-schema.json",
+  "title": "PutFirewallRuleGroupPolicyResponse",
+  "description": "PutFirewallRuleGroupPolicyResponse schema from openapi",
+  "type": "object",
+  "properties": {
+    "ReturnValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "<p/>"
+        }
+      ]
+    }
+  }
+}

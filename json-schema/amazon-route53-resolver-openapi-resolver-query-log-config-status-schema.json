@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-resolver-query-log-config-status-schema.json",
+  "title": "ResolverQueryLogConfigStatus",
+  "description": "ResolverQueryLogConfigStatus schema from openapi",
+  "type": "string",
+  "enum": [
+    "CREATING",
+    "CREATED",
+    "DELETING",
+    "FAILED"
+  ]
+}

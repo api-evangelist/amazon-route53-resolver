@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-list-firewall-configs-max-result-structure.json",
+  "description": "ListFirewallConfigsMaxResult schema from openapi",
+  "type": "int32",
+  "minimum": 5,
+  "maximum": 10,
+  "name": "ListFirewallConfigsMaxResult"
+}

@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-firewall-rule-group-association-structure.json",
+  "description": "An association between a firewall rule group and a VPC, which enables DNS filtering for the VPC. ",
+  "type": "object",
+  "properties": {
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The identifier for the association."
+        }
+      ]
+    },
+    "Arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Arn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the firewall rule group association."
+        }
+      ]
+    },
+    "FirewallRuleGroupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The unique identifier of the firewall rule group. "
+        }
+      ]
+    },
+    "VpcId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The unique identifier of the VPC that is associated with the rule group. "
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Name"
+        },
+        {
+          "description": "The name of the association."
+        }
+      ]
+    },
+    "Priority": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Priority"
+        },
+        {
+          "description": "The setting that determines the processing order of the rule group among the rule groups that are associated with a single VPC. DNS Firewall filters VPC traffic starting from rule group with the lowest numeric priority setting. "
+        }
+      ]
+    },
+    "MutationProtection": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MutationProtectionStatus"
+        },
+        {
+          "description": "If enabled, this setting disallows modification or removal of the association, to help prevent against accidentally altering DNS firewall protections. "
+        }
+      ]
+    },
+    "ManagedOwnerName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ServicePrinciple"
+        },
+        {
+          "description": "The owner of the association, used only for associations that are not managed by you. If you use Firewall Manager to manage your DNS Firewalls, then this reports Firewall Manager as the managed owner."
+        }
+      ]
+    },
+    "Status": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FirewallRuleGroupAssociationStatus"
+        },
+        {
+          "description": "The current status of the association."
+        }
+      ]
+    },
+    "StatusMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StatusMessage"
+        },
+        {
+          "description": "Additional information about the status of the response, if available."
+        }
+      ]
+    },
+    "CreatorRequestId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CreatorRequestId"
+        },
+        {
+          "description": "A unique string defined by you to identify the request. This allows you to retry failed requests without the risk of running the operation twice. This can be any unique string, for example, a timestamp. "
+        }
+      ]
+    },
+    "CreationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Rfc3339TimeString"
+        },
+        {
+          "description": "The date and time that the association was created, in Unix time format and Coordinated Universal Time (UTC). "
+        }
+      ]
+    },
+    "ModificationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Rfc3339TimeString"
+        },
+        {
+          "description": "The date and time that the association was last modified, in Unix time format and Coordinated Universal Time (UTC)."
+        }
+      ]
+    }
+  },
+  "name": "FirewallRuleGroupAssociation"
+}

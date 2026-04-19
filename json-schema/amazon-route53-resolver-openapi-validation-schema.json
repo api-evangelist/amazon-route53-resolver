@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-validation-schema.json",
+  "title": "Validation",
+  "description": "Validation schema from openapi",
+  "type": "string",
+  "enum": [
+    "ENABLE",
+    "DISABLE",
+    "USE_LOCAL_RESOURCE_SETTING"
+  ]
+}

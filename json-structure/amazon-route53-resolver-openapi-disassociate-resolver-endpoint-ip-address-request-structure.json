@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-disassociate-resolver-endpoint-ip-address-request-structure.json",
+  "description": "DisassociateResolverEndpointIpAddressRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResolverEndpointId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of the Resolver endpoint that you want to disassociate an IP address from."
+        }
+      ]
+    },
+    "IpAddress": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpAddressUpdate"
+        },
+        {
+          "description": "The IPv4 address that you want to remove from a Resolver endpoint."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResolverEndpointId",
+    "IpAddress"
+  ],
+  "name": "DisassociateResolverEndpointIpAddressRequest"
+}

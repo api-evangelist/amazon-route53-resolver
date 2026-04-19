@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-name-structure.json",
+  "description": "Name schema from openapi",
+  "type": "string",
+  "pattern": "(?!^[0-9]+$)([a-zA-Z0-9\\-_' ']+)",
+  "maxLength": 64,
+  "name": "Name"
+}

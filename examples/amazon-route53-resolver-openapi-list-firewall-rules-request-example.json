@@ -1,0 +1,7 @@
+{
+  "FirewallRuleGroupId": "abc123",
+  "Priority": "example-value",
+  "Action": "example-value",
+  "MaxResults": "example-value",
+  "NextToken": "example-value"
+}

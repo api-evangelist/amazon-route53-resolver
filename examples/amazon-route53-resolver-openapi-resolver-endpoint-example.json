@@ -1,0 +1,12 @@
+{
+  "Id": "abc123",
+  "CreatorRequestId": "abc123",
+  "Arn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "Name": "Example Resource",
+  "SecurityGroupIds": "https://example.com/resource",
+  "Direction": "example-value",
+  "IpAddressCount": "example-value",
+  "HostVPCId": "abc123",
+  "Status": "ACTIVE",
+  "StatusMessage": "ACTIVE"
+}

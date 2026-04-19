@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-update-firewall-rule-group-association-request-schema.json",
+  "title": "UpdateFirewallRuleGroupAssociationRequest",
+  "description": "UpdateFirewallRuleGroupAssociationRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "FirewallRuleGroupAssociationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The identifier of the <a>FirewallRuleGroupAssociation</a>. "
+        }
+      ]
+    },
+    "Priority": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Priority"
+        },
+        {
+          "description": "<p>The setting that determines the processing order of the rule group among the rule groups that you associate with the specified VPC. DNS Firewall filters VPC traffic starting from the rule group with the lowest numeric priority setting. </p> <p>You must specify a unique priority for each rule group that you associate with a single VPC. To make it easier to insert rule groups later, leave space between the numbers, for example, use 100, 200, and so on. You can change the priority setting for a rule group association after you create it.</p>"
+        }
+      ]
+    },
+    "MutationProtection": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MutationProtectionStatus"
+        },
+        {
+          "description": "If enabled, this setting disallows modification or removal of the association, to help prevent against accidentally altering DNS firewall protections. "
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Name"
+        },
+        {
+          "description": "The name of the rule group association."
+        }
+      ]
+    }
+  },
+  "required": [
+    "FirewallRuleGroupAssociationId"
+  ]
+}

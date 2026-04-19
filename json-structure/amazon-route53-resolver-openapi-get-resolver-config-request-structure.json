@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-get-resolver-config-request-structure.json",
+  "description": "GetResolverConfigRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "Resource ID of the Amazon VPC that you want to get information about."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceId"
+  ],
+  "name": "GetResolverConfigRequest"
+}

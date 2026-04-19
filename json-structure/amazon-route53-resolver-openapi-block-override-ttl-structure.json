@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-block-override-ttl-structure.json",
+  "description": "BlockOverrideTtl schema from openapi",
+  "type": "int32",
+  "minimum": 0,
+  "maximum": 604800,
+  "name": "BlockOverrideTtl"
+}

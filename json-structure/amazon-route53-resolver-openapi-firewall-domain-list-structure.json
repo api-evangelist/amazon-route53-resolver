@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-firewall-domain-list-structure.json",
+  "description": "<p>High-level information about a list of firewall domains for use in a <a>FirewallRule</a>. This is returned by <a>GetFirewallDomainList</a>.</p> <p>To retrieve the domains that are defined for this domain list, call <a>ListFirewallDomains</a>.</p>",
+  "type": "object",
+  "properties": {
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of the domain list. "
+        }
+      ]
+    },
+    "Arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Arn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the firewall domain list."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Name"
+        },
+        {
+          "description": "The name of the domain list. "
+        }
+      ]
+    },
+    "DomainCount": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Unsigned"
+        },
+        {
+          "description": "The number of domain names that are specified in the domain list."
+        }
+      ]
+    },
+    "Status": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FirewallDomainListStatus"
+        },
+        {
+          "description": "The status of the domain list. "
+        }
+      ]
+    },
+    "StatusMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StatusMessage"
+        },
+        {
+          "description": "Additional information about the status of the list, if available."
+        }
+      ]
+    },
+    "ManagedOwnerName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ServicePrinciple"
+        },
+        {
+          "description": "The owner of the list, used only for lists that are not managed by you. For example, the managed domain list <code>AWSManagedDomainsMalwareDomainList</code> has the managed owner name <code>Route 53 Resolver DNS Firewall</code>."
+        }
+      ]
+    },
+    "CreatorRequestId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CreatorRequestId"
+        },
+        {
+          "description": "A unique string defined by you to identify the request. This allows you to retry failed requests without the risk of running the operation twice. This can be any unique string, for example, a timestamp. "
+        }
+      ]
+    },
+    "CreationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Rfc3339TimeString"
+        },
+        {
+          "description": "The date and time that the domain list was created, in Unix time format and Coordinated Universal Time (UTC). "
+        }
+      ]
+    },
+    "ModificationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Rfc3339TimeString"
+        },
+        {
+          "description": "The date and time that the domain list was last modified, in Unix time format and Coordinated Universal Time (UTC). "
+        }
+      ]
+    }
+  },
+  "name": "FirewallDomainList"
+}

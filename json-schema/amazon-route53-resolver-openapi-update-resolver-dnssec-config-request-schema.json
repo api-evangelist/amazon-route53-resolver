@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-update-resolver-dnssec-config-request-schema.json",
+  "title": "UpdateResolverDnssecConfigRequest",
+  "description": "UpdateResolverDnssecConfigRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of the virtual private cloud (VPC) that you're updating the DNSSEC validation status for."
+        }
+      ]
+    },
+    "Validation": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Validation"
+        },
+        {
+          "description": "The new value that you are specifying for DNSSEC validation for the VPC. The value can be <code>ENABLE</code> or <code>DISABLE</code>. Be aware that it can take time for a validation status change to be completed."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceId",
+    "Validation"
+  ]
+}

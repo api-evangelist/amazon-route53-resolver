@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-rfc3339-time-string-schema.json",
+  "title": "Rfc3339TimeString",
+  "description": "Rfc3339TimeString schema from openapi",
+  "type": "string",
+  "minLength": 20,
+  "maxLength": 40
+}

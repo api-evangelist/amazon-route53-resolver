@@ -1,0 +1,5 @@
+{
+  "FirewallDomainListId": "example.com",
+  "MaxResults": "example-value",
+  "NextToken": "example-value"
+}

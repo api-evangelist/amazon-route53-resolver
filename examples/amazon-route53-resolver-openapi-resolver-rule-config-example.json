@@ -1,0 +1,5 @@
+{
+  "Name": "Example Resource",
+  "TargetIps": "example-value",
+  "ResolverEndpointId": "abc123"
+}

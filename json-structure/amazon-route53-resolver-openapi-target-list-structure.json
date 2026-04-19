@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-target-list-structure.json",
+  "description": "TargetList schema from openapi",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/TargetAddress"
+  },
+  "minItems": 1,
+  "name": "TargetList"
+}

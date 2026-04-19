@@ -1,0 +1,4 @@
+{
+  "FirewallRuleGroupId": "abc123",
+  "FirewallDomainListId": "example.com"
+}

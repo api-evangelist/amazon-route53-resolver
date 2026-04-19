@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-put-resolver-rule-policy-response-structure.json",
+  "description": "The response to a <code>PutResolverRulePolicy</code> request.",
+  "type": "object",
+  "properties": {
+    "ReturnValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Boolean"
+        },
+        {
+          "description": "Whether the <code>PutResolverRulePolicy</code> request was successful."
+        }
+      ]
+    }
+  },
+  "name": "PutResolverRulePolicyResponse"
+}

@@ -1,0 +1,7 @@
+{
+  "Id": "abc123",
+  "Arn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "Name": "Example Resource",
+  "CreatorRequestId": "abc123",
+  "ManagedOwnerName": "Example Resource"
+}

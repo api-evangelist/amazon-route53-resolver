@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-update-ip-address-schema.json",
+  "title": "UpdateIpAddress",
+  "description": " Provides information about the IP address type in response to <a href=\"https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_UpdateResolverEndpoint.html\">UpdateResolverEndpoint</a>. ",
+  "type": "object",
+  "properties": {
+    "IpId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": " The ID of the IP address, specified by the <code>ResolverEndpointId</code>. "
+        }
+      ]
+    },
+    "Ipv6": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Ipv6"
+        },
+        {
+          "description": " The IPv6 address that you want to use for DNS queries. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "IpId",
+    "Ipv6"
+  ]
+}

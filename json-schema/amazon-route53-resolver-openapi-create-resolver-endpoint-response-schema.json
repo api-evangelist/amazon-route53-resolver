@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-create-resolver-endpoint-response-schema.json",
+  "title": "CreateResolverEndpointResponse",
+  "description": "CreateResolverEndpointResponse schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResolverEndpoint": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResolverEndpoint"
+        },
+        {
+          "description": "Information about the <code>CreateResolverEndpoint</code> request, including the status of the request."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-create-firewall-domain-list-request-structure.json",
+  "description": "CreateFirewallDomainListRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "CreatorRequestId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CreatorRequestId"
+        },
+        {
+          "description": "A unique string that identifies the request and that allows you to retry failed requests without the risk of running the operation twice. <code>CreatorRequestId</code> can be any unique string, for example, a date/time stamp. "
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Name"
+        },
+        {
+          "description": "A name that lets you identify the domain list to manage and use it."
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "A list of the tag keys and values that you want to associate with the domain list. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "CreatorRequestId",
+    "Name"
+  ],
+  "name": "CreateFirewallDomainListRequest"
+}

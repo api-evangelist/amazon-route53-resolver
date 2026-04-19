@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-create-firewall-rule-group-response-schema.json",
+  "title": "CreateFirewallRuleGroupResponse",
+  "description": "CreateFirewallRuleGroupResponse schema from openapi",
+  "type": "object",
+  "properties": {
+    "FirewallRuleGroup": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FirewallRuleGroup"
+        },
+        {
+          "description": "A collection of rules used to filter DNS network traffic. "
+        }
+      ]
+    }
+  }
+}

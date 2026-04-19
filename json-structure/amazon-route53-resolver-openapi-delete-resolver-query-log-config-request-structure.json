@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-delete-resolver-query-log-config-request-structure.json",
+  "description": "DeleteResolverQueryLogConfigRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResolverQueryLogConfigId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of the query logging configuration that you want to delete."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResolverQueryLogConfigId"
+  ],
+  "name": "DeleteResolverQueryLogConfigRequest"
+}

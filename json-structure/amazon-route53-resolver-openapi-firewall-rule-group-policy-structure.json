@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-firewall-rule-group-policy-structure.json",
+  "description": "FirewallRuleGroupPolicy schema from openapi",
+  "type": "string",
+  "maxLength": 30000,
+  "name": "FirewallRuleGroupPolicy"
+}

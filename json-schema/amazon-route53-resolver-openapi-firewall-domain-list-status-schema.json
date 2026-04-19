@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-firewall-domain-list-status-schema.json",
+  "title": "FirewallDomainListStatus",
+  "description": "FirewallDomainListStatus schema from openapi",
+  "type": "string",
+  "enum": [
+    "COMPLETE",
+    "COMPLETE_IMPORT_FAILED",
+    "IMPORTING",
+    "DELETING",
+    "UPDATING"
+  ]
+}

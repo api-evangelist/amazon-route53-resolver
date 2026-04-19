@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-disassociate-resolver-rule-response-structure.json",
+  "description": "DisassociateResolverRuleResponse schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResolverRuleAssociation": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResolverRuleAssociation"
+        },
+        {
+          "description": "Information about the <code>DisassociateResolverRule</code> request, including the status of the request."
+        }
+      ]
+    }
+  },
+  "name": "DisassociateResolverRuleResponse"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-get-firewall-domain-list-response-structure.json",
+  "description": "GetFirewallDomainListResponse schema from openapi",
+  "type": "object",
+  "properties": {
+    "FirewallDomainList": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FirewallDomainList"
+        },
+        {
+          "description": "The domain list that you requested. "
+        }
+      ]
+    }
+  },
+  "name": "GetFirewallDomainListResponse"
+}

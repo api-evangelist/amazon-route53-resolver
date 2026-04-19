@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-ip-address-status-structure.json",
+  "description": "IpAddressStatus schema from openapi",
+  "type": "string",
+  "enum": [
+    "CREATING",
+    "FAILED_CREATION",
+    "ATTACHING",
+    "ATTACHED",
+    "REMAP_DETACHING",
+    "REMAP_ATTACHING",
+    "DETACHING",
+    "FAILED_RESOURCE_GONE",
+    "DELETING",
+    "DELETE_FAILED_FAS_EXPIRED",
+    "UPDATING"
+  ],
+  "name": "IpAddressStatus"
+}

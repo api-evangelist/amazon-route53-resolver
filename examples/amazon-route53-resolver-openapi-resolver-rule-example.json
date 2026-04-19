@@ -1,0 +1,12 @@
+{
+  "Id": "abc123",
+  "CreatorRequestId": "abc123",
+  "Arn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "DomainName": "example.com",
+  "Status": "ACTIVE",
+  "StatusMessage": "ACTIVE",
+  "RuleType": "example-value",
+  "Name": "Example Resource",
+  "TargetIps": "example-value",
+  "ResolverEndpointId": "abc123"
+}

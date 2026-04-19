@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-disassociate-resolver-query-log-config-response-structure.json",
+  "description": "DisassociateResolverQueryLogConfigResponse schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResolverQueryLogConfigAssociation": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResolverQueryLogConfigAssociation"
+        },
+        {
+          "description": "A complex type that contains settings for the association that you deleted between an Amazon VPC and a query logging configuration."
+        }
+      ]
+    }
+  },
+  "name": "DisassociateResolverQueryLogConfigResponse"
+}

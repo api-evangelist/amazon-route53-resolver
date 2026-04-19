@@ -1,0 +1,9 @@
+{
+  "Id": "abc123",
+  "ResolverQueryLogConfigId": "abc123",
+  "ResourceId": "abc123",
+  "Status": "ACTIVE",
+  "Error": "example-value",
+  "ErrorMessage": "example-value",
+  "CreationTime": "example-value"
+}

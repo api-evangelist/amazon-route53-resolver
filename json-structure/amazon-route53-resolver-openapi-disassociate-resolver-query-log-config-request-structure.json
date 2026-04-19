@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-disassociate-resolver-query-log-config-request-structure.json",
+  "description": "DisassociateResolverQueryLogConfigRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResolverQueryLogConfigId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of the query logging configuration that you want to disassociate a specified VPC from."
+        }
+      ]
+    },
+    "ResourceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of the Amazon VPC that you want to disassociate from a specified query logging configuration."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResolverQueryLogConfigId",
+    "ResourceId"
+  ],
+  "name": "DisassociateResolverQueryLogConfigRequest"
+}

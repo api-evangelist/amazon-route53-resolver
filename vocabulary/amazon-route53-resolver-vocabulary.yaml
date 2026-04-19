@@ -1,0 +1,197 @@
+vocabulary: 1.0.0
+info:
+  provider: Amazon Route53 Resolver
+  description: Vocabulary for Amazon Route53 Resolver APIs covering operational and capability dimensions
+  created: '2026-04-19'
+  modified: '2026-04-19'
+operational:
+  apis:
+  - name: Amazon Route53 Resolver
+    namespace: amazon-route53-resolver
+    status: active
+  resources:
+  - name: '#X-Amz-Target=Route53Resolver.AssociateFirewallRuleGroup'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - AssociateFirewallRuleGroup
+  - name: '#X-Amz-Target=Route53Resolver.AssociateResolverEndpointIpAddress'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - AssociateResolverEndpointIpAddress
+  - name: '#X-Amz-Target=Route53Resolver.AssociateResolverQueryLogConfig'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - AssociateResolverQueryLogConfig
+  - name: '#X-Amz-Target=Route53Resolver.AssociateResolverRule'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - AssociateResolverRule
+  - name: '#X-Amz-Target=Route53Resolver.CreateFirewallDomainList'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - CreateFirewallDomainList
+  - name: '#X-Amz-Target=Route53Resolver.CreateFirewallRule'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - CreateFirewallRule
+  - name: '#X-Amz-Target=Route53Resolver.CreateFirewallRuleGroup'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - CreateFirewallRuleGroup
+  - name: '#X-Amz-Target=Route53Resolver.CreateResolverEndpoint'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - CreateResolverEndpoint
+  - name: '#X-Amz-Target=Route53Resolver.CreateResolverQueryLogConfig'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - CreateResolverQueryLogConfig
+  - name: '#X-Amz-Target=Route53Resolver.CreateResolverRule'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - CreateResolverRule
+  - name: '#X-Amz-Target=Route53Resolver.DeleteFirewallDomainList'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - DeleteFirewallDomainList
+  - name: '#X-Amz-Target=Route53Resolver.DeleteFirewallRule'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - DeleteFirewallRule
+  - name: '#X-Amz-Target=Route53Resolver.DeleteFirewallRuleGroup'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - DeleteFirewallRuleGroup
+  - name: '#X-Amz-Target=Route53Resolver.DeleteResolverEndpoint'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - DeleteResolverEndpoint
+  - name: '#X-Amz-Target=Route53Resolver.DeleteResolverQueryLogConfig'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - DeleteResolverQueryLogConfig
+  - name: '#X-Amz-Target=Route53Resolver.DeleteResolverRule'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - DeleteResolverRule
+  - name: '#X-Amz-Target=Route53Resolver.DisassociateFirewallRuleGroup'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - DisassociateFirewallRuleGroup
+  - name: '#X-Amz-Target=Route53Resolver.DisassociateResolverEndpointIpAddress'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - DisassociateResolverEndpointIpAddress
+  - name: '#X-Amz-Target=Route53Resolver.DisassociateResolverQueryLogConfig'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - DisassociateResolverQueryLogConfig
+  - name: '#X-Amz-Target=Route53Resolver.DisassociateResolverRule'
+    api: amazon-route53-resolver-openapi
+    actions:
+    - DisassociateResolverRule
+  actions:
+  - name: post
+    httpMethod: POST
+    pattern: write
+  - name: create
+    httpMethod: POST
+    pattern: write
+  - name: delete
+    httpMethod: POST
+    pattern: write
+  - name: list
+    httpMethod: POST
+    pattern: write
+  - name: update
+    httpMethod: POST
+    pattern: write
+  schemas:
+    core:
+    - amazon-route53-resolver-openapi-access-denied-exception
+    - amazon-route53-resolver-openapi-account-id
+    - amazon-route53-resolver-openapi-action
+    - amazon-route53-resolver-openapi-arn
+    - amazon-route53-resolver-openapi-associate-firewall-rule-group-request
+    - amazon-route53-resolver-openapi-associate-firewall-rule-group-response
+    - amazon-route53-resolver-openapi-associate-resolver-endpoint-ip-address-request
+    - amazon-route53-resolver-openapi-associate-resolver-endpoint-ip-address-response
+    - amazon-route53-resolver-openapi-associate-resolver-query-log-config-request
+    - amazon-route53-resolver-openapi-associate-resolver-query-log-config-response
+    - amazon-route53-resolver-openapi-associate-resolver-rule-request
+    - amazon-route53-resolver-openapi-associate-resolver-rule-response
+    - amazon-route53-resolver-openapi-autodefined-reverse-flag
+    - amazon-route53-resolver-openapi-block-override-dns-type
+    - amazon-route53-resolver-openapi-block-override-domain
+    - amazon-route53-resolver-openapi-block-override-ttl
+    - amazon-route53-resolver-openapi-block-response
+    - amazon-route53-resolver-openapi-boolean
+    - amazon-route53-resolver-openapi-conflict-exception
+    - amazon-route53-resolver-openapi-count
+  authentication:
+    schemes:
+    - type: bearer
+      description: AWS Signature V4
+capability:
+  workflows:
+  - name: Amazon Route53 Resolver Operations
+    file: capabilities/amazon-route53-resolver.yaml
+    description: Automation workflow for Amazon Route53 Resolver
+  personas:
+  - id: cloud-engineer
+    name: Cloud Engineer
+    description: Engineer managing Amazon Route53 Resolver resources
+  domains:
+  - name: Cloud Operations
+    description: AWS cloud resource management
+crossReference:
+- resource: '#X-Amz-Target=Route53Resolver.AssociateFirewallRuleGroup'
+  operations:
+  - AssociateFirewallRuleGroup
+  workflows:
+  - Amazon Route53 Resolver Operations
+- resource: '#X-Amz-Target=Route53Resolver.AssociateResolverEndpointIpAddress'
+  operations:
+  - AssociateResolverEndpointIpAddress
+  workflows:
+  - Amazon Route53 Resolver Operations
+- resource: '#X-Amz-Target=Route53Resolver.AssociateResolverQueryLogConfig'
+  operations:
+  - AssociateResolverQueryLogConfig
+  workflows:
+  - Amazon Route53 Resolver Operations
+- resource: '#X-Amz-Target=Route53Resolver.AssociateResolverRule'
+  operations:
+  - AssociateResolverRule
+  workflows:
+  - Amazon Route53 Resolver Operations
+- resource: '#X-Amz-Target=Route53Resolver.CreateFirewallDomainList'
+  operations:
+  - CreateFirewallDomainList
+  workflows:
+  - Amazon Route53 Resolver Operations
+- resource: '#X-Amz-Target=Route53Resolver.CreateFirewallRule'
+  operations:
+  - CreateFirewallRule
+  workflows:
+  - Amazon Route53 Resolver Operations
+- resource: '#X-Amz-Target=Route53Resolver.CreateFirewallRuleGroup'
+  operations:
+  - CreateFirewallRuleGroup
+  workflows:
+  - Amazon Route53 Resolver Operations
+- resource: '#X-Amz-Target=Route53Resolver.CreateResolverEndpoint'
+  operations:
+  - CreateResolverEndpoint
+  workflows:
+  - Amazon Route53 Resolver Operations
+- resource: '#X-Amz-Target=Route53Resolver.CreateResolverQueryLogConfig'
+  operations:
+  - CreateResolverQueryLogConfig
+  workflows:
+  - Amazon Route53 Resolver Operations
+- resource: '#X-Amz-Target=Route53Resolver.CreateResolverRule'
+  operations:
+  - CreateResolverRule
+  workflows:
+  - Amazon Route53 Resolver Operations

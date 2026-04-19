@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-associate-resolver-rule-request-structure.json",
+  "description": "AssociateResolverRuleRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResolverRuleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of the Resolver rule that you want to associate with the VPC. To list the existing Resolver rules, use <a href=\"https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverRules.html\">ListResolverRules</a>."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Name"
+        },
+        {
+          "description": "A name for the association that you're creating between a Resolver rule and a VPC."
+        }
+      ]
+    },
+    "VPCId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of the VPC that you want to associate the Resolver rule with."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResolverRuleId",
+    "VPCId"
+  ],
+  "name": "AssociateResolverRuleRequest"
+}

@@ -1,0 +1,5 @@
+{
+  "FirewallDomainListId": "example.com",
+  "Operation": "example-value",
+  "Domains": "example.com"
+}

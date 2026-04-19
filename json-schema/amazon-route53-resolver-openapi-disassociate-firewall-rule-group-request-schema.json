@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-disassociate-firewall-rule-group-request-schema.json",
+  "title": "DisassociateFirewallRuleGroupRequest",
+  "description": "DisassociateFirewallRuleGroupRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "FirewallRuleGroupAssociationId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The identifier of the <a>FirewallRuleGroupAssociation</a>. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "FirewallRuleGroupAssociationId"
+  ]
+}

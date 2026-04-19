@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-ip-address-response-structure.json",
+  "description": "In the response to a <a href=\"https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverEndpoint.html\">GetResolverEndpoint</a> request, information about the IP addresses that the Resolver endpoint uses for DNS queries.",
+  "type": "object",
+  "properties": {
+    "IpId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of one IP address."
+        }
+      ]
+    },
+    "SubnetId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SubnetId"
+        },
+        {
+          "description": "The ID of one subnet."
+        }
+      ]
+    },
+    "Ip": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Ip"
+        },
+        {
+          "description": "One IPv4 address that the Resolver endpoint uses for DNS queries."
+        }
+      ]
+    },
+    "Ipv6": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Ipv6"
+        },
+        {
+          "description": " One IPv6 address that the Resolver endpoint uses for DNS queries. "
+        }
+      ]
+    },
+    "Status": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpAddressStatus"
+        },
+        {
+          "description": "A status code that gives the current status of the request."
+        }
+      ]
+    },
+    "StatusMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StatusMessage"
+        },
+        {
+          "description": "A message that provides additional information about the status of the request."
+        }
+      ]
+    },
+    "CreationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Rfc3339TimeString"
+        },
+        {
+          "description": "The date and time that the IP address was created, in Unix time format and Coordinated Universal Time (UTC)."
+        }
+      ]
+    },
+    "ModificationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Rfc3339TimeString"
+        },
+        {
+          "description": "The date and time that the IP address was last modified, in Unix time format and Coordinated Universal Time (UTC)."
+        }
+      ]
+    }
+  },
+  "name": "IpAddressResponse"
+}

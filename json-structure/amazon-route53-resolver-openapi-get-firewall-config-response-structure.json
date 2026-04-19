@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-get-firewall-config-response-structure.json",
+  "description": "GetFirewallConfigResponse schema from openapi",
+  "type": "object",
+  "properties": {
+    "FirewallConfig": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FirewallConfig"
+        },
+        {
+          "description": "Configuration of the firewall behavior provided by DNS Firewall for a single VPC from AmazonVPC. "
+        }
+      ]
+    }
+  },
+  "name": "GetFirewallConfigResponse"
+}

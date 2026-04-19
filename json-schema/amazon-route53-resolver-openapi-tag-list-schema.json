@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-tag-list-schema.json",
+  "title": "TagList",
+  "description": "TagList schema from openapi",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/Tag"
+  },
+  "maxItems": 200
+}

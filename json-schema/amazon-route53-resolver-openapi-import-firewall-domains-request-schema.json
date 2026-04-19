@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-import-firewall-domains-request-schema.json",
+  "title": "ImportFirewallDomainsRequest",
+  "description": "ImportFirewallDomainsRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "FirewallDomainListId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of the domain list that you want to modify with the import operation."
+        }
+      ]
+    },
+    "Operation": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FirewallDomainImportOperation"
+        },
+        {
+          "description": "What you want DNS Firewall to do with the domains that are listed in the file. This must be set to <code>REPLACE</code>, which updates the domain list to exactly match the list in the file. "
+        }
+      ]
+    },
+    "DomainFileUrl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainListFileUrl"
+        },
+        {
+          "description": "<p>The fully qualified URL or URI of the file stored in Amazon Simple Storage Service (Amazon S3) that contains the list of domains to import.</p> <p>The file must be in an S3 bucket that's in the same Region as your DNS Firewall. The file must be a text file and must contain a single domain per line.</p>"
+        }
+      ]
+    }
+  },
+  "required": [
+    "FirewallDomainListId",
+    "Operation",
+    "DomainFileUrl"
+  ]
+}

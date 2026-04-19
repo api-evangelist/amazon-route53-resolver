@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-ipv6-schema.json",
+  "title": "Ipv6",
+  "description": "Ipv6 schema from openapi",
+  "type": "string",
+  "minLength": 7,
+  "maxLength": 39
+}

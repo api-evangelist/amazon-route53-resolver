@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-ip-address-update-schema.json",
+  "title": "IpAddressUpdate",
+  "description": "In an <a href=\"https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_UpdateResolverEndpoint.html\">UpdateResolverEndpoint</a> request, information about an IP address to update.",
+  "type": "object",
+  "properties": {
+    "IpId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": " <i>Only when removing an IP address from a Resolver endpoint</i>: The ID of the IP address that you want to remove. To get this ID, use <a href=\"https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverEndpoint.html\">GetResolverEndpoint</a>."
+        }
+      ]
+    },
+    "SubnetId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SubnetId"
+        },
+        {
+          "description": "The ID of the subnet that includes the IP address that you want to update. To get this ID, use <a href=\"https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverEndpoint.html\">GetResolverEndpoint</a>."
+        }
+      ]
+    },
+    "Ip": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Ip"
+        },
+        {
+          "description": "The new IPv4 address."
+        }
+      ]
+    },
+    "Ipv6": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Ipv6"
+        },
+        {
+          "description": " The new IPv6 address. "
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-disassociate-resolver-rule-request-schema.json",
+  "title": "DisassociateResolverRuleRequest",
+  "description": "DisassociateResolverRuleRequest schema from openapi",
+  "type": "object",
+  "properties": {
+    "VPCId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of the VPC that you want to disassociate the Resolver rule from."
+        }
+      ]
+    },
+    "ResolverRuleId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceId"
+        },
+        {
+          "description": "The ID of the Resolver rule that you want to disassociate from the specified VPC."
+        }
+      ]
+    }
+  },
+  "required": [
+    "VPCId",
+    "ResolverRuleId"
+  ]
+}

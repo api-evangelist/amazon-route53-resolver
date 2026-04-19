@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-block-override-dns-type-structure.json",
+  "description": "BlockOverrideDnsType schema from openapi",
+  "type": "string",
+  "enum": [
+    "CNAME"
+  ],
+  "name": "BlockOverrideDnsType"
+}

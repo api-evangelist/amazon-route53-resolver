@@ -1,0 +1,12 @@
+{
+  "Id": "abc123",
+  "Arn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "Name": "Example Resource",
+  "DomainCount": "example.com",
+  "Status": "ACTIVE",
+  "StatusMessage": "ACTIVE",
+  "ManagedOwnerName": "Example Resource",
+  "CreatorRequestId": "abc123",
+  "CreationTime": "example-value",
+  "ModificationTime": "example-value"
+}

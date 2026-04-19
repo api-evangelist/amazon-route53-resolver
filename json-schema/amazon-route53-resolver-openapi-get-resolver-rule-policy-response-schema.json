@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-get-resolver-rule-policy-response-schema.json",
+  "title": "GetResolverRulePolicyResponse",
+  "description": "GetResolverRulePolicyResponse schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResolverRulePolicy": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResolverRulePolicy"
+        },
+        {
+          "description": "The Resolver rule policy for the rule that you specified in a <code>GetResolverRulePolicy</code> request."
+        }
+      ]
+    }
+  }
+}

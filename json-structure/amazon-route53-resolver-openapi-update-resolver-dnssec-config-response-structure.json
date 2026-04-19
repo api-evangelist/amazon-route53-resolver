@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-update-resolver-dnssec-config-response-structure.json",
+  "description": "UpdateResolverDnssecConfigResponse schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResolverDNSSECConfig": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResolverDnssecConfig"
+        },
+        {
+          "description": "A complex type that contains settings for the specified DNSSEC configuration."
+        }
+      ]
+    }
+  },
+  "name": "UpdateResolverDnssecConfigResponse"
+}

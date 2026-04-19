@@ -1,0 +1,9 @@
+{
+  "CreatorRequestId": "abc123",
+  "Name": "Example Resource",
+  "SecurityGroupIds": "https://example.com/resource",
+  "Direction": "example-value",
+  "IpAddresses": "example-value",
+  "Tags": "example-value",
+  "ResolverEndpointType": "example-value"
+}

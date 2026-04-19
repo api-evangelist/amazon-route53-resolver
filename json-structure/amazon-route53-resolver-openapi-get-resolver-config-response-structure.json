@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-get-resolver-config-response-structure.json",
+  "description": "GetResolverConfigResponse schema from openapi",
+  "type": "object",
+  "properties": {
+    "ResolverConfig": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResolverConfig"
+        },
+        {
+          "description": "Information about the behavior configuration of Route\u00a053 Resolver behavior for the VPC you specified in the <code>GetResolverConfig</code> request."
+        }
+      ]
+    }
+  },
+  "name": "GetResolverConfigResponse"
+}

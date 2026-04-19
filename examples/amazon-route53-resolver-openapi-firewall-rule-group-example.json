@@ -1,0 +1,12 @@
+{
+  "Id": "abc123",
+  "Arn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "Name": "Example Resource",
+  "RuleCount": "example-value",
+  "Status": "ACTIVE",
+  "StatusMessage": "ACTIVE",
+  "OwnerId": "abc123",
+  "CreatorRequestId": "abc123",
+  "ShareStatus": "ACTIVE",
+  "CreationTime": "example-value"
+}

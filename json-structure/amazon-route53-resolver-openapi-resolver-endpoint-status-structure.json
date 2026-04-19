@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-structure/amazon-route53-resolver-openapi-resolver-endpoint-status-structure.json",
+  "description": "ResolverEndpointStatus schema from openapi",
+  "type": "string",
+  "enum": [
+    "CREATING",
+    "OPERATIONAL",
+    "UPDATING",
+    "AUTO_RECOVERING",
+    "ACTION_NEEDED",
+    "DELETING"
+  ],
+  "name": "ResolverEndpointStatus"
+}

@@ -1,0 +1,6 @@
+{
+  "ResolverEndpointId": "abc123",
+  "Name": "Example Resource",
+  "ResolverEndpointType": "example-value",
+  "UpdateIpAddresses": "example-value"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/json-schema/amazon-route53-resolver-openapi-share-status-schema.json",
+  "title": "ShareStatus",
+  "description": "ShareStatus schema from openapi",
+  "type": "string",
+  "enum": [
+    "NOT_SHARED",
+    "SHARED_WITH_ME",
+    "SHARED_BY_ME"
+  ]
+}
