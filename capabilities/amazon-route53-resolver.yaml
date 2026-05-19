@@ -1,295 +1,3436 @@
 naftiko: 1.0.0-alpha2
 info:
-  label: Amazon Route53 Resolver Operations
-  description: Workflow capability for Amazon Route53 Resolver. Enables automation of Amazon Route53 Resolver resources for
-    cloud operations teams.
+  label: Amazon Route 53 Resolver
+  description: 'Amazon Route 53 Resolver. 63 operations. Lead operation: Amazon Route 53 Resolver. Self-contained Naftiko
+    capability covering one Amazon Route53 Resolver business surface.'
   tags:
   - Amazon Route53 Resolver
-  - AWS
-  - Cloud Operations
-  created: '2026-04-19'
-  modified: '2026-05-06'
+  - Amazon Route 53 Resolver
+  created: '2026-05-19'
+  modified: '2026-05-19'
 binds:
 - namespace: env
   keys:
-    AWS_ACCESS_KEY: AWS_ACCESS_KEY
-    AWS_SECRET_KEY: AWS_SECRET_KEY
+    AMAZON_ROUTE53_RESOLVER_API_KEY: AMAZON_ROUTE53_RESOLVER_API_KEY
 capability:
   consumes:
   - type: http
     namespace: amazon-route53-resolver
     baseUri: http://route53resolver.{region}.amazonaws.com
-    description: Amazon Route 53 Resolver
-    authentication:
-      type: bearer
-      token: '{{AWS_ACCESS_KEY}}'
+    description: Amazon Route 53 Resolver business capability. Self-contained, no shared references.
     resources:
     - name: '#X-Amz-Target=Route53Resolver.AssociateFirewallRuleGroup'
       path: /#X-Amz-Target=Route53Resolver.AssociateFirewallRuleGroup
-      description: '#X-Amz-Target=Route53Resolver.AssociateFirewallRuleGroup operations'
       operations:
-      - name: AssociateFirewallRuleGroup
+      - name: associatefirewallrulegroup
         method: POST
-        description: AssociateFirewallRuleGroup
+        description: Associates a <a>FirewallRuleGroup</a> with a VPC, to provide DNS filtering for the VPC.
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.AssociateResolverEndpointIpAddress'
       path: /#X-Amz-Target=Route53Resolver.AssociateResolverEndpointIpAddress
-      description: '#X-Amz-Target=Route53Resolver.AssociateResolverEndpointIpAddress operations'
       operations:
-      - name: AssociateResolverEndpointIpAddress
+      - name: associateresolverendpointipaddress
         method: POST
-        description: AssociateResolverEndpointIpAddress
+        description: <p>Adds IP addresses to an inbound or an outbound Resolver endpoint. If you want to add more than one
+          IP address, submit one <code>AssociateResolverEndpointIpAddress</code> request for each IP address.</p> <p>To remove
+          an IP address from an
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.AssociateResolverQueryLogConfig'
       path: /#X-Amz-Target=Route53Resolver.AssociateResolverQueryLogConfig
-      description: '#X-Amz-Target=Route53Resolver.AssociateResolverQueryLogConfig operations'
       operations:
-      - name: AssociateResolverQueryLogConfig
+      - name: associateresolverquerylogconfig
         method: POST
-        description: AssociateResolverQueryLogConfig
+        description: <p>Associates an Amazon VPC with a specified query logging configuration. Route 53 Resolver logs DNS
+          queries that originate in all of the Amazon VPCs that are associated with a specified query logging configuration.
+          To associate more than o
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.AssociateResolverRule'
       path: /#X-Amz-Target=Route53Resolver.AssociateResolverRule
-      description: '#X-Amz-Target=Route53Resolver.AssociateResolverRule operations'
       operations:
-      - name: AssociateResolverRule
+      - name: associateresolverrule
         method: POST
-        description: AssociateResolverRule
+        description: Associates a Resolver rule with a VPC. When you associate a rule with a VPC, Resolver forwards all DNS
+          queries for the domain name that is specified in the rule and that originate in the VPC. The queries are forwarded
+          to the IP addresses fo
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.CreateFirewallDomainList'
       path: /#X-Amz-Target=Route53Resolver.CreateFirewallDomainList
-      description: '#X-Amz-Target=Route53Resolver.CreateFirewallDomainList operations'
       operations:
-      - name: CreateFirewallDomainList
+      - name: createfirewalldomainlist
         method: POST
-        description: CreateFirewallDomainList
+        description: Creates an empty firewall domain list for use in DNS Firewall rules. You can populate the domains for
+          the new list with a file, using <a>ImportFirewallDomains</a>, or with domain strings, using <a>UpdateFirewallDomains</a>.
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.CreateFirewallRule'
       path: /#X-Amz-Target=Route53Resolver.CreateFirewallRule
-      description: '#X-Amz-Target=Route53Resolver.CreateFirewallRule operations'
       operations:
-      - name: CreateFirewallRule
+      - name: createfirewallrule
         method: POST
-        description: CreateFirewallRule
+        description: Creates a single DNS Firewall rule in the specified rule group, using the specified domain list.
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.CreateFirewallRuleGroup'
       path: /#X-Amz-Target=Route53Resolver.CreateFirewallRuleGroup
-      description: '#X-Amz-Target=Route53Resolver.CreateFirewallRuleGroup operations'
       operations:
-      - name: CreateFirewallRuleGroup
+      - name: createfirewallrulegroup
         method: POST
-        description: CreateFirewallRuleGroup
+        description: Creates an empty DNS Firewall rule group for filtering DNS network traffic in a VPC. You can add rules
+          to the new rule group by calling <a>CreateFirewallRule</a>.
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.CreateResolverEndpoint'
       path: /#X-Amz-Target=Route53Resolver.CreateResolverEndpoint
-      description: '#X-Amz-Target=Route53Resolver.CreateResolverEndpoint operations'
       operations:
-      - name: CreateResolverEndpoint
+      - name: createresolverendpoint
         method: POST
-        description: CreateResolverEndpoint
+        description: '<p>Creates a Resolver endpoint. There are two types of Resolver endpoints, inbound and outbound:</p>
+          <ul> <li> <p>An <i>inbound Resolver endpoint</i> forwards DNS queries to the DNS service for a VPC from your network.</p>
+          </li> <li> <p>An '
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.CreateResolverQueryLogConfig'
       path: /#X-Amz-Target=Route53Resolver.CreateResolverQueryLogConfig
-      description: '#X-Amz-Target=Route53Resolver.CreateResolverQueryLogConfig operations'
       operations:
-      - name: CreateResolverQueryLogConfig
+      - name: createresolverquerylogconfig
         method: POST
-        description: CreateResolverQueryLogConfig
+        description: <p>Creates a Resolver query logging configuration, which defines where you want Resolver to save DNS
+          query logs that originate in your VPCs. Resolver can log queries only for VPCs that are in the same Region as the
+          query logging configurati
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.CreateResolverRule'
       path: /#X-Amz-Target=Route53Resolver.CreateResolverRule
-      description: '#X-Amz-Target=Route53Resolver.CreateResolverRule operations'
       operations:
-      - name: CreateResolverRule
+      - name: createresolverrule
         method: POST
-        description: CreateResolverRule
+        description: For DNS queries that originate in your VPCs, specifies which Resolver endpoint the queries pass through,
+          one domain name that you want to forward to your network, and the IP addresses of the DNS resolvers in your network.
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.DeleteFirewallDomainList'
       path: /#X-Amz-Target=Route53Resolver.DeleteFirewallDomainList
-      description: '#X-Amz-Target=Route53Resolver.DeleteFirewallDomainList operations'
       operations:
-      - name: DeleteFirewallDomainList
+      - name: deletefirewalldomainlist
         method: POST
-        description: DeleteFirewallDomainList
+        description: Deletes the specified domain list.
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.DeleteFirewallRule'
       path: /#X-Amz-Target=Route53Resolver.DeleteFirewallRule
-      description: '#X-Amz-Target=Route53Resolver.DeleteFirewallRule operations'
       operations:
-      - name: DeleteFirewallRule
+      - name: deletefirewallrule
         method: POST
-        description: DeleteFirewallRule
+        description: Deletes the specified firewall rule.
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.DeleteFirewallRuleGroup'
       path: /#X-Amz-Target=Route53Resolver.DeleteFirewallRuleGroup
-      description: '#X-Amz-Target=Route53Resolver.DeleteFirewallRuleGroup operations'
       operations:
-      - name: DeleteFirewallRuleGroup
+      - name: deletefirewallrulegroup
         method: POST
-        description: DeleteFirewallRuleGroup
+        description: Deletes the specified firewall rule group.
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.DeleteResolverEndpoint'
       path: /#X-Amz-Target=Route53Resolver.DeleteResolverEndpoint
-      description: '#X-Amz-Target=Route53Resolver.DeleteResolverEndpoint operations'
       operations:
-      - name: DeleteResolverEndpoint
+      - name: deleteresolverendpoint
         method: POST
-        description: DeleteResolverEndpoint
+        description: '<p>Deletes a Resolver endpoint. The effect of deleting a Resolver endpoint depends on whether it''s
+          an inbound or an outbound Resolver endpoint:</p> <ul> <li> <p> <b>Inbound</b>: DNS queries from your network are
+          no longer routed to the DNS '
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.DeleteResolverQueryLogConfig'
       path: /#X-Amz-Target=Route53Resolver.DeleteResolverQueryLogConfig
-      description: '#X-Amz-Target=Route53Resolver.DeleteResolverQueryLogConfig operations'
       operations:
-      - name: DeleteResolverQueryLogConfig
+      - name: deleteresolverquerylogconfig
         method: POST
-        description: DeleteResolverQueryLogConfig
+        description: <p>Deletes a query logging configuration. When you delete a configuration, Resolver stops logging DNS
+          queries for all of the Amazon VPCs that are associated with the configuration. This also applies if the query logging
+          configuration is sha
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.DeleteResolverRule'
       path: /#X-Amz-Target=Route53Resolver.DeleteResolverRule
-      description: '#X-Amz-Target=Route53Resolver.DeleteResolverRule operations'
       operations:
-      - name: DeleteResolverRule
+      - name: deleteresolverrule
         method: POST
-        description: DeleteResolverRule
+        description: Deletes a Resolver rule. Before you can delete a Resolver rule, you must disassociate it from all the
+          VPCs that you associated the Resolver rule with. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/APIReferenc
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.DisassociateFirewallRuleGroup'
       path: /#X-Amz-Target=Route53Resolver.DisassociateFirewallRuleGroup
-      description: '#X-Amz-Target=Route53Resolver.DisassociateFirewallRuleGroup operations'
       operations:
-      - name: DisassociateFirewallRuleGroup
+      - name: disassociatefirewallrulegroup
         method: POST
-        description: DisassociateFirewallRuleGroup
+        description: Disassociates a <a>FirewallRuleGroup</a> from a VPC, to remove DNS filtering from the VPC.
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.DisassociateResolverEndpointIpAddress'
       path: /#X-Amz-Target=Route53Resolver.DisassociateResolverEndpointIpAddress
-      description: '#X-Amz-Target=Route53Resolver.DisassociateResolverEndpointIpAddress operations'
       operations:
-      - name: DisassociateResolverEndpointIpAddress
+      - name: disassociateresolverendpointipaddress
         method: POST
-        description: DisassociateResolverEndpointIpAddress
+        description: <p>Removes IP addresses from an inbound or an outbound Resolver endpoint. If you want to remove more
+          than one IP address, submit one <code>DisassociateResolverEndpointIpAddress</code> request for each IP address.</p>
+          <p>To add an IP address
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.DisassociateResolverQueryLogConfig'
       path: /#X-Amz-Target=Route53Resolver.DisassociateResolverQueryLogConfig
-      description: '#X-Amz-Target=Route53Resolver.DisassociateResolverQueryLogConfig operations'
       operations:
-      - name: DisassociateResolverQueryLogConfig
+      - name: disassociateresolverquerylogconfig
         method: POST
-        description: DisassociateResolverQueryLogConfig
+        description: '<p>Disassociates a VPC from a query logging configuration.</p> <note> <p>Before you can delete a query
+          logging configuration, you must first disassociate all VPCs from the configuration. If you used Resource Access
+          Manager (RAM) to share a '
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
     - name: '#X-Amz-Target=Route53Resolver.DisassociateResolverRule'
       path: /#X-Amz-Target=Route53Resolver.DisassociateResolverRule
-      description: '#X-Amz-Target=Route53Resolver.DisassociateResolverRule operations'
       operations:
-      - name: DisassociateResolverRule
+      - name: disassociateresolverrule
         method: POST
-        description: DisassociateResolverRule
+        description: <p>Removes the association between a specified Resolver rule and a specified VPC.</p> <important> <p>If
+          you disassociate a Resolver rule from a VPC, Resolver stops forwarding DNS queries for the domain name that you
+          specified in the Resolve
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.GetFirewallConfig'
+      path: /#X-Amz-Target=Route53Resolver.GetFirewallConfig
+      operations:
+      - name: getfirewallconfig
+        method: POST
+        description: Retrieves the configuration of the firewall behavior provided by DNS Firewall for a single VPC from Amazon
+          Virtual Private Cloud (Amazon VPC).
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.GetFirewallDomainList'
+      path: /#X-Amz-Target=Route53Resolver.GetFirewallDomainList
+      operations:
+      - name: getfirewalldomainlist
+        method: POST
+        description: Retrieves the specified firewall domain list.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.GetFirewallRuleGroup'
+      path: /#X-Amz-Target=Route53Resolver.GetFirewallRuleGroup
+      operations:
+      - name: getfirewallrulegroup
+        method: POST
+        description: Retrieves the specified firewall rule group.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.GetFirewallRuleGroupAssociation'
+      path: /#X-Amz-Target=Route53Resolver.GetFirewallRuleGroupAssociation
+      operations:
+      - name: getfirewallrulegroupassociation
+        method: POST
+        description: Retrieves a firewall rule group association, which enables DNS filtering for a VPC with one rule group.
+          A VPC can have more than one firewall rule group association, and a rule group can be associated with more than
+          one VPC.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.GetFirewallRuleGroupPolicy'
+      path: /#X-Amz-Target=Route53Resolver.GetFirewallRuleGroupPolicy
+      operations:
+      - name: getfirewallrulegrouppolicy
+        method: POST
+        description: Returns the Identity and Access Management (Amazon Web Services IAM) policy for sharing the specified
+          rule group. You can use the policy to share the rule group using Resource Access Manager (RAM).
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.GetResolverConfig'
+      path: /#X-Amz-Target=Route53Resolver.GetResolverConfig
+      operations:
+      - name: getresolverconfig
+        method: POST
+        description: Retrieves the behavior configuration of Route 53 Resolver behavior for a single VPC from Amazon Virtual
+          Private Cloud.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.GetResolverDnssecConfig'
+      path: /#X-Amz-Target=Route53Resolver.GetResolverDnssecConfig
+      operations:
+      - name: getresolverdnssecconfig
+        method: POST
+        description: Gets DNSSEC validation information for a specified resource.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.GetResolverEndpoint'
+      path: /#X-Amz-Target=Route53Resolver.GetResolverEndpoint
+      operations:
+      - name: getresolverendpoint
+        method: POST
+        description: Gets information about a specified Resolver endpoint, such as whether it's an inbound or an outbound
+          Resolver endpoint, and the current status of the endpoint.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.GetResolverQueryLogConfig'
+      path: /#X-Amz-Target=Route53Resolver.GetResolverQueryLogConfig
+      operations:
+      - name: getresolverquerylogconfig
+        method: POST
+        description: Gets information about a specified Resolver query logging configuration, such as the number of VPCs that
+          the configuration is logging queries for and the location that logs are sent to.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.GetResolverQueryLogConfigAssociation'
+      path: /#X-Amz-Target=Route53Resolver.GetResolverQueryLogConfigAssociation
+      operations:
+      - name: getresolverquerylogconfigassociation
+        method: POST
+        description: Gets information about a specified association between a Resolver query logging configuration and an
+          Amazon VPC. When you associate a VPC with a query logging configuration, Resolver logs DNS queries that originate
+          in that VPC.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.GetResolverQueryLogConfigPolicy'
+      path: /#X-Amz-Target=Route53Resolver.GetResolverQueryLogConfigPolicy
+      operations:
+      - name: getresolverquerylogconfigpolicy
+        method: POST
+        description: Gets information about a query logging policy. A query logging policy specifies the Resolver query logging
+          operations and resources that you want to allow another Amazon Web Services account to be able to use.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.GetResolverRule'
+      path: /#X-Amz-Target=Route53Resolver.GetResolverRule
+      operations:
+      - name: getresolverrule
+        method: POST
+        description: Gets information about a specified Resolver rule, such as the domain name that the rule forwards DNS
+          queries for and the ID of the outbound Resolver endpoint that the rule is associated with.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.GetResolverRuleAssociation'
+      path: /#X-Amz-Target=Route53Resolver.GetResolverRuleAssociation
+      operations:
+      - name: getresolverruleassociation
+        method: POST
+        description: Gets information about an association between a specified Resolver rule and a VPC. You associate a Resolver
+          rule and a VPC using <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_AssociateResolverRule.html
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.GetResolverRulePolicy'
+      path: /#X-Amz-Target=Route53Resolver.GetResolverRulePolicy
+      operations:
+      - name: getresolverrulepolicy
+        method: POST
+        description: Gets information about the Resolver rule policy for a specified rule. A Resolver rule policy includes
+          the rule that you want to share with another account, the account that you want to share the rule with, and the
+          Resolver operations that y
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ImportFirewallDomains'
+      path: /#X-Amz-Target=Route53Resolver.ImportFirewallDomains
+      operations:
+      - name: importfirewalldomains
+        method: POST
+        description: '<p>Imports domain names from a file into a domain list, for use in a DNS firewall rule group. </p> <p>Each
+          domain specification in your domain list must satisfy the following requirements: </p> <ul> <li> <p>It can optionally
+          start with <cod'
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ListFirewallConfigs'
+      path: /#X-Amz-Target=Route53Resolver.ListFirewallConfigs
+      operations:
+      - name: listfirewallconfigs
+        method: POST
+        description: <p>Retrieves the firewall configurations that you have defined. DNS Firewall uses the configurations
+          to manage firewall behavior for your VPCs. </p> <p>A single call might return only a partial list of the configurations.
+          For information, s
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ListFirewallDomainLists'
+      path: /#X-Amz-Target=Route53Resolver.ListFirewallDomainLists
+      operations:
+      - name: listfirewalldomainlists
+        method: POST
+        description: '<p>Retrieves the firewall domain lists that you have defined. For each firewall domain list, you can
+          retrieve the domains that are defined for a list by calling <a>ListFirewallDomains</a>. </p> <p>A single call to
+          this list operation might '
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ListFirewallDomains'
+      path: /#X-Amz-Target=Route53Resolver.ListFirewallDomains
+      operations:
+      - name: listfirewalldomains
+        method: POST
+        description: <p>Retrieves the domains that you have defined for the specified firewall domain list. </p> <p>A single
+          call might return only a partial list of the domains. For information, see <code>MaxResults</code>. </p>
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ListFirewallRuleGroupAssociations'
+      path: /#X-Amz-Target=Route53Resolver.ListFirewallRuleGroupAssociations
+      operations:
+      - name: listfirewallrulegroupassociations
+        method: POST
+        description: '<p>Retrieves the firewall rule group associations that you have defined. Each association enables DNS
+          filtering for a VPC with one rule group. </p> <p>A single call might return only a partial list of the associations.
+          For information, see '
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ListFirewallRuleGroups'
+      path: /#X-Amz-Target=Route53Resolver.ListFirewallRuleGroups
+      operations:
+      - name: listfirewallrulegroups
+        method: POST
+        description: <p>Retrieves the minimal high-level information for the rule groups that you have defined. </p> <p>A
+          single call might return only a partial list of the rule groups. For information, see <code>MaxResults</code>. </p>
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ListFirewallRules'
+      path: /#X-Amz-Target=Route53Resolver.ListFirewallRules
+      operations:
+      - name: listfirewallrules
+        method: POST
+        description: '<p>Retrieves the firewall rules that you have defined for the specified firewall rule group. DNS Firewall
+          uses the rules in a rule group to filter DNS network traffic for a VPC. </p> <p>A single call might return only
+          a partial list of the '
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ListResolverConfigs'
+      path: /#X-Amz-Target=Route53Resolver.ListResolverConfigs
+      operations:
+      - name: listresolverconfigs
+        method: POST
+        description: Retrieves the Resolver configurations that you have defined. Route 53 Resolver uses the configurations
+          to manage DNS resolution behavior for your VPCs.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ListResolverDnssecConfigs'
+      path: /#X-Amz-Target=Route53Resolver.ListResolverDnssecConfigs
+      operations:
+      - name: listresolverdnssecconfigs
+        method: POST
+        description: Lists the configurations for DNSSEC validation that are associated with the current Amazon Web Services
+          account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ListResolverEndpointIpAddresses'
+      path: /#X-Amz-Target=Route53Resolver.ListResolverEndpointIpAddresses
+      operations:
+      - name: listresolverendpointipaddresses
+        method: POST
+        description: Gets the IP addresses for a specified Resolver endpoint.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ListResolverEndpoints'
+      path: /#X-Amz-Target=Route53Resolver.ListResolverEndpoints
+      operations:
+      - name: listresolverendpoints
+        method: POST
+        description: Lists all the Resolver endpoints that were created using the current Amazon Web Services account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ListResolverQueryLogConfigAssociations'
+      path: /#X-Amz-Target=Route53Resolver.ListResolverQueryLogConfigAssociations
+      operations:
+      - name: listresolverquerylogconfigassociations
+        method: POST
+        description: Lists information about associations between Amazon VPCs and query logging configurations.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ListResolverQueryLogConfigs'
+      path: /#X-Amz-Target=Route53Resolver.ListResolverQueryLogConfigs
+      operations:
+      - name: listresolverquerylogconfigs
+        method: POST
+        description: Lists information about the specified query logging configurations. Each configuration defines where
+          you want Resolver to save DNS query logs and specifies the VPCs that you want to log queries for.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ListResolverRuleAssociations'
+      path: /#X-Amz-Target=Route53Resolver.ListResolverRuleAssociations
+      operations:
+      - name: listresolverruleassociations
+        method: POST
+        description: Lists the associations that were created between Resolver rules and VPCs using the current Amazon Web
+          Services account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ListResolverRules'
+      path: /#X-Amz-Target=Route53Resolver.ListResolverRules
+      operations:
+      - name: listresolverrules
+        method: POST
+        description: Lists the Resolver rules that were created using the current Amazon Web Services account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.ListTagsForResource'
+      path: /#X-Amz-Target=Route53Resolver.ListTagsForResource
+      operations:
+      - name: listtagsforresource
+        method: POST
+        description: Lists the tags that you associated with the specified resource.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: MaxResults
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.PutFirewallRuleGroupPolicy'
+      path: /#X-Amz-Target=Route53Resolver.PutFirewallRuleGroupPolicy
+      operations:
+      - name: putfirewallrulegrouppolicy
+        method: POST
+        description: Attaches an Identity and Access Management (Amazon Web Services IAM) policy for sharing the rule group.
+          You can use the policy to share the rule group using Resource Access Manager (RAM).
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.PutResolverQueryLogConfigPolicy'
+      path: /#X-Amz-Target=Route53Resolver.PutResolverQueryLogConfigPolicy
+      operations:
+      - name: putresolverquerylogconfigpolicy
+        method: POST
+        description: Specifies an Amazon Web Services account that you want to share a query logging configuration with, the
+          query logging configuration that you want to share, and the operations that you want the account to be able to perform
+          on the configurat
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.PutResolverRulePolicy'
+      path: /#X-Amz-Target=Route53Resolver.PutResolverRulePolicy
+      operations:
+      - name: putresolverrulepolicy
+        method: POST
+        description: Specifies an Amazon Web Services rule that you want to share with another account, the account that you
+          want to share the rule with, and the operations that you want the account to be able to perform on the rule.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.TagResource'
+      path: /#X-Amz-Target=Route53Resolver.TagResource
+      operations:
+      - name: tagresource
+        method: POST
+        description: Adds one or more tags to a specified resource.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.UntagResource'
+      path: /#X-Amz-Target=Route53Resolver.UntagResource
+      operations:
+      - name: untagresource
+        method: POST
+        description: Removes one or more tags from a specified resource.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.UpdateFirewallConfig'
+      path: /#X-Amz-Target=Route53Resolver.UpdateFirewallConfig
+      operations:
+      - name: updatefirewallconfig
+        method: POST
+        description: Updates the configuration of the firewall behavior provided by DNS Firewall for a single VPC from Amazon
+          Virtual Private Cloud (Amazon VPC).
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.UpdateFirewallDomains'
+      path: /#X-Amz-Target=Route53Resolver.UpdateFirewallDomains
+      operations:
+      - name: updatefirewalldomains
+        method: POST
+        description: Updates the firewall domain list from an array of domain specifications.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.UpdateFirewallRule'
+      path: /#X-Amz-Target=Route53Resolver.UpdateFirewallRule
+      operations:
+      - name: updatefirewallrule
+        method: POST
+        description: Updates the specified firewall rule.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.UpdateFirewallRuleGroupAssociation'
+      path: /#X-Amz-Target=Route53Resolver.UpdateFirewallRuleGroupAssociation
+      operations:
+      - name: updatefirewallrulegroupassociation
+        method: POST
+        description: Changes the association of a <a>FirewallRuleGroup</a> with a VPC. The association enables DNS filtering
+          for the VPC.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.UpdateResolverConfig'
+      path: /#X-Amz-Target=Route53Resolver.UpdateResolverConfig
+      operations:
+      - name: updateresolverconfig
+        method: POST
+        description: Updates the behavior configuration of Route 53 Resolver behavior for a single VPC from Amazon Virtual
+          Private Cloud.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.UpdateResolverDnssecConfig'
+      path: /#X-Amz-Target=Route53Resolver.UpdateResolverDnssecConfig
+      operations:
+      - name: updateresolverdnssecconfig
+        method: POST
+        description: Updates an existing DNSSEC validation configuration. If there is no existing DNSSEC validation configuration,
+          one is created.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.UpdateResolverEndpoint'
+      path: /#X-Amz-Target=Route53Resolver.UpdateResolverEndpoint
+      operations:
+      - name: updateresolverendpoint
+        method: POST
+        description: Updates the name, or enpoint type for an inbound or an outbound Resolver endpoint. You can only update
+          between IPV4 and DUALSTACK, IPV6 endpoint type can't be updated to other type.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=Route53Resolver.UpdateResolverRule'
+      path: /#X-Amz-Target=Route53Resolver.UpdateResolverRule
+      operations:
+      - name: updateresolverrule
+        method: POST
+        description: Updates settings for a specified Resolver rule. <code>ResolverRuleId</code> is required, and all other
+          parameters are optional. If you don't specify a parameter, it retains its current value.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    authentication:
+      type: apikey
+      key: Authorization
+      value: '{{env.AMAZON_ROUTE53_RESOLVER_API_KEY}}'
+      placement: header
   exposes:
   - type: rest
+    namespace: amazon-route53-resolver-rest
     port: 8080
-    namespace: amazon-route53-resolver-api
-    description: Unified REST API for Amazon Route53 Resolver operations.
+    description: REST adapter for Amazon Route 53 Resolver. One Spectral-compliant resource per consumed operation, prefixed
+      with /v1.
     resources:
-    - path: /v1/resources
-      name: resources
-      description: Amazon Route53 Resolver resources
+    - path: /v1/x-amz-target-route53resolver-associatefirewallrulegroup
+      name: x-amz-target-route53resolver-associatefirewallrulegroup
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.AssociateFirewallRuleGroup.'
       operations:
-      - method: GET
-        name: list-resources
-        description: List Amazon Route53 Resolver resources
+      - method: POST
+        name: associatefirewallrulegroup
+        description: Associates a <a>FirewallRuleGroup</a> with a VPC, to provide DNS filtering for the VPC.
+        call: amazon-route53-resolver.associatefirewallrulegroup
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-associateresolverendpointipaddress
+      name: x-amz-target-route53resolver-associateresolverendpointipaddress
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.AssociateResolverEndpointIpAddress.'
+      operations:
+      - method: POST
+        name: associateresolverendpointipaddress
+        description: <p>Adds IP addresses to an inbound or an outbound Resolver endpoint. If you want to add more than one
+          IP address, submit one <code>AssociateResolverEndpointIpAddress</code> request for each IP address.</p> <p>To remove
+          an IP address from an
+        call: amazon-route53-resolver.associateresolverendpointipaddress
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-associateresolverquerylogconfig
+      name: x-amz-target-route53resolver-associateresolverquerylogconfig
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.AssociateResolverQueryLogConfig.'
+      operations:
+      - method: POST
+        name: associateresolverquerylogconfig
+        description: <p>Associates an Amazon VPC with a specified query logging configuration. Route 53 Resolver logs DNS
+          queries that originate in all of the Amazon VPCs that are associated with a specified query logging configuration.
+          To associate more than o
+        call: amazon-route53-resolver.associateresolverquerylogconfig
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-associateresolverrule
+      name: x-amz-target-route53resolver-associateresolverrule
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.AssociateResolverRule.'
+      operations:
+      - method: POST
+        name: associateresolverrule
+        description: Associates a Resolver rule with a VPC. When you associate a rule with a VPC, Resolver forwards all DNS
+          queries for the domain name that is specified in the rule and that originate in the VPC. The queries are forwarded
+          to the IP addresses fo
+        call: amazon-route53-resolver.associateresolverrule
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-createfirewalldomainlist
+      name: x-amz-target-route53resolver-createfirewalldomainlist
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.CreateFirewallDomainList.'
+      operations:
+      - method: POST
+        name: createfirewalldomainlist
+        description: Creates an empty firewall domain list for use in DNS Firewall rules. You can populate the domains for
+          the new list with a file, using <a>ImportFirewallDomains</a>, or with domain strings, using <a>UpdateFirewallDomains</a>.
+        call: amazon-route53-resolver.createfirewalldomainlist
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-createfirewallrule
+      name: x-amz-target-route53resolver-createfirewallrule
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.CreateFirewallRule.'
+      operations:
+      - method: POST
+        name: createfirewallrule
+        description: Creates a single DNS Firewall rule in the specified rule group, using the specified domain list.
+        call: amazon-route53-resolver.createfirewallrule
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-createfirewallrulegroup
+      name: x-amz-target-route53resolver-createfirewallrulegroup
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.CreateFirewallRuleGroup.'
+      operations:
+      - method: POST
+        name: createfirewallrulegroup
+        description: Creates an empty DNS Firewall rule group for filtering DNS network traffic in a VPC. You can add rules
+          to the new rule group by calling <a>CreateFirewallRule</a>.
+        call: amazon-route53-resolver.createfirewallrulegroup
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-createresolverendpoint
+      name: x-amz-target-route53resolver-createresolverendpoint
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.CreateResolverEndpoint.'
+      operations:
+      - method: POST
+        name: createresolverendpoint
+        description: '<p>Creates a Resolver endpoint. There are two types of Resolver endpoints, inbound and outbound:</p>
+          <ul> <li> <p>An <i>inbound Resolver endpoint</i> forwards DNS queries to the DNS service for a VPC from your network.</p>
+          </li> <li> <p>An '
+        call: amazon-route53-resolver.createresolverendpoint
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-createresolverquerylogconfig
+      name: x-amz-target-route53resolver-createresolverquerylogconfig
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.CreateResolverQueryLogConfig.'
+      operations:
+      - method: POST
+        name: createresolverquerylogconfig
+        description: <p>Creates a Resolver query logging configuration, which defines where you want Resolver to save DNS
+          query logs that originate in your VPCs. Resolver can log queries only for VPCs that are in the same Region as the
+          query logging configurati
+        call: amazon-route53-resolver.createresolverquerylogconfig
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-createresolverrule
+      name: x-amz-target-route53resolver-createresolverrule
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.CreateResolverRule.'
+      operations:
+      - method: POST
+        name: createresolverrule
+        description: For DNS queries that originate in your VPCs, specifies which Resolver endpoint the queries pass through,
+          one domain name that you want to forward to your network, and the IP addresses of the DNS resolvers in your network.
+        call: amazon-route53-resolver.createresolverrule
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-deletefirewalldomainlist
+      name: x-amz-target-route53resolver-deletefirewalldomainlist
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.DeleteFirewallDomainList.'
+      operations:
+      - method: POST
+        name: deletefirewalldomainlist
+        description: Deletes the specified domain list.
+        call: amazon-route53-resolver.deletefirewalldomainlist
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-deletefirewallrule
+      name: x-amz-target-route53resolver-deletefirewallrule
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.DeleteFirewallRule.'
+      operations:
+      - method: POST
+        name: deletefirewallrule
+        description: Deletes the specified firewall rule.
+        call: amazon-route53-resolver.deletefirewallrule
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-deletefirewallrulegroup
+      name: x-amz-target-route53resolver-deletefirewallrulegroup
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.DeleteFirewallRuleGroup.'
+      operations:
+      - method: POST
+        name: deletefirewallrulegroup
+        description: Deletes the specified firewall rule group.
+        call: amazon-route53-resolver.deletefirewallrulegroup
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-deleteresolverendpoint
+      name: x-amz-target-route53resolver-deleteresolverendpoint
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.DeleteResolverEndpoint.'
+      operations:
+      - method: POST
+        name: deleteresolverendpoint
+        description: '<p>Deletes a Resolver endpoint. The effect of deleting a Resolver endpoint depends on whether it''s
+          an inbound or an outbound Resolver endpoint:</p> <ul> <li> <p> <b>Inbound</b>: DNS queries from your network are
+          no longer routed to the DNS '
+        call: amazon-route53-resolver.deleteresolverendpoint
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-deleteresolverquerylogconfig
+      name: x-amz-target-route53resolver-deleteresolverquerylogconfig
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.DeleteResolverQueryLogConfig.'
+      operations:
+      - method: POST
+        name: deleteresolverquerylogconfig
+        description: <p>Deletes a query logging configuration. When you delete a configuration, Resolver stops logging DNS
+          queries for all of the Amazon VPCs that are associated with the configuration. This also applies if the query logging
+          configuration is sha
+        call: amazon-route53-resolver.deleteresolverquerylogconfig
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-deleteresolverrule
+      name: x-amz-target-route53resolver-deleteresolverrule
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.DeleteResolverRule.'
+      operations:
+      - method: POST
+        name: deleteresolverrule
+        description: Deletes a Resolver rule. Before you can delete a Resolver rule, you must disassociate it from all the
+          VPCs that you associated the Resolver rule with. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/APIReferenc
+        call: amazon-route53-resolver.deleteresolverrule
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-disassociatefirewallrulegroup
+      name: x-amz-target-route53resolver-disassociatefirewallrulegroup
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.DisassociateFirewallRuleGroup.'
+      operations:
+      - method: POST
+        name: disassociatefirewallrulegroup
+        description: Disassociates a <a>FirewallRuleGroup</a> from a VPC, to remove DNS filtering from the VPC.
+        call: amazon-route53-resolver.disassociatefirewallrulegroup
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-disassociateresolverendpointipaddress
+      name: x-amz-target-route53resolver-disassociateresolverendpointipaddress
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.DisassociateResolverEndpointIpAddress.'
+      operations:
+      - method: POST
+        name: disassociateresolverendpointipaddress
+        description: <p>Removes IP addresses from an inbound or an outbound Resolver endpoint. If you want to remove more
+          than one IP address, submit one <code>DisassociateResolverEndpointIpAddress</code> request for each IP address.</p>
+          <p>To add an IP address
+        call: amazon-route53-resolver.disassociateresolverendpointipaddress
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-disassociateresolverquerylogconfig
+      name: x-amz-target-route53resolver-disassociateresolverquerylogconfig
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.DisassociateResolverQueryLogConfig.'
+      operations:
+      - method: POST
+        name: disassociateresolverquerylogconfig
+        description: '<p>Disassociates a VPC from a query logging configuration.</p> <note> <p>Before you can delete a query
+          logging configuration, you must first disassociate all VPCs from the configuration. If you used Resource Access
+          Manager (RAM) to share a '
+        call: amazon-route53-resolver.disassociateresolverquerylogconfig
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-disassociateresolverrule
+      name: x-amz-target-route53resolver-disassociateresolverrule
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.DisassociateResolverRule.'
+      operations:
+      - method: POST
+        name: disassociateresolverrule
+        description: <p>Removes the association between a specified Resolver rule and a specified VPC.</p> <important> <p>If
+          you disassociate a Resolver rule from a VPC, Resolver stops forwarding DNS queries for the domain name that you
+          specified in the Resolve
+        call: amazon-route53-resolver.disassociateresolverrule
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-getfirewallconfig
+      name: x-amz-target-route53resolver-getfirewallconfig
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.GetFirewallConfig.'
+      operations:
+      - method: POST
+        name: getfirewallconfig
+        description: Retrieves the configuration of the firewall behavior provided by DNS Firewall for a single VPC from Amazon
+          Virtual Private Cloud (Amazon VPC).
+        call: amazon-route53-resolver.getfirewallconfig
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-getfirewalldomainlist
+      name: x-amz-target-route53resolver-getfirewalldomainlist
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.GetFirewallDomainList.'
+      operations:
+      - method: POST
+        name: getfirewalldomainlist
+        description: Retrieves the specified firewall domain list.
+        call: amazon-route53-resolver.getfirewalldomainlist
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-getfirewallrulegroup
+      name: x-amz-target-route53resolver-getfirewallrulegroup
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.GetFirewallRuleGroup.'
+      operations:
+      - method: POST
+        name: getfirewallrulegroup
+        description: Retrieves the specified firewall rule group.
+        call: amazon-route53-resolver.getfirewallrulegroup
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-getfirewallrulegroupassociation
+      name: x-amz-target-route53resolver-getfirewallrulegroupassociation
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.GetFirewallRuleGroupAssociation.'
+      operations:
+      - method: POST
+        name: getfirewallrulegroupassociation
+        description: Retrieves a firewall rule group association, which enables DNS filtering for a VPC with one rule group.
+          A VPC can have more than one firewall rule group association, and a rule group can be associated with more than
+          one VPC.
+        call: amazon-route53-resolver.getfirewallrulegroupassociation
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-getfirewallrulegrouppolicy
+      name: x-amz-target-route53resolver-getfirewallrulegrouppolicy
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.GetFirewallRuleGroupPolicy.'
+      operations:
+      - method: POST
+        name: getfirewallrulegrouppolicy
+        description: Returns the Identity and Access Management (Amazon Web Services IAM) policy for sharing the specified
+          rule group. You can use the policy to share the rule group using Resource Access Manager (RAM).
+        call: amazon-route53-resolver.getfirewallrulegrouppolicy
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-getresolverconfig
+      name: x-amz-target-route53resolver-getresolverconfig
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.GetResolverConfig.'
+      operations:
+      - method: POST
+        name: getresolverconfig
+        description: Retrieves the behavior configuration of Route 53 Resolver behavior for a single VPC from Amazon Virtual
+          Private Cloud.
+        call: amazon-route53-resolver.getresolverconfig
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-getresolverdnssecconfig
+      name: x-amz-target-route53resolver-getresolverdnssecconfig
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.GetResolverDnssecConfig.'
+      operations:
+      - method: POST
+        name: getresolverdnssecconfig
+        description: Gets DNSSEC validation information for a specified resource.
+        call: amazon-route53-resolver.getresolverdnssecconfig
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-getresolverendpoint
+      name: x-amz-target-route53resolver-getresolverendpoint
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.GetResolverEndpoint.'
+      operations:
+      - method: POST
+        name: getresolverendpoint
+        description: Gets information about a specified Resolver endpoint, such as whether it's an inbound or an outbound
+          Resolver endpoint, and the current status of the endpoint.
+        call: amazon-route53-resolver.getresolverendpoint
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-getresolverquerylogconfig
+      name: x-amz-target-route53resolver-getresolverquerylogconfig
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.GetResolverQueryLogConfig.'
+      operations:
+      - method: POST
+        name: getresolverquerylogconfig
+        description: Gets information about a specified Resolver query logging configuration, such as the number of VPCs that
+          the configuration is logging queries for and the location that logs are sent to.
+        call: amazon-route53-resolver.getresolverquerylogconfig
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-getresolverquerylogconfigassociation
+      name: x-amz-target-route53resolver-getresolverquerylogconfigassociation
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.GetResolverQueryLogConfigAssociation.'
+      operations:
+      - method: POST
+        name: getresolverquerylogconfigassociation
+        description: Gets information about a specified association between a Resolver query logging configuration and an
+          Amazon VPC. When you associate a VPC with a query logging configuration, Resolver logs DNS queries that originate
+          in that VPC.
+        call: amazon-route53-resolver.getresolverquerylogconfigassociation
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-getresolverquerylogconfigpolicy
+      name: x-amz-target-route53resolver-getresolverquerylogconfigpolicy
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.GetResolverQueryLogConfigPolicy.'
+      operations:
+      - method: POST
+        name: getresolverquerylogconfigpolicy
+        description: Gets information about a query logging policy. A query logging policy specifies the Resolver query logging
+          operations and resources that you want to allow another Amazon Web Services account to be able to use.
+        call: amazon-route53-resolver.getresolverquerylogconfigpolicy
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-getresolverrule
+      name: x-amz-target-route53resolver-getresolverrule
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.GetResolverRule.'
+      operations:
+      - method: POST
+        name: getresolverrule
+        description: Gets information about a specified Resolver rule, such as the domain name that the rule forwards DNS
+          queries for and the ID of the outbound Resolver endpoint that the rule is associated with.
+        call: amazon-route53-resolver.getresolverrule
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-getresolverruleassociation
+      name: x-amz-target-route53resolver-getresolverruleassociation
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.GetResolverRuleAssociation.'
+      operations:
+      - method: POST
+        name: getresolverruleassociation
+        description: Gets information about an association between a specified Resolver rule and a VPC. You associate a Resolver
+          rule and a VPC using <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_AssociateResolverRule.html
+        call: amazon-route53-resolver.getresolverruleassociation
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-getresolverrulepolicy
+      name: x-amz-target-route53resolver-getresolverrulepolicy
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.GetResolverRulePolicy.'
+      operations:
+      - method: POST
+        name: getresolverrulepolicy
+        description: Gets information about the Resolver rule policy for a specified rule. A Resolver rule policy includes
+          the rule that you want to share with another account, the account that you want to share the rule with, and the
+          Resolver operations that y
+        call: amazon-route53-resolver.getresolverrulepolicy
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-importfirewalldomains
+      name: x-amz-target-route53resolver-importfirewalldomains
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ImportFirewallDomains.'
+      operations:
+      - method: POST
+        name: importfirewalldomains
+        description: '<p>Imports domain names from a file into a domain list, for use in a DNS firewall rule group. </p> <p>Each
+          domain specification in your domain list must satisfy the following requirements: </p> <ul> <li> <p>It can optionally
+          start with <cod'
+        call: amazon-route53-resolver.importfirewalldomains
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-listfirewallconfigs
+      name: x-amz-target-route53resolver-listfirewallconfigs
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ListFirewallConfigs.'
+      operations:
+      - method: POST
+        name: listfirewallconfigs
+        description: <p>Retrieves the firewall configurations that you have defined. DNS Firewall uses the configurations
+          to manage firewall behavior for your VPCs. </p> <p>A single call might return only a partial list of the configurations.
+          For information, s
+        call: amazon-route53-resolver.listfirewallconfigs
+        with:
+          MaxResults: rest.MaxResults
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-listfirewalldomainlists
+      name: x-amz-target-route53resolver-listfirewalldomainlists
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ListFirewallDomainLists.'
+      operations:
+      - method: POST
+        name: listfirewalldomainlists
+        description: '<p>Retrieves the firewall domain lists that you have defined. For each firewall domain list, you can
+          retrieve the domains that are defined for a list by calling <a>ListFirewallDomains</a>. </p> <p>A single call to
+          this list operation might '
+        call: amazon-route53-resolver.listfirewalldomainlists
+        with:
+          MaxResults: rest.MaxResults
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-listfirewalldomains
+      name: x-amz-target-route53resolver-listfirewalldomains
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ListFirewallDomains.'
+      operations:
+      - method: POST
+        name: listfirewalldomains
+        description: <p>Retrieves the domains that you have defined for the specified firewall domain list. </p> <p>A single
+          call might return only a partial list of the domains. For information, see <code>MaxResults</code>. </p>
+        call: amazon-route53-resolver.listfirewalldomains
+        with:
+          MaxResults: rest.MaxResults
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-listfirewallrulegroupassociations
+      name: x-amz-target-route53resolver-listfirewallrulegroupassociations
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ListFirewallRuleGroupAssociations.'
+      operations:
+      - method: POST
+        name: listfirewallrulegroupassociations
+        description: '<p>Retrieves the firewall rule group associations that you have defined. Each association enables DNS
+          filtering for a VPC with one rule group. </p> <p>A single call might return only a partial list of the associations.
+          For information, see '
+        call: amazon-route53-resolver.listfirewallrulegroupassociations
+        with:
+          MaxResults: rest.MaxResults
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-listfirewallrulegroups
+      name: x-amz-target-route53resolver-listfirewallrulegroups
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ListFirewallRuleGroups.'
+      operations:
+      - method: POST
+        name: listfirewallrulegroups
+        description: <p>Retrieves the minimal high-level information for the rule groups that you have defined. </p> <p>A
+          single call might return only a partial list of the rule groups. For information, see <code>MaxResults</code>. </p>
+        call: amazon-route53-resolver.listfirewallrulegroups
+        with:
+          MaxResults: rest.MaxResults
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-listfirewallrules
+      name: x-amz-target-route53resolver-listfirewallrules
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ListFirewallRules.'
+      operations:
+      - method: POST
+        name: listfirewallrules
+        description: '<p>Retrieves the firewall rules that you have defined for the specified firewall rule group. DNS Firewall
+          uses the rules in a rule group to filter DNS network traffic for a VPC. </p> <p>A single call might return only
+          a partial list of the '
+        call: amazon-route53-resolver.listfirewallrules
+        with:
+          MaxResults: rest.MaxResults
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-listresolverconfigs
+      name: x-amz-target-route53resolver-listresolverconfigs
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ListResolverConfigs.'
+      operations:
+      - method: POST
+        name: listresolverconfigs
+        description: Retrieves the Resolver configurations that you have defined. Route 53 Resolver uses the configurations
+          to manage DNS resolution behavior for your VPCs.
+        call: amazon-route53-resolver.listresolverconfigs
+        with:
+          MaxResults: rest.MaxResults
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-listresolverdnssecconfigs
+      name: x-amz-target-route53resolver-listresolverdnssecconfigs
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ListResolverDnssecConfigs.'
+      operations:
+      - method: POST
+        name: listresolverdnssecconfigs
+        description: Lists the configurations for DNSSEC validation that are associated with the current Amazon Web Services
+          account.
+        call: amazon-route53-resolver.listresolverdnssecconfigs
+        with:
+          MaxResults: rest.MaxResults
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-listresolverendpointipaddresses
+      name: x-amz-target-route53resolver-listresolverendpointipaddresses
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ListResolverEndpointIpAddresses.'
+      operations:
+      - method: POST
+        name: listresolverendpointipaddresses
+        description: Gets the IP addresses for a specified Resolver endpoint.
+        call: amazon-route53-resolver.listresolverendpointipaddresses
+        with:
+          MaxResults: rest.MaxResults
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-listresolverendpoints
+      name: x-amz-target-route53resolver-listresolverendpoints
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ListResolverEndpoints.'
+      operations:
+      - method: POST
+        name: listresolverendpoints
+        description: Lists all the Resolver endpoints that were created using the current Amazon Web Services account.
+        call: amazon-route53-resolver.listresolverendpoints
+        with:
+          MaxResults: rest.MaxResults
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-listresolverquerylogconfigassociations
+      name: x-amz-target-route53resolver-listresolverquerylogconfigassociations
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ListResolverQueryLogConfigAssociations.'
+      operations:
+      - method: POST
+        name: listresolverquerylogconfigassociations
+        description: Lists information about associations between Amazon VPCs and query logging configurations.
+        call: amazon-route53-resolver.listresolverquerylogconfigassociations
+        with:
+          MaxResults: rest.MaxResults
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-listresolverquerylogconfigs
+      name: x-amz-target-route53resolver-listresolverquerylogconfigs
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ListResolverQueryLogConfigs.'
+      operations:
+      - method: POST
+        name: listresolverquerylogconfigs
+        description: Lists information about the specified query logging configurations. Each configuration defines where
+          you want Resolver to save DNS query logs and specifies the VPCs that you want to log queries for.
+        call: amazon-route53-resolver.listresolverquerylogconfigs
+        with:
+          MaxResults: rest.MaxResults
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-listresolverruleassociations
+      name: x-amz-target-route53resolver-listresolverruleassociations
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ListResolverRuleAssociations.'
+      operations:
+      - method: POST
+        name: listresolverruleassociations
+        description: Lists the associations that were created between Resolver rules and VPCs using the current Amazon Web
+          Services account.
+        call: amazon-route53-resolver.listresolverruleassociations
+        with:
+          MaxResults: rest.MaxResults
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-listresolverrules
+      name: x-amz-target-route53resolver-listresolverrules
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ListResolverRules.'
+      operations:
+      - method: POST
+        name: listresolverrules
+        description: Lists the Resolver rules that were created using the current Amazon Web Services account.
+        call: amazon-route53-resolver.listresolverrules
+        with:
+          MaxResults: rest.MaxResults
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-listtagsforresource
+      name: x-amz-target-route53resolver-listtagsforresource
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.ListTagsForResource.'
+      operations:
+      - method: POST
+        name: listtagsforresource
+        description: Lists the tags that you associated with the specified resource.
+        call: amazon-route53-resolver.listtagsforresource
+        with:
+          MaxResults: rest.MaxResults
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-putfirewallrulegrouppolicy
+      name: x-amz-target-route53resolver-putfirewallrulegrouppolicy
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.PutFirewallRuleGroupPolicy.'
+      operations:
+      - method: POST
+        name: putfirewallrulegrouppolicy
+        description: Attaches an Identity and Access Management (Amazon Web Services IAM) policy for sharing the rule group.
+          You can use the policy to share the rule group using Resource Access Manager (RAM).
+        call: amazon-route53-resolver.putfirewallrulegrouppolicy
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-putresolverquerylogconfigpolicy
+      name: x-amz-target-route53resolver-putresolverquerylogconfigpolicy
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.PutResolverQueryLogConfigPolicy.'
+      operations:
+      - method: POST
+        name: putresolverquerylogconfigpolicy
+        description: Specifies an Amazon Web Services account that you want to share a query logging configuration with, the
+          query logging configuration that you want to share, and the operations that you want the account to be able to perform
+          on the configurat
+        call: amazon-route53-resolver.putresolverquerylogconfigpolicy
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-putresolverrulepolicy
+      name: x-amz-target-route53resolver-putresolverrulepolicy
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.PutResolverRulePolicy.'
+      operations:
+      - method: POST
+        name: putresolverrulepolicy
+        description: Specifies an Amazon Web Services rule that you want to share with another account, the account that you
+          want to share the rule with, and the operations that you want the account to be able to perform on the rule.
+        call: amazon-route53-resolver.putresolverrulepolicy
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-tagresource
+      name: x-amz-target-route53resolver-tagresource
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.TagResource.'
+      operations:
+      - method: POST
+        name: tagresource
+        description: Adds one or more tags to a specified resource.
+        call: amazon-route53-resolver.tagresource
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-untagresource
+      name: x-amz-target-route53resolver-untagresource
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.UntagResource.'
+      operations:
+      - method: POST
+        name: untagresource
+        description: Removes one or more tags from a specified resource.
+        call: amazon-route53-resolver.untagresource
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-updatefirewallconfig
+      name: x-amz-target-route53resolver-updatefirewallconfig
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.UpdateFirewallConfig.'
+      operations:
+      - method: POST
+        name: updatefirewallconfig
+        description: Updates the configuration of the firewall behavior provided by DNS Firewall for a single VPC from Amazon
+          Virtual Private Cloud (Amazon VPC).
+        call: amazon-route53-resolver.updatefirewallconfig
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-updatefirewalldomains
+      name: x-amz-target-route53resolver-updatefirewalldomains
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.UpdateFirewallDomains.'
+      operations:
+      - method: POST
+        name: updatefirewalldomains
+        description: Updates the firewall domain list from an array of domain specifications.
+        call: amazon-route53-resolver.updatefirewalldomains
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-updatefirewallrule
+      name: x-amz-target-route53resolver-updatefirewallrule
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.UpdateFirewallRule.'
+      operations:
+      - method: POST
+        name: updatefirewallrule
+        description: Updates the specified firewall rule.
+        call: amazon-route53-resolver.updatefirewallrule
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-updatefirewallrulegroupassociation
+      name: x-amz-target-route53resolver-updatefirewallrulegroupassociation
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.UpdateFirewallRuleGroupAssociation.'
+      operations:
+      - method: POST
+        name: updatefirewallrulegroupassociation
+        description: Changes the association of a <a>FirewallRuleGroup</a> with a VPC. The association enables DNS filtering
+          for the VPC.
+        call: amazon-route53-resolver.updatefirewallrulegroupassociation
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-updateresolverconfig
+      name: x-amz-target-route53resolver-updateresolverconfig
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.UpdateResolverConfig.'
+      operations:
+      - method: POST
+        name: updateresolverconfig
+        description: Updates the behavior configuration of Route 53 Resolver behavior for a single VPC from Amazon Virtual
+          Private Cloud.
+        call: amazon-route53-resolver.updateresolverconfig
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-updateresolverdnssecconfig
+      name: x-amz-target-route53resolver-updateresolverdnssecconfig
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.UpdateResolverDnssecConfig.'
+      operations:
+      - method: POST
+        name: updateresolverdnssecconfig
+        description: Updates an existing DNSSEC validation configuration. If there is no existing DNSSEC validation configuration,
+          one is created.
+        call: amazon-route53-resolver.updateresolverdnssecconfig
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-updateresolverendpoint
+      name: x-amz-target-route53resolver-updateresolverendpoint
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.UpdateResolverEndpoint.'
+      operations:
+      - method: POST
+        name: updateresolverendpoint
+        description: Updates the name, or enpoint type for an inbound or an outbound Resolver endpoint. You can only update
+          between IPV4 and DUALSTACK, IPV6 endpoint type can't be updated to other type.
+        call: amazon-route53-resolver.updateresolverendpoint
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-route53resolver-updateresolverrule
+      name: x-amz-target-route53resolver-updateresolverrule
+      description: 'REST surface for #X-Amz-Target=Route53Resolver.UpdateResolverRule.'
+      operations:
+      - method: POST
+        name: updateresolverrule
+        description: Updates settings for a specified Resolver rule. <code>ResolverRuleId</code> is required, and all other
+          parameters are optional. If you don't specify a parameter, it retains its current value.
+        call: amazon-route53-resolver.updateresolverrule
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
         outputParameters:
         - type: object
           mapping: $.
   - type: mcp
-    port: 9090
     namespace: amazon-route53-resolver-mcp
+    port: 9090
     transport: http
-    description: MCP server for AI-assisted Amazon Route53 Resolver operations.
+    description: MCP adapter for Amazon Route 53 Resolver. One tool per consumed operation, routed inline through this capability's
+      consumes block.
     tools:
-    - name: list-amazon-route53-resolver-resources
-      description: List Amazon Route53 Resolver resources
+    - name: associates-a-firewallrulegroup-vpc-provide-dns
+      description: Associates a <a>FirewallRuleGroup</a> with a VPC, to provide DNS filtering for the VPC.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.associatefirewallrulegroup
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-adds-ip-addresses-inbound-outbound
+      description: <p>Adds IP addresses to an inbound or an outbound Resolver endpoint. If you want to add more than one IP
+        address, submit one <code>AssociateResolverEndpointIpAddress</code> request for each IP address.</p> <p>To remove
+        an IP address from an
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.associateresolverendpointipaddress
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-associates-amazon-vpc-specified-query
+      description: <p>Associates an Amazon VPC with a specified query logging configuration. Route 53 Resolver logs DNS queries
+        that originate in all of the Amazon VPCs that are associated with a specified query logging configuration. To associate
+        more than o
       hints:
         readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.associateresolverquerylogconfig
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: associates-resolver-rule-vpc-when
+      description: Associates a Resolver rule with a VPC. When you associate a rule with a VPC, Resolver forwards all DNS
+        queries for the domain name that is specified in the rule and that originate in the VPC. The queries are forwarded
+        to the IP addresses fo
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.associateresolverrule
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: creates-empty-firewall-domain-list
+      description: Creates an empty firewall domain list for use in DNS Firewall rules. You can populate the domains for the
+        new list with a file, using <a>ImportFirewallDomains</a>, or with domain strings, using <a>UpdateFirewallDomains</a>.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.createfirewalldomainlist
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: creates-single-dns-firewall-rule
+      description: Creates a single DNS Firewall rule in the specified rule group, using the specified domain list.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.createfirewallrule
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: creates-empty-dns-firewall-rule
+      description: Creates an empty DNS Firewall rule group for filtering DNS network traffic in a VPC. You can add rules
+        to the new rule group by calling <a>CreateFirewallRule</a>.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.createfirewallrulegroup
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-creates-resolver-endpoint-there-are
+      description: '<p>Creates a Resolver endpoint. There are two types of Resolver endpoints, inbound and outbound:</p> <ul>
+        <li> <p>An <i>inbound Resolver endpoint</i> forwards DNS queries to the DNS service for a VPC from your network.</p>
+        </li> <li> <p>An '
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.createresolverendpoint
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-creates-resolver-query-logging-configuration
+      description: <p>Creates a Resolver query logging configuration, which defines where you want Resolver to save DNS query
+        logs that originate in your VPCs. Resolver can log queries only for VPCs that are in the same Region as the query
+        logging configurati
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.createresolverquerylogconfig
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: dns-queries-that-originate-your
+      description: For DNS queries that originate in your VPCs, specifies which Resolver endpoint the queries pass through,
+        one domain name that you want to forward to your network, and the IP addresses of the DNS resolvers in your network.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.createresolverrule
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-specified-domain-list
+      description: Deletes the specified domain list.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.deletefirewalldomainlist
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-specified-firewall-rule
+      description: Deletes the specified firewall rule.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.deletefirewallrule
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-specified-firewall-rule-group
+      description: Deletes the specified firewall rule group.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.deletefirewallrulegroup
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-deletes-resolver-endpoint-effect-deleting
+      description: '<p>Deletes a Resolver endpoint. The effect of deleting a Resolver endpoint depends on whether it''s an
+        inbound or an outbound Resolver endpoint:</p> <ul> <li> <p> <b>Inbound</b>: DNS queries from your network are no longer
+        routed to the DNS '
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.deleteresolverendpoint
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-deletes-query-logging-configuration-when
+      description: <p>Deletes a query logging configuration. When you delete a configuration, Resolver stops logging DNS queries
+        for all of the Amazon VPCs that are associated with the configuration. This also applies if the query logging configuration
+        is sha
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.deleteresolverquerylogconfig
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-resolver-rule-before-you
+      description: Deletes a Resolver rule. Before you can delete a Resolver rule, you must disassociate it from all the VPCs
+        that you associated the Resolver rule with. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/APIReferenc
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.deleteresolverrule
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: disassociates-a-firewallrulegroup-vpc-remove-dns
+      description: Disassociates a <a>FirewallRuleGroup</a> from a VPC, to remove DNS filtering from the VPC.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.disassociatefirewallrulegroup
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-removes-ip-addresses-inbound-outbound
+      description: <p>Removes IP addresses from an inbound or an outbound Resolver endpoint. If you want to remove more than
+        one IP address, submit one <code>DisassociateResolverEndpointIpAddress</code> request for each IP address.</p> <p>To
+        add an IP address
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.disassociateresolverendpointipaddress
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-disassociates-vpc-query-logging-configuration
+      description: '<p>Disassociates a VPC from a query logging configuration.</p> <note> <p>Before you can delete a query
+        logging configuration, you must first disassociate all VPCs from the configuration. If you used Resource Access Manager
+        (RAM) to share a '
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.disassociateresolverquerylogconfig
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-removes-association-between-specified-resolver
+      description: <p>Removes the association between a specified Resolver rule and a specified VPC.</p> <important> <p>If
+        you disassociate a Resolver rule from a VPC, Resolver stops forwarding DNS queries for the domain name that you specified
+        in the Resolve
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.disassociateresolverrule
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: retrieves-configuration-firewall-behavior-provided
+      description: Retrieves the configuration of the firewall behavior provided by DNS Firewall for a single VPC from Amazon
+        Virtual Private Cloud (Amazon VPC).
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.getfirewallconfig
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: retrieves-specified-firewall-domain-list
+      description: Retrieves the specified firewall domain list.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.getfirewalldomainlist
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: retrieves-specified-firewall-rule-group
+      description: Retrieves the specified firewall rule group.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.getfirewallrulegroup
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: retrieves-firewall-rule-group-association
+      description: Retrieves a firewall rule group association, which enables DNS filtering for a VPC with one rule group.
+        A VPC can have more than one firewall rule group association, and a rule group can be associated with more than one
+        VPC.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.getfirewallrulegroupassociation
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-identity-and-access-management
+      description: Returns the Identity and Access Management (Amazon Web Services IAM) policy for sharing the specified rule
+        group. You can use the policy to share the rule group using Resource Access Manager (RAM).
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.getfirewallrulegrouppolicy
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: retrieves-behavior-configuration-route-53
+      description: Retrieves the behavior configuration of Route 53 Resolver behavior for a single VPC from Amazon Virtual
+        Private Cloud.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.getresolverconfig
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-dnssec-validation-information-specified
+      description: Gets DNSSEC validation information for a specified resource.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.getresolverdnssecconfig
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-specified-resolver
+      description: Gets information about a specified Resolver endpoint, such as whether it's an inbound or an outbound Resolver
+        endpoint, and the current status of the endpoint.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.getresolverendpoint
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-specified-resolver-2
+      description: Gets information about a specified Resolver query logging configuration, such as the number of VPCs that
+        the configuration is logging queries for and the location that logs are sent to.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.getresolverquerylogconfig
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-specified-association
+      description: Gets information about a specified association between a Resolver query logging configuration and an Amazon
+        VPC. When you associate a VPC with a query logging configuration, Resolver logs DNS queries that originate in that
+        VPC.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.getresolverquerylogconfigassociation
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-query-logging
+      description: Gets information about a query logging policy. A query logging policy specifies the Resolver query logging
+        operations and resources that you want to allow another Amazon Web Services account to be able to use.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.getresolverquerylogconfigpolicy
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-specified-resolver-3
+      description: Gets information about a specified Resolver rule, such as the domain name that the rule forwards DNS queries
+        for and the ID of the outbound Resolver endpoint that the rule is associated with.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.getresolverrule
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-association-between
+      description: Gets information about an association between a specified Resolver rule and a VPC. You associate a Resolver
+        rule and a VPC using <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_AssociateResolverRule.html
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.getresolverruleassociation
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-information-about-resolver-rule
+      description: Gets information about the Resolver rule policy for a specified rule. A Resolver rule policy includes the
+        rule that you want to share with another account, the account that you want to share the rule with, and the Resolver
+        operations that y
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.getresolverrulepolicy
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-imports-domain-names-file-domain
+      description: '<p>Imports domain names from a file into a domain list, for use in a DNS firewall rule group. </p> <p>Each
+        domain specification in your domain list must satisfy the following requirements: </p> <ul> <li> <p>It can optionally
+        start with <cod'
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.importfirewalldomains
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-retrieves-firewall-configurations-that-you
+      description: <p>Retrieves the firewall configurations that you have defined. DNS Firewall uses the configurations to
+        manage firewall behavior for your VPCs. </p> <p>A single call might return only a partial list of the configurations.
+        For information, s
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.listfirewallconfigs
+      with:
+        MaxResults: tools.MaxResults
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-retrieves-firewall-domain-lists-that
+      description: '<p>Retrieves the firewall domain lists that you have defined. For each firewall domain list, you can retrieve
+        the domains that are defined for a list by calling <a>ListFirewallDomains</a>. </p> <p>A single call to this list
+        operation might '
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.listfirewalldomainlists
+      with:
+        MaxResults: tools.MaxResults
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-retrieves-domains-that-you-have
+      description: <p>Retrieves the domains that you have defined for the specified firewall domain list. </p> <p>A single
+        call might return only a partial list of the domains. For information, see <code>MaxResults</code>. </p>
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.listfirewalldomains
+      with:
+        MaxResults: tools.MaxResults
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-retrieves-firewall-rule-group-associations
+      description: '<p>Retrieves the firewall rule group associations that you have defined. Each association enables DNS
+        filtering for a VPC with one rule group. </p> <p>A single call might return only a partial list of the associations.
+        For information, see '
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.listfirewallrulegroupassociations
+      with:
+        MaxResults: tools.MaxResults
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-retrieves-minimal-high-level-information
+      description: <p>Retrieves the minimal high-level information for the rule groups that you have defined. </p> <p>A single
+        call might return only a partial list of the rule groups. For information, see <code>MaxResults</code>. </p>
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.listfirewallrulegroups
+      with:
+        MaxResults: tools.MaxResults
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-retrieves-firewall-rules-that-you
+      description: '<p>Retrieves the firewall rules that you have defined for the specified firewall rule group. DNS Firewall
+        uses the rules in a rule group to filter DNS network traffic for a VPC. </p> <p>A single call might return only a
+        partial list of the '
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.listfirewallrules
+      with:
+        MaxResults: tools.MaxResults
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: retrieves-resolver-configurations-that-you
+      description: Retrieves the Resolver configurations that you have defined. Route 53 Resolver uses the configurations
+        to manage DNS resolution behavior for your VPCs.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.listresolverconfigs
+      with:
+        MaxResults: tools.MaxResults
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: lists-configurations-dnssec-validation-that
+      description: Lists the configurations for DNSSEC validation that are associated with the current Amazon Web Services
+        account.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.listresolverdnssecconfigs
+      with:
+        MaxResults: tools.MaxResults
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: gets-ip-addresses-specified-resolver
+      description: Gets the IP addresses for a specified Resolver endpoint.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.listresolverendpointipaddresses
+      with:
+        MaxResults: tools.MaxResults
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: lists-all-resolver-endpoints-that
+      description: Lists all the Resolver endpoints that were created using the current Amazon Web Services account.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.listresolverendpoints
+      with:
+        MaxResults: tools.MaxResults
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: lists-information-about-associations-between
+      description: Lists information about associations between Amazon VPCs and query logging configurations.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.listresolverquerylogconfigassociations
+      with:
+        MaxResults: tools.MaxResults
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: lists-information-about-specified-query
+      description: Lists information about the specified query logging configurations. Each configuration defines where you
+        want Resolver to save DNS query logs and specifies the VPCs that you want to log queries for.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.listresolverquerylogconfigs
+      with:
+        MaxResults: tools.MaxResults
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: lists-associations-that-were-created
+      description: Lists the associations that were created between Resolver rules and VPCs using the current Amazon Web Services
+        account.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.listresolverruleassociations
+      with:
+        MaxResults: tools.MaxResults
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: lists-resolver-rules-that-were
+      description: Lists the Resolver rules that were created using the current Amazon Web Services account.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.listresolverrules
+      with:
+        MaxResults: tools.MaxResults
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: lists-tags-that-you-associated
+      description: Lists the tags that you associated with the specified resource.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.listtagsforresource
+      with:
+        MaxResults: tools.MaxResults
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: attaches-identity-and-access-management
+      description: Attaches an Identity and Access Management (Amazon Web Services IAM) policy for sharing the rule group.
+        You can use the policy to share the rule group using Resource Access Manager (RAM).
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.putfirewallrulegrouppolicy
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: specifies-amazon-web-services-account
+      description: Specifies an Amazon Web Services account that you want to share a query logging configuration with, the
+        query logging configuration that you want to share, and the operations that you want the account to be able to perform
+        on the configurat
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.putresolverquerylogconfigpolicy
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: specifies-amazon-web-services-rule
+      description: Specifies an Amazon Web Services rule that you want to share with another account, the account that you
+        want to share the rule with, and the operations that you want the account to be able to perform on the rule.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.putresolverrulepolicy
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: adds-one-more-tags-specified
+      description: Adds one or more tags to a specified resource.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.tagresource
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: removes-one-more-tags-specified
+      description: Removes one or more tags from a specified resource.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.untagresource
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-configuration-firewall-behavior-provided
+      description: Updates the configuration of the firewall behavior provided by DNS Firewall for a single VPC from Amazon
+        Virtual Private Cloud (Amazon VPC).
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.updatefirewallconfig
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-firewall-domain-list-array
+      description: Updates the firewall domain list from an array of domain specifications.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.updatefirewalldomains
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-specified-firewall-rule
+      description: Updates the specified firewall rule.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.updatefirewallrule
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: changes-association-a-firewallrulegroup-vpc-association
+      description: Changes the association of a <a>FirewallRuleGroup</a> with a VPC. The association enables DNS filtering
+        for the VPC.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.updatefirewallrulegroupassociation
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-behavior-configuration-route-53
+      description: Updates the behavior configuration of Route 53 Resolver behavior for a single VPC from Amazon Virtual Private
+        Cloud.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.updateresolverconfig
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-existing-dnssec-validation-configuration
+      description: Updates an existing DNSSEC validation configuration. If there is no existing DNSSEC validation configuration,
+        one is created.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.updateresolverdnssecconfig
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-name-enpoint-type-inbound
+      description: Updates the name, or enpoint type for an inbound or an outbound Resolver endpoint. You can only update
+        between IPV4 and DUALSTACK, IPV6 endpoint type can't be updated to other type.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.updateresolverendpoint
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-settings-specified-resolver-rule
+      description: Updates settings for a specified Resolver rule. <code>ResolverRuleId</code> is required, and all other
+        parameters are optional. If you don't specify a parameter, it retains its current value.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-route53-resolver.updateresolverrule
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
       outputParameters:
       - type: object
         mapping: $.

@@ -1,18 +1,16 @@
 name: Amazon Route 53 Resolver
-description: Amazon Route 53 Resolver provides DNS resolution for hybrid cloud environments, enabling DNS queries between your VPCs and on-premises networks. It allows you to configure DNS forwarding 
-  rules, manage resolver endpoints, and set up conditional forwarding to resolve domain names across your hybrid infrastructure seamlessly.
+description: Amazon Route 53 Resolver provides DNS resolution for hybrid cloud environments, enabling DNS queries between
+  your VPCs and on-premises networks. It allows you to configure DNS forwarding rules, manage resolver endpoints, and set
+  up conditional forwarding to resolve domain names across your hybrid infrastructure seamlessly.
 image: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
 url: https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/apis.yml
 created: '2024-01-15'
-modified: '2026-04-19'
+modified: '2026-05-19'
 apis:
 - name: Amazon Route 53 Resolver API
-  description: >-
-    The Amazon Route 53 Resolver API provides programmatic access to manage DNS
-    resolution across hybrid cloud environments. It enables developers to create
-    and manage resolver endpoints, configure forwarding rules, associate VPCs
-    with resolver rules, and manage DNS firewall rule groups for filtering DNS
-    queries.
+  description: The Amazon Route 53 Resolver API provides programmatic access to manage DNS resolution across hybrid cloud
+    environments. It enables developers to create and manage resolver endpoints, configure forwarding rules, associate VPCs
+    with resolver rules, and manage DNS firewall rule groups for filtering DNS queries.
   image: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
   humanURL: https://aws.amazon.com/route53/
   baseURL: https://route53resolver.amazonaws.com
@@ -32,6 +30,8 @@ apis:
     url: https://aws.amazon.com/route53/getting-started/
   - type: FAQ
     url: https://aws.amazon.com/route53/faqs/
+  - type: NaftikoCapability
+    url: capabilities/amazon-route53-resolver.yaml
 common:
 - type: Portal
   url: https://aws.amazon.com/
@@ -1351,10 +1351,6 @@ common:
   url: examples/amazon-route53-resolver-openapi-update-resolver-rule-request-example.json
 - type: Example
   url: examples/amazon-route53-resolver-openapi-update-resolver-rule-response-example.json
-- type: NaftikoCapability
-  url: capabilities/amazon-route53-resolver.yaml
-- type: NaftikoCapability
-  url: capabilities/shared/amazon-route53-resolver.yaml
 - type: SpectralRules
   url: rules/amazon-route53-resolver-spectral-rules.yml
 - type: Vocabulary
@@ -1362,14 +1358,14 @@ common:
 - type: Integrations
   url: https://aws.amazon.com/partners/
 integrations:
-  - name: Partner Programs
-  - name: Resources
-  - name: Success Stories
-  - name: Work with an AWS Partner
-  - name: AWS Marketplace
-  - name: AWS Partner Central
-  - name: Partner Paths
-  - name: co-sell with AWS
+- name: Partner Programs
+- name: Resources
+- name: Success Stories
+- name: Work with an AWS Partner
+- name: AWS Marketplace
+- name: AWS Partner Central
+- name: Partner Paths
+- name: co-sell with AWS
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
