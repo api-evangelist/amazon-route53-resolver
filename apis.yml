@@ -49,7 +49,7 @@ common:
     url: https://github.com/aws
   - type: Portal
     url: https://console.aws.amazon.com/route53resolver/
-  - type: SignUp
+  - type: Signup
     url: https://signin.aws.amazon.com/signup?request_type=register
   - type: Login
     url: https://aws.amazon.com/console/
@@ -1059,297 +1059,297 @@ common:
     url: json-structure/amazon-route53-resolver-openapi-validation-exception-structure.json
   - type: JSONStructure
     url: json-structure/amazon-route53-resolver-openapi-validation-structure.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-associate-firewall-rule-group-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-associate-firewall-rule-group-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-associate-resolver-endpoint-ip-address-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-associate-resolver-endpoint-ip-address-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-associate-resolver-query-log-config-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-associate-resolver-query-log-config-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-associate-resolver-rule-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-associate-resolver-rule-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-create-firewall-domain-list-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-create-firewall-domain-list-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-create-firewall-rule-group-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-create-firewall-rule-group-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-create-firewall-rule-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-create-firewall-rule-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-create-resolver-endpoint-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-create-resolver-endpoint-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-create-resolver-query-log-config-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-create-resolver-query-log-config-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-create-resolver-rule-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-create-resolver-rule-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-delete-firewall-domain-list-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-delete-firewall-domain-list-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-delete-firewall-rule-group-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-delete-firewall-rule-group-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-delete-firewall-rule-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-delete-firewall-rule-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-delete-resolver-endpoint-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-delete-resolver-endpoint-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-delete-resolver-query-log-config-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-delete-resolver-query-log-config-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-delete-resolver-rule-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-delete-resolver-rule-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-disassociate-firewall-rule-group-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-disassociate-firewall-rule-group-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-disassociate-resolver-endpoint-ip-address-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-disassociate-resolver-endpoint-ip-address-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-disassociate-resolver-query-log-config-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-disassociate-resolver-query-log-config-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-disassociate-resolver-rule-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-disassociate-resolver-rule-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-filter-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-firewall-config-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-firewall-domain-list-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-firewall-domain-list-metadata-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-firewall-rule-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-firewall-rule-group-association-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-firewall-rule-group-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-firewall-rule-group-metadata-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-firewall-config-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-firewall-config-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-firewall-domain-list-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-firewall-domain-list-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-firewall-rule-group-association-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-firewall-rule-group-association-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-firewall-rule-group-policy-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-firewall-rule-group-policy-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-firewall-rule-group-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-firewall-rule-group-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-config-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-config-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-dnssec-config-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-dnssec-config-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-endpoint-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-endpoint-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-query-log-config-association-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-query-log-config-association-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-query-log-config-policy-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-query-log-config-policy-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-query-log-config-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-query-log-config-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-rule-association-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-rule-association-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-rule-policy-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-rule-policy-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-rule-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-get-resolver-rule-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-import-firewall-domains-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-import-firewall-domains-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-ip-address-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-ip-address-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-ip-address-update-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-firewall-configs-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-firewall-configs-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-firewall-domain-lists-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-firewall-domain-lists-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-firewall-domains-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-firewall-domains-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-firewall-rule-group-associations-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-firewall-rule-group-associations-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-firewall-rule-groups-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-firewall-rule-groups-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-firewall-rules-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-firewall-rules-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-configs-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-configs-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-dnssec-configs-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-dnssec-configs-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-endpoint-ip-addresses-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-endpoint-ip-addresses-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-endpoints-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-endpoints-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-query-log-config-associations-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-query-log-config-associations-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-query-log-configs-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-query-log-configs-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-rule-associations-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-rule-associations-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-rules-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-resolver-rules-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-tags-for-resource-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-list-tags-for-resource-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-put-firewall-rule-group-policy-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-put-firewall-rule-group-policy-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-put-resolver-query-log-config-policy-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-put-resolver-query-log-config-policy-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-put-resolver-rule-policy-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-put-resolver-rule-policy-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-resolver-config-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-resolver-dnssec-config-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-resolver-endpoint-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-resolver-query-log-config-association-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-resolver-query-log-config-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-resolver-rule-association-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-resolver-rule-config-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-resolver-rule-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-tag-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-tag-resource-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-target-address-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-untag-resource-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-firewall-config-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-firewall-config-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-firewall-domains-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-firewall-domains-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-firewall-rule-group-association-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-firewall-rule-group-association-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-firewall-rule-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-firewall-rule-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-ip-address-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-resolver-config-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-resolver-config-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-resolver-dnssec-config-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-resolver-dnssec-config-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-resolver-endpoint-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-resolver-endpoint-response-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-resolver-rule-request-example.json
-  - type: Example
+  - type: Examples
     url: examples/amazon-route53-resolver-openapi-update-resolver-rule-response-example.json
   - type: SpectralRules
     url: rules/amazon-route53-resolver-spectral-rules.yml
