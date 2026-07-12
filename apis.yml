@@ -33,6 +33,14 @@ apis:
       - type: FAQ
         url: https://aws.amazon.com/route53/faqs/
 common:
+  - type: TrustCenter
+    url: security/amazon-route53-resolver-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/amazon-route53-resolver-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/amazon-route53-resolver-domain-security.yml
+  - type: Authentication
+    url: authentication/amazon-route53-resolver-authentication.yml
   - type: Portal
     url: https://aws.amazon.com/
   - type: Portal
