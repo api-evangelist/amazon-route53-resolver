@@ -1,0 +1,1022 @@
+generated: '2026-07-15'
+method: generated
+source: openapi/amazon-route53-resolver-openapi.yml
+description: Recommended x-agentic-access execution contracts, classified heuristically from
+  the OpenAPI. A governance starting point for exposing this API to AI agents — review and bind
+  audience per deployment. See research/curity/agentic-governance/.
+summary:
+  operations: 63
+  by_action_class:
+    acting: 63
+  by_consequence:
+    write: 63
+  human_in_the_loop_required: 0
+operations:
+- path: /#X-Amz-Target=Route53Resolver.AssociateFirewallRuleGroup
+  method: post
+  operationId: AssociateFirewallRuleGroup
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.AssociateResolverEndpointIpAddress
+  method: post
+  operationId: AssociateResolverEndpointIpAddress
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.AssociateResolverQueryLogConfig
+  method: post
+  operationId: AssociateResolverQueryLogConfig
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.AssociateResolverRule
+  method: post
+  operationId: AssociateResolverRule
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.CreateFirewallDomainList
+  method: post
+  operationId: CreateFirewallDomainList
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.CreateFirewallRule
+  method: post
+  operationId: CreateFirewallRule
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.CreateFirewallRuleGroup
+  method: post
+  operationId: CreateFirewallRuleGroup
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.CreateResolverEndpoint
+  method: post
+  operationId: CreateResolverEndpoint
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.CreateResolverQueryLogConfig
+  method: post
+  operationId: CreateResolverQueryLogConfig
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.CreateResolverRule
+  method: post
+  operationId: CreateResolverRule
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.DeleteFirewallDomainList
+  method: post
+  operationId: DeleteFirewallDomainList
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.DeleteFirewallRule
+  method: post
+  operationId: DeleteFirewallRule
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.DeleteFirewallRuleGroup
+  method: post
+  operationId: DeleteFirewallRuleGroup
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.DeleteResolverEndpoint
+  method: post
+  operationId: DeleteResolverEndpoint
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.DeleteResolverQueryLogConfig
+  method: post
+  operationId: DeleteResolverQueryLogConfig
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.DeleteResolverRule
+  method: post
+  operationId: DeleteResolverRule
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.DisassociateFirewallRuleGroup
+  method: post
+  operationId: DisassociateFirewallRuleGroup
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.DisassociateResolverEndpointIpAddress
+  method: post
+  operationId: DisassociateResolverEndpointIpAddress
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.DisassociateResolverQueryLogConfig
+  method: post
+  operationId: DisassociateResolverQueryLogConfig
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.DisassociateResolverRule
+  method: post
+  operationId: DisassociateResolverRule
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.GetFirewallConfig
+  method: post
+  operationId: GetFirewallConfig
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.GetFirewallDomainList
+  method: post
+  operationId: GetFirewallDomainList
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.GetFirewallRuleGroup
+  method: post
+  operationId: GetFirewallRuleGroup
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.GetFirewallRuleGroupAssociation
+  method: post
+  operationId: GetFirewallRuleGroupAssociation
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.GetFirewallRuleGroupPolicy
+  method: post
+  operationId: GetFirewallRuleGroupPolicy
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.GetResolverConfig
+  method: post
+  operationId: GetResolverConfig
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.GetResolverDnssecConfig
+  method: post
+  operationId: GetResolverDnssecConfig
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.GetResolverEndpoint
+  method: post
+  operationId: GetResolverEndpoint
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.GetResolverQueryLogConfig
+  method: post
+  operationId: GetResolverQueryLogConfig
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.GetResolverQueryLogConfigAssociation
+  method: post
+  operationId: GetResolverQueryLogConfigAssociation
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.GetResolverQueryLogConfigPolicy
+  method: post
+  operationId: GetResolverQueryLogConfigPolicy
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.GetResolverRule
+  method: post
+  operationId: GetResolverRule
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.GetResolverRuleAssociation
+  method: post
+  operationId: GetResolverRuleAssociation
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.GetResolverRulePolicy
+  method: post
+  operationId: GetResolverRulePolicy
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ImportFirewallDomains
+  method: post
+  operationId: ImportFirewallDomains
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ListFirewallConfigs
+  method: post
+  operationId: ListFirewallConfigs
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ListFirewallDomainLists
+  method: post
+  operationId: ListFirewallDomainLists
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ListFirewallDomains
+  method: post
+  operationId: ListFirewallDomains
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ListFirewallRuleGroupAssociations
+  method: post
+  operationId: ListFirewallRuleGroupAssociations
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ListFirewallRuleGroups
+  method: post
+  operationId: ListFirewallRuleGroups
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ListFirewallRules
+  method: post
+  operationId: ListFirewallRules
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ListResolverConfigs
+  method: post
+  operationId: ListResolverConfigs
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ListResolverDnssecConfigs
+  method: post
+  operationId: ListResolverDnssecConfigs
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ListResolverEndpointIpAddresses
+  method: post
+  operationId: ListResolverEndpointIpAddresses
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ListResolverEndpoints
+  method: post
+  operationId: ListResolverEndpoints
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ListResolverQueryLogConfigAssociations
+  method: post
+  operationId: ListResolverQueryLogConfigAssociations
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ListResolverQueryLogConfigs
+  method: post
+  operationId: ListResolverQueryLogConfigs
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ListResolverRuleAssociations
+  method: post
+  operationId: ListResolverRuleAssociations
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ListResolverRules
+  method: post
+  operationId: ListResolverRules
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.ListTagsForResource
+  method: post
+  operationId: ListTagsForResource
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.PutFirewallRuleGroupPolicy
+  method: post
+  operationId: PutFirewallRuleGroupPolicy
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.PutResolverQueryLogConfigPolicy
+  method: post
+  operationId: PutResolverQueryLogConfigPolicy
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.PutResolverRulePolicy
+  method: post
+  operationId: PutResolverRulePolicy
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.TagResource
+  method: post
+  operationId: TagResource
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.UntagResource
+  method: post
+  operationId: UntagResource
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.UpdateFirewallConfig
+  method: post
+  operationId: UpdateFirewallConfig
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.UpdateFirewallDomains
+  method: post
+  operationId: UpdateFirewallDomains
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.UpdateFirewallRule
+  method: post
+  operationId: UpdateFirewallRule
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.UpdateFirewallRuleGroupAssociation
+  method: post
+  operationId: UpdateFirewallRuleGroupAssociation
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.UpdateResolverConfig
+  method: post
+  operationId: UpdateResolverConfig
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.UpdateResolverDnssecConfig
+  method: post
+  operationId: UpdateResolverDnssecConfig
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.UpdateResolverEndpoint
+  method: post
+  operationId: UpdateResolverEndpoint
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=Route53Resolver.UpdateResolverRule
+  method: post
+  operationId: UpdateResolverRule
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
