@@ -1,0 +1,370 @@
+openapi: 3.0.0
+info:
+  version: '2018-04-01'
+  x-release: v4
+  title: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.ListResolverEndpointIpAddresses API'
+  description: <p>When you create a VPC using Amazon VPC, you automatically get DNS resolution within the VPC from Route 53 Resolver. By default, Resolver answers DNS queries for VPC domain names such as domain names for EC2 instances or Elastic Load Balancing load balancers. Resolver performs recursive lookups against public name servers for all other domain names.</p> <p>You can also configure DNS resolution between your VPC and your network over a Direct Connect or VPN connection:</p> <p> <b>Forward DNS queries from resolvers on your network to Route 53 Resolver</b> </p> <p>DNS resolvers on your network can forward DNS queries to Resolver in a specified VPC. This allows your DNS resolvers to easily resolve domain names for Amazon Web Services resources such as EC2 instances or records in a Route 53 private hosted zone. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-network-to-vpc">How DNS Resolvers on Your Network Forward DNS Queries to Route 53 Resolver</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p> <b>Conditionally forward queries from a VPC to resolvers on your network</b> </p> <p>You can configure Resolver to forward queries that it receives from EC2 instances in your VPCs to DNS resolvers on your network. To forward selected queries, you create Resolver rules that specify the domain names for the DNS queries that you want to forward (such as example.com), and the IP addresses of the DNS resolvers on your network that you want to forward the queries to. If a query matches multiple rules (example.com, acme.example.com), Resolver chooses the rule with the most specific match (acme.example.com) and forwards the query to the IP addresses that you specified in that rule. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-vpc-to-network">How Route 53 Resolver Forwards DNS Queries from Your VPCs to Your Network</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p>Like Amazon VPC, Resolver is Regional. In each Region where you have VPCs, you can choose whether to forward queries from your VPCs to your network (outbound queries), from your network to your VPCs (inbound queries), or both.</p>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: route53resolver
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/route53resolver-2018-04-01.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://route53resolver.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Route53Resolver multi-region endpoint
+- url: https://route53resolver.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Route53Resolver multi-region endpoint
+- url: http://route53resolver.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Route53Resolver endpoint for China (Beijing) and China (Ningxia)
+- url: https://route53resolver.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Route53Resolver endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=Route53Resolver.ListResolverEndpointIpAddresses'
+paths:
+  /#X-Amz-Target=Route53Resolver.ListResolverEndpointIpAddresses:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: ListResolverEndpointIpAddresses
+      description: Gets the IP addresses for a specified Resolver endpoint.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListResolverEndpointIpAddressesResponse'
+        '480':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+        '481':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+        '482':
+          description: InternalServiceErrorException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServiceErrorException'
+        '483':
+          description: InvalidNextTokenException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidNextTokenException'
+        '484':
+          description: ThrottlingException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ThrottlingException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ListResolverEndpointIpAddressesRequest'
+      parameters:
+      - name: MaxResults
+        in: query
+        schema:
+          type: string
+        description: Pagination limit
+        required: false
+      - name: NextToken
+        in: query
+        schema:
+          type: string
+        description: Pagination token
+        required: false
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - Route53Resolver.ListResolverEndpointIpAddresses
+      tags:
+      - '#X Amz Target=Route53Resolver.ListResolverEndpointIpAddresses'
+components:
+  schemas:
+    ResourceNotFoundException: {}
+    Ipv6:
+      type: string
+      minLength: 7
+      maxLength: 39
+    IpAddressesResponse:
+      type: array
+      items:
+        $ref: '#/components/schemas/IpAddressResponse'
+    SubnetId:
+      type: string
+      minLength: 1
+      maxLength: 32
+    ThrottlingException: {}
+    ListResolverEndpointIpAddressesResponse:
+      type: object
+      properties:
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: 'If the specified endpoint has more than <code>MaxResults</code> IP addresses, you can submit another <code>ListResolverEndpointIpAddresses</code> request to get the next group of IP addresses. In the next request, specify the value of <code>NextToken</code> from the previous response. '
+        MaxResults:
+          allOf:
+          - $ref: '#/components/schemas/MaxResults'
+          - description: The value that you specified for <code>MaxResults</code> in the request.
+        IpAddresses:
+          allOf:
+          - $ref: '#/components/schemas/IpAddressesResponse'
+          - description: Information about the IP addresses in your VPC that DNS queries originate from (for outbound endpoints) or that you forward DNS queries to (for inbound endpoints).
+    InvalidParameterException: {}
+    Ip:
+      type: string
+      minLength: 7
+      maxLength: 36
+    ResourceId:
+      type: string
+      minLength: 1
+      maxLength: 64
+    IpAddressStatus:
+      type: string
+      enum:
+      - CREATING
+      - FAILED_CREATION
+      - ATTACHING
+      - ATTACHED
+      - REMAP_DETACHING
+      - REMAP_ATTACHING
+      - DETACHING
+      - FAILED_RESOURCE_GONE
+      - DELETING
+      - DELETE_FAILED_FAS_EXPIRED
+      - UPDATING
+    InternalServiceErrorException: {}
+    IpAddressResponse:
+      type: object
+      properties:
+        IpId:
+          allOf:
+          - $ref: '#/components/schemas/ResourceId'
+          - description: The ID of one IP address.
+        SubnetId:
+          allOf:
+          - $ref: '#/components/schemas/SubnetId'
+          - description: The ID of one subnet.
+        Ip:
+          allOf:
+          - $ref: '#/components/schemas/Ip'
+          - description: One IPv4 address that the Resolver endpoint uses for DNS queries.
+        Ipv6:
+          allOf:
+          - $ref: '#/components/schemas/Ipv6'
+          - description: ' One IPv6 address that the Resolver endpoint uses for DNS queries. '
+        Status:
+          allOf:
+          - $ref: '#/components/schemas/IpAddressStatus'
+          - description: A status code that gives the current status of the request.
+        StatusMessage:
+          allOf:
+          - $ref: '#/components/schemas/StatusMessage'
+          - description: A message that provides additional information about the status of the request.
+        CreationTime:
+          allOf:
+          - $ref: '#/components/schemas/Rfc3339TimeString'
+          - description: The date and time that the IP address was created, in Unix time format and Coordinated Universal Time (UTC).
+        ModificationTime:
+          allOf:
+          - $ref: '#/components/schemas/Rfc3339TimeString'
+          - description: The date and time that the IP address was last modified, in Unix time format and Coordinated Universal Time (UTC).
+      description: In the response to a <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverEndpoint.html">GetResolverEndpoint</a> request, information about the IP addresses that the Resolver endpoint uses for DNS queries.
+    ListResolverEndpointIpAddressesRequest:
+      type: object
+      required:
+      - ResolverEndpointId
+      title: ListResolverEndpointIpAddressesRequest
+      properties:
+        ResolverEndpointId:
+          allOf:
+          - $ref: '#/components/schemas/ResourceId'
+          - description: The ID of the Resolver endpoint that you want to get IP addresses for.
+        MaxResults:
+          allOf:
+          - $ref: '#/components/schemas/MaxResults'
+          - description: 'The maximum number of IP addresses that you want to return in the response to a <code>ListResolverEndpointIpAddresses</code> request. If you don''t specify a value for <code>MaxResults</code>, Resolver returns up to 100 IP addresses. '
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: <p>For the first <code>ListResolverEndpointIpAddresses</code> request, omit this value.</p> <p>If the specified Resolver endpoint has more than <code>MaxResults</code> IP addresses, you can submit another <code>ListResolverEndpointIpAddresses</code> request to get the next group of IP addresses. In the next request, specify the value of <code>NextToken</code> from the previous response. </p>
+    MaxResults:
+      type: integer
+      minimum: 1
+      maximum: 100
+    NextToken:
+      type: string
+    StatusMessage:
+      type: string
+      maxLength: 255
+    InvalidNextTokenException: {}
+    Rfc3339TimeString:
+      type: string
+      minLength: 20
+      maxLength: 40
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/route53resolver/
+x-hasEquivalentPaths: true

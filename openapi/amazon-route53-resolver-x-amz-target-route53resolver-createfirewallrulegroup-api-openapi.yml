@@ -1,0 +1,385 @@
+openapi: 3.0.0
+info:
+  version: '2018-04-01'
+  x-release: v4
+  title: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.CreateFirewallRuleGroup API'
+  description: <p>When you create a VPC using Amazon VPC, you automatically get DNS resolution within the VPC from Route 53 Resolver. By default, Resolver answers DNS queries for VPC domain names such as domain names for EC2 instances or Elastic Load Balancing load balancers. Resolver performs recursive lookups against public name servers for all other domain names.</p> <p>You can also configure DNS resolution between your VPC and your network over a Direct Connect or VPN connection:</p> <p> <b>Forward DNS queries from resolvers on your network to Route 53 Resolver</b> </p> <p>DNS resolvers on your network can forward DNS queries to Resolver in a specified VPC. This allows your DNS resolvers to easily resolve domain names for Amazon Web Services resources such as EC2 instances or records in a Route 53 private hosted zone. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-network-to-vpc">How DNS Resolvers on Your Network Forward DNS Queries to Route 53 Resolver</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p> <b>Conditionally forward queries from a VPC to resolvers on your network</b> </p> <p>You can configure Resolver to forward queries that it receives from EC2 instances in your VPCs to DNS resolvers on your network. To forward selected queries, you create Resolver rules that specify the domain names for the DNS queries that you want to forward (such as example.com), and the IP addresses of the DNS resolvers on your network that you want to forward the queries to. If a query matches multiple rules (example.com, acme.example.com), Resolver chooses the rule with the most specific match (acme.example.com) and forwards the query to the IP addresses that you specified in that rule. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-vpc-to-network">How Route 53 Resolver Forwards DNS Queries from Your VPCs to Your Network</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p>Like Amazon VPC, Resolver is Regional. In each Region where you have VPCs, you can choose whether to forward queries from your VPCs to your network (outbound queries), from your network to your VPCs (inbound queries), or both.</p>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: route53resolver
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/route53resolver-2018-04-01.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://route53resolver.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Route53Resolver multi-region endpoint
+- url: https://route53resolver.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Route53Resolver multi-region endpoint
+- url: http://route53resolver.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Route53Resolver endpoint for China (Beijing) and China (Ningxia)
+- url: https://route53resolver.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Route53Resolver endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=Route53Resolver.CreateFirewallRuleGroup'
+paths:
+  /#X-Amz-Target=Route53Resolver.CreateFirewallRuleGroup:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: CreateFirewallRuleGroup
+      description: 'Creates an empty DNS Firewall rule group for filtering DNS network traffic in a VPC. You can add rules to the new rule group by calling <a>CreateFirewallRule</a>. '
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateFirewallRuleGroupResponse'
+        '480':
+          description: LimitExceededException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LimitExceededException'
+        '481':
+          description: ValidationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationException'
+        '482':
+          description: AccessDeniedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessDeniedException'
+        '483':
+          description: InternalServiceErrorException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServiceErrorException'
+        '484':
+          description: ThrottlingException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ThrottlingException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateFirewallRuleGroupRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - Route53Resolver.CreateFirewallRuleGroup
+      tags:
+      - '#X Amz Target=Route53Resolver.CreateFirewallRuleGroup'
+components:
+  schemas:
+    Arn:
+      type: string
+      minLength: 1
+      maxLength: 255
+    TagKey:
+      type: string
+      minLength: 1
+      maxLength: 128
+    ThrottlingException: {}
+    FirewallRuleGroup:
+      type: object
+      properties:
+        Id:
+          allOf:
+          - $ref: '#/components/schemas/ResourceId'
+          - description: 'The ID of the rule group. '
+        Arn:
+          allOf:
+          - $ref: '#/components/schemas/Arn'
+          - description: The ARN (Amazon Resource Name) of the rule group.
+        Name:
+          allOf:
+          - $ref: '#/components/schemas/Name'
+          - description: The name of the rule group.
+        RuleCount:
+          allOf:
+          - $ref: '#/components/schemas/Unsigned'
+          - description: The number of rules in the rule group.
+        Status:
+          allOf:
+          - $ref: '#/components/schemas/FirewallRuleGroupStatus'
+          - description: 'The status of the domain list. '
+        StatusMessage:
+          allOf:
+          - $ref: '#/components/schemas/StatusMessage'
+          - description: Additional information about the status of the rule group, if available.
+        OwnerId:
+          allOf:
+          - $ref: '#/components/schemas/AccountId'
+          - description: 'The Amazon Web Services account ID for the account that created the rule group. When a rule group is shared with your account, this is the account that has shared the rule group with you. '
+        CreatorRequestId:
+          allOf:
+          - $ref: '#/components/schemas/CreatorRequestId'
+          - description: 'A unique string defined by you to identify the request. This allows you to retry failed requests without the risk of running the operation twice. This can be any unique string, for example, a timestamp. '
+        ShareStatus:
+          allOf:
+          - $ref: '#/components/schemas/ShareStatus'
+          - description: Whether the rule group is shared with other Amazon Web Services accounts, or was shared with the current account by another Amazon Web Services account. Sharing is configured through Resource Access Manager (RAM).
+        CreationTime:
+          allOf:
+          - $ref: '#/components/schemas/Rfc3339TimeString'
+          - description: 'The date and time that the rule group was created, in Unix time format and Coordinated Universal Time (UTC). '
+        ModificationTime:
+          allOf:
+          - $ref: '#/components/schemas/Rfc3339TimeString'
+          - description: The date and time that the rule group was last modified, in Unix time format and Coordinated Universal Time (UTC).
+      description: High-level information for a firewall rule group. A firewall rule group is a collection of rules that DNS Firewall uses to filter DNS network traffic for a VPC. To retrieve the rules for the rule group, call <a>ListFirewallRules</a>.
+    ResourceId:
+      type: string
+      minLength: 1
+      maxLength: 64
+    InternalServiceErrorException: {}
+    FirewallRuleGroupStatus:
+      type: string
+      enum:
+      - COMPLETE
+      - DELETING
+      - UPDATING
+    LimitExceededException: {}
+    StatusMessage:
+      type: string
+      maxLength: 255
+    Unsigned:
+      type: integer
+    AccessDeniedException: {}
+    AccountId:
+      type: string
+      minLength: 12
+      maxLength: 32
+    ValidationException: {}
+    CreateFirewallRuleGroupRequest:
+      type: object
+      required:
+      - CreatorRequestId
+      - Name
+      title: CreateFirewallRuleGroupRequest
+      properties:
+        CreatorRequestId:
+          allOf:
+          - $ref: '#/components/schemas/CreatorRequestId'
+          - description: 'A unique string defined by you to identify the request. This allows you to retry failed requests without the risk of running the operation twice. This can be any unique string, for example, a timestamp. '
+        Name:
+          allOf:
+          - $ref: '#/components/schemas/Name'
+          - description: A name that lets you identify the rule group, to manage and use it.
+        Tags:
+          allOf:
+          - $ref: '#/components/schemas/TagList'
+          - description: 'A list of the tag keys and values that you want to associate with the rule group. '
+    Tag:
+      type: object
+      required:
+      - Key
+      - Value
+      properties:
+        Key:
+          allOf:
+          - $ref: '#/components/schemas/TagKey'
+          - description: The name for the tag. For example, if you want to associate Resolver resources with the account IDs of your customers for billing purposes, the value of <code>Key</code> might be <code>account-id</code>.
+        Value:
+          allOf:
+          - $ref: '#/components/schemas/TagValue'
+          - description: The value for the tag. For example, if <code>Key</code> is <code>account-id</code>, then <code>Value</code> might be the ID of the customer account that you're creating the resource for.
+      description: One tag that you want to add to the specified resource. A tag consists of a <code>Key</code> (a name for the tag) and a <code>Value</code>.
+    CreateFirewallRuleGroupResponse:
+      type: object
+      properties:
+        FirewallRuleGroup:
+          allOf:
+          - $ref: '#/components/schemas/FirewallRuleGroup'
+          - description: 'A collection of rules used to filter DNS network traffic. '
+    ShareStatus:
+      type: string
+      enum:
+      - NOT_SHARED
+      - SHARED_WITH_ME
+      - SHARED_BY_ME
+    TagValue:
+      type: string
+      minLength: 0
+      maxLength: 256
+    Name:
+      type: string
+      pattern: (?!^[0-9]+$)([a-zA-Z0-9\-_' ']+)
+      maxLength: 64
+    TagList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tag'
+      maxItems: 200
+    Rfc3339TimeString:
+      type: string
+      minLength: 20
+      maxLength: 40
+    CreatorRequestId:
+      type: string
+      minLength: 1
+      maxLength: 255
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/route53resolver/
+x-hasEquivalentPaths: true
