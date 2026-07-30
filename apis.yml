@@ -3,36 +3,1424 @@ description: >-
   Amazon Route 53 Resolver provides DNS resolution for hybrid cloud environments, enabling DNS queries between your VPCs
   and on-premises networks. It allows you to configure DNS forwarding rules, manage resolver endpoints, and set up
   conditional forwarding to resolve domain names across your hybrid infrastructure seamlessly.
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 image: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
 url: https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/apis.yml
 created: '2024-01-15'
 modified: '2026-05-19'
 apis:
-  - name: Amazon Route 53 Resolver API
-    description: >-
-      The Amazon Route 53 Resolver API provides programmatic access to manage DNS resolution across hybrid cloud
-      environments. It enables developers to create and manage resolver endpoints, configure forwarding rules, associate
-      VPCs with resolver rules, and manage DNS firewall rule groups for filtering DNS queries.
-    image: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
-    humanURL: https://aws.amazon.com/route53/
-    baseURL: https://route53resolver.amazonaws.com
-    tags:
-      - AWS
-      - DNS
-      - Hybrid Cloud
-      - Networking
-    properties:
-      - type: Documentation
-        url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
-      - type: OpenAPI
-        url: openapi/amazon-route53-resolver-openapi.yml
-      - type: Pricing
-        url: https://aws.amazon.com/route53/pricing/
-      - type: GettingStarted
-        url: https://aws.amazon.com/route53/getting-started/
-      - type: FAQ
-        url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-associatefirewallrulegroup-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup API'
+  description: >-
+    The #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup API from Amazon Route 53 Resolver — 1
+    operation(s) for #x amz target=route53resolver.associatefirewallrulegroup.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.AssociateFirewallRuleGroup'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-associatefirewallrulegroup-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-associateresolverendpointipaddress-api
+  name: >-
+    Amazon Route 53 Resolver #X Amz Target=Route53Resolver.AssociateResolverEndpointIpAddress API
+  description: >-
+    The #X Amz Target=Route53Resolver.AssociateResolverEndpointIpAddress API from Amazon Route 53 Resolver
+    — 1 operation(s) for #x amz target=route53resolver.associateresolverendpointipaddress.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.AssociateResolverEndpointIpAddress'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverendpointipaddress-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-associateresolverquerylogconfig-api
+  name: >-
+    Amazon Route 53 Resolver #X Amz Target=Route53Resolver.AssociateResolverQueryLogConfig API
+  description: >-
+    The #X Amz Target=Route53Resolver.AssociateResolverQueryLogConfig API from Amazon Route 53 Resolver
+    — 1 operation(s) for #x amz target=route53resolver.associateresolverquerylogconfig.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.AssociateResolverQueryLogConfig'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverquerylogconfig-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-associateresolverrule-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.AssociateResolverRule API'
+  description: >-
+    The #X Amz Target=Route53Resolver.AssociateResolverRule API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.associateresolverrule.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.AssociateResolverRule'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverrule-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-createfirewalldomainlist-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.CreateFirewallDomainList API'
+  description: >-
+    The #X Amz Target=Route53Resolver.CreateFirewallDomainList API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.createfirewalldomainlist.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.CreateFirewallDomainList'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-createfirewalldomainlist-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrule-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.CreateFirewallRule API'
+  description: >-
+    The #X Amz Target=Route53Resolver.CreateFirewallRule API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.createfirewallrule.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.CreateFirewallRule'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrule-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrulegroup-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.CreateFirewallRuleGroup API'
+  description: >-
+    The #X Amz Target=Route53Resolver.CreateFirewallRuleGroup API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.createfirewallrulegroup.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.CreateFirewallRuleGroup'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrulegroup-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-createresolverendpoint-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.CreateResolverEndpoint API'
+  description: >-
+    The #X Amz Target=Route53Resolver.CreateResolverEndpoint API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.createresolverendpoint.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.CreateResolverEndpoint'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-createresolverendpoint-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-createresolverquerylogconfig-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.CreateResolverQueryLogConfig API'
+  description: >-
+    The #X Amz Target=Route53Resolver.CreateResolverQueryLogConfig API from Amazon Route 53 Resolver —
+    1 operation(s) for #x amz target=route53resolver.createresolverquerylogconfig.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.CreateResolverQueryLogConfig'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-createresolverquerylogconfig-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-createresolverrule-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.CreateResolverRule API'
+  description: >-
+    The #X Amz Target=Route53Resolver.CreateResolverRule API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.createresolverrule.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.CreateResolverRule'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-createresolverrule-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-deletefirewalldomainlist-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.DeleteFirewallDomainList API'
+  description: >-
+    The #X Amz Target=Route53Resolver.DeleteFirewallDomainList API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.deletefirewalldomainlist.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.DeleteFirewallDomainList'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewalldomainlist-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrule-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.DeleteFirewallRule API'
+  description: >-
+    The #X Amz Target=Route53Resolver.DeleteFirewallRule API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.deletefirewallrule.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.DeleteFirewallRule'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrule-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrulegroup-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.DeleteFirewallRuleGroup API'
+  description: >-
+    The #X Amz Target=Route53Resolver.DeleteFirewallRuleGroup API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.deletefirewallrulegroup.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.DeleteFirewallRuleGroup'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrulegroup-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverendpoint-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.DeleteResolverEndpoint API'
+  description: >-
+    The #X Amz Target=Route53Resolver.DeleteResolverEndpoint API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.deleteresolverendpoint.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.DeleteResolverEndpoint'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverendpoint-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverquerylogconfig-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.DeleteResolverQueryLogConfig API'
+  description: >-
+    The #X Amz Target=Route53Resolver.DeleteResolverQueryLogConfig API from Amazon Route 53 Resolver —
+    1 operation(s) for #x amz target=route53resolver.deleteresolverquerylogconfig.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.DeleteResolverQueryLogConfig'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverquerylogconfig-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverrule-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.DeleteResolverRule API'
+  description: >-
+    The #X Amz Target=Route53Resolver.DeleteResolverRule API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.deleteresolverrule.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.DeleteResolverRule'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverrule-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-disassociatefirewallrulegroup-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.DisassociateFirewallRuleGroup API'
+  description: >-
+    The #X Amz Target=Route53Resolver.DisassociateFirewallRuleGroup API from Amazon Route 53 Resolver
+    — 1 operation(s) for #x amz target=route53resolver.disassociatefirewallrulegroup.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.DisassociateFirewallRuleGroup'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociatefirewallrulegroup-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverendpointipaddress-api
+  name: >-
+    Amazon Route 53 Resolver #X Amz Target=Route53Resolver.DisassociateResolverEndpointIpAddress API
+  description: >-
+    The #X Amz Target=Route53Resolver.DisassociateResolverEndpointIpAddress API from Amazon Route 53 Resolver
+    — 1 operation(s) for #x amz target=route53resolver.disassociateresolverendpointipaddress.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.DisassociateResolverEndpointIpAddress'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverendpointipaddress-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverquerylogconfig-api
+  name: >-
+    Amazon Route 53 Resolver #X Amz Target=Route53Resolver.DisassociateResolverQueryLogConfig API
+  description: >-
+    The #X Amz Target=Route53Resolver.DisassociateResolverQueryLogConfig API from Amazon Route 53 Resolver
+    — 1 operation(s) for #x amz target=route53resolver.disassociateresolverquerylogconfig.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.DisassociateResolverQueryLogConfig'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverquerylogconfig-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverrule-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.DisassociateResolverRule API'
+  description: >-
+    The #X Amz Target=Route53Resolver.DisassociateResolverRule API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.disassociateresolverrule.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.DisassociateResolverRule'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverrule-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-getfirewallconfig-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.GetFirewallConfig API'
+  description: >-
+    The #X Amz Target=Route53Resolver.GetFirewallConfig API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.getfirewallconfig.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.GetFirewallConfig'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallconfig-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-getfirewalldomainlist-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.GetFirewallDomainList API'
+  description: >-
+    The #X Amz Target=Route53Resolver.GetFirewallDomainList API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.getfirewalldomainlist.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.GetFirewallDomainList'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewalldomainlist-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroup-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.GetFirewallRuleGroup API'
+  description: >-
+    The #X Amz Target=Route53Resolver.GetFirewallRuleGroup API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.getfirewallrulegroup.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.GetFirewallRuleGroup'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroup-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroupassociation-api
+  name: >-
+    Amazon Route 53 Resolver #X Amz Target=Route53Resolver.GetFirewallRuleGroupAssociation API
+  description: >-
+    The #X Amz Target=Route53Resolver.GetFirewallRuleGroupAssociation API from Amazon Route 53 Resolver
+    — 1 operation(s) for #x amz target=route53resolver.getfirewallrulegroupassociation.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.GetFirewallRuleGroupAssociation'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroupassociation-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegrouppolicy-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.GetFirewallRuleGroupPolicy API'
+  description: >-
+    The #X Amz Target=Route53Resolver.GetFirewallRuleGroupPolicy API from Amazon Route 53 Resolver — 1
+    operation(s) for #x amz target=route53resolver.getfirewallrulegrouppolicy.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.GetFirewallRuleGroupPolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegrouppolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-getresolverconfig-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.GetResolverConfig API'
+  description: >-
+    The #X Amz Target=Route53Resolver.GetResolverConfig API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.getresolverconfig.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.GetResolverConfig'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverconfig-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-getresolverdnssecconfig-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.GetResolverDnssecConfig API'
+  description: >-
+    The #X Amz Target=Route53Resolver.GetResolverDnssecConfig API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.getresolverdnssecconfig.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.GetResolverDnssecConfig'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverdnssecconfig-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-getresolverendpoint-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.GetResolverEndpoint API'
+  description: >-
+    The #X Amz Target=Route53Resolver.GetResolverEndpoint API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.getresolverendpoint.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.GetResolverEndpoint'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverendpoint-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfig-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.GetResolverQueryLogConfig API'
+  description: >-
+    The #X Amz Target=Route53Resolver.GetResolverQueryLogConfig API from Amazon Route 53 Resolver — 1
+    operation(s) for #x amz target=route53resolver.getresolverquerylogconfig.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.GetResolverQueryLogConfig'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfig-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigassociation-api
+  name: >-
+    Amazon Route 53 Resolver #X Amz Target=Route53Resolver.GetResolverQueryLogConfigAssociation API
+  description: >-
+    The #X Amz Target=Route53Resolver.GetResolverQueryLogConfigAssociation API from Amazon Route 53 Resolver
+    — 1 operation(s) for #x amz target=route53resolver.getresolverquerylogconfigassociation.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.GetResolverQueryLogConfigAssociation'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigassociation-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigpolicy-api
+  name: >-
+    Amazon Route 53 Resolver #X Amz Target=Route53Resolver.GetResolverQueryLogConfigPolicy API
+  description: >-
+    The #X Amz Target=Route53Resolver.GetResolverQueryLogConfigPolicy API from Amazon Route 53 Resolver
+    — 1 operation(s) for #x amz target=route53resolver.getresolverquerylogconfigpolicy.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.GetResolverQueryLogConfigPolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigpolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-getresolverrule-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.GetResolverRule API'
+  description: >-
+    The #X Amz Target=Route53Resolver.GetResolverRule API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.getresolverrule.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.GetResolverRule'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrule-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-getresolverruleassociation-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.GetResolverRuleAssociation API'
+  description: >-
+    The #X Amz Target=Route53Resolver.GetResolverRuleAssociation API from Amazon Route 53 Resolver — 1
+    operation(s) for #x amz target=route53resolver.getresolverruleassociation.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.GetResolverRuleAssociation'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverruleassociation-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-getresolverrulepolicy-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.GetResolverRulePolicy API'
+  description: >-
+    The #X Amz Target=Route53Resolver.GetResolverRulePolicy API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.getresolverrulepolicy.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.GetResolverRulePolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrulepolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-importfirewalldomains-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ImportFirewallDomains API'
+  description: >-
+    The #X Amz Target=Route53Resolver.ImportFirewallDomains API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.importfirewalldomains.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ImportFirewallDomains'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-importfirewalldomains-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-listfirewallconfigs-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ListFirewallConfigs API'
+  description: >-
+    The #X Amz Target=Route53Resolver.ListFirewallConfigs API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.listfirewallconfigs.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ListFirewallConfigs'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallconfigs-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomainlists-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ListFirewallDomainLists API'
+  description: >-
+    The #X Amz Target=Route53Resolver.ListFirewallDomainLists API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.listfirewalldomainlists.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ListFirewallDomainLists'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomainlists-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomains-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ListFirewallDomains API'
+  description: >-
+    The #X Amz Target=Route53Resolver.ListFirewallDomains API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.listfirewalldomains.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ListFirewallDomains'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomains-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroupassociations-api
+  name: >-
+    Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ListFirewallRuleGroupAssociations API
+  description: >-
+    The #X Amz Target=Route53Resolver.ListFirewallRuleGroupAssociations API from Amazon Route 53 Resolver
+    — 1 operation(s) for #x amz target=route53resolver.listfirewallrulegroupassociations.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ListFirewallRuleGroupAssociations'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroupassociations-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroups-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ListFirewallRuleGroups API'
+  description: >-
+    The #X Amz Target=Route53Resolver.ListFirewallRuleGroups API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.listfirewallrulegroups.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ListFirewallRuleGroups'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroups-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrules-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ListFirewallRules API'
+  description: >-
+    The #X Amz Target=Route53Resolver.ListFirewallRules API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.listfirewallrules.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ListFirewallRules'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrules-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-listresolverconfigs-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ListResolverConfigs API'
+  description: >-
+    The #X Amz Target=Route53Resolver.ListResolverConfigs API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.listresolverconfigs.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ListResolverConfigs'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverconfigs-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-listresolverdnssecconfigs-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ListResolverDnssecConfigs API'
+  description: >-
+    The #X Amz Target=Route53Resolver.ListResolverDnssecConfigs API from Amazon Route 53 Resolver — 1
+    operation(s) for #x amz target=route53resolver.listresolverdnssecconfigs.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ListResolverDnssecConfigs'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverdnssecconfigs-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpointipaddresses-api
+  name: >-
+    Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ListResolverEndpointIpAddresses API
+  description: >-
+    The #X Amz Target=Route53Resolver.ListResolverEndpointIpAddresses API from Amazon Route 53 Resolver
+    — 1 operation(s) for #x amz target=route53resolver.listresolverendpointipaddresses.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ListResolverEndpointIpAddresses'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpointipaddresses-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpoints-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ListResolverEndpoints API'
+  description: >-
+    The #X Amz Target=Route53Resolver.ListResolverEndpoints API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.listresolverendpoints.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ListResolverEndpoints'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpoints-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigassociations-api
+  name: >-
+    Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ListResolverQueryLogConfigAssociations API
+  description: >-
+    The #X Amz Target=Route53Resolver.ListResolverQueryLogConfigAssociations API from Amazon Route 53
+    Resolver — 1 operation(s) for #x amz target=route53resolver.listresolverquerylogconfigassociations.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ListResolverQueryLogConfigAssociations'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigassociations-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigs-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ListResolverQueryLogConfigs API'
+  description: >-
+    The #X Amz Target=Route53Resolver.ListResolverQueryLogConfigs API from Amazon Route 53 Resolver —
+    1 operation(s) for #x amz target=route53resolver.listresolverquerylogconfigs.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ListResolverQueryLogConfigs'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigs-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-listresolverruleassociations-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ListResolverRuleAssociations API'
+  description: >-
+    The #X Amz Target=Route53Resolver.ListResolverRuleAssociations API from Amazon Route 53 Resolver —
+    1 operation(s) for #x amz target=route53resolver.listresolverruleassociations.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ListResolverRuleAssociations'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverruleassociations-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-listresolverrules-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ListResolverRules API'
+  description: >-
+    The #X Amz Target=Route53Resolver.ListResolverRules API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.listresolverrules.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ListResolverRules'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverrules-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-listtagsforresource-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.ListTagsForResource API'
+  description: >-
+    The #X Amz Target=Route53Resolver.ListTagsForResource API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.listtagsforresource.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.ListTagsForResource'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-listtagsforresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-putfirewallrulegrouppolicy-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.PutFirewallRuleGroupPolicy API'
+  description: >-
+    The #X Amz Target=Route53Resolver.PutFirewallRuleGroupPolicy API from Amazon Route 53 Resolver — 1
+    operation(s) for #x amz target=route53resolver.putfirewallrulegrouppolicy.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.PutFirewallRuleGroupPolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-putfirewallrulegrouppolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-putresolverquerylogconfigpolicy-api
+  name: >-
+    Amazon Route 53 Resolver #X Amz Target=Route53Resolver.PutResolverQueryLogConfigPolicy API
+  description: >-
+    The #X Amz Target=Route53Resolver.PutResolverQueryLogConfigPolicy API from Amazon Route 53 Resolver
+    — 1 operation(s) for #x amz target=route53resolver.putresolverquerylogconfigpolicy.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.PutResolverQueryLogConfigPolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-putresolverquerylogconfigpolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-putresolverrulepolicy-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.PutResolverRulePolicy API'
+  description: >-
+    The #X Amz Target=Route53Resolver.PutResolverRulePolicy API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.putresolverrulepolicy.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.PutResolverRulePolicy'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-putresolverrulepolicy-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-tagresource-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.TagResource API'
+  description: >-
+    The #X Amz Target=Route53Resolver.TagResource API from Amazon Route 53 Resolver — 1 operation(s) for
+    #x amz target=route53resolver.tagresource.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.TagResource'
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-route53-resolver-x-amz-target-route53resolver-tagresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-untagresource-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.UntagResource API'
+  description: >-
+    The #X Amz Target=Route53Resolver.UntagResource API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.untagresource.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.UntagResource'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-untagresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallconfig-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.UpdateFirewallConfig API'
+  description: >-
+    The #X Amz Target=Route53Resolver.UpdateFirewallConfig API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.updatefirewallconfig.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.UpdateFirewallConfig'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallconfig-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-updatefirewalldomains-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.UpdateFirewallDomains API'
+  description: >-
+    The #X Amz Target=Route53Resolver.UpdateFirewallDomains API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.updatefirewalldomains.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.UpdateFirewallDomains'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewalldomains-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrule-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.UpdateFirewallRule API'
+  description: >-
+    The #X Amz Target=Route53Resolver.UpdateFirewallRule API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.updatefirewallrule.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.UpdateFirewallRule'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrule-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrulegroupassociation-api
+  name: >-
+    Amazon Route 53 Resolver #X Amz Target=Route53Resolver.UpdateFirewallRuleGroupAssociation API
+  description: >-
+    The #X Amz Target=Route53Resolver.UpdateFirewallRuleGroupAssociation API from Amazon Route 53 Resolver
+    — 1 operation(s) for #x amz target=route53resolver.updatefirewallrulegroupassociation.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.UpdateFirewallRuleGroupAssociation'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrulegroupassociation-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-updateresolverconfig-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.UpdateResolverConfig API'
+  description: >-
+    The #X Amz Target=Route53Resolver.UpdateResolverConfig API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.updateresolverconfig.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.UpdateResolverConfig'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverconfig-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-updateresolverdnssecconfig-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.UpdateResolverDnssecConfig API'
+  description: >-
+    The #X Amz Target=Route53Resolver.UpdateResolverDnssecConfig API from Amazon Route 53 Resolver — 1
+    operation(s) for #x amz target=route53resolver.updateresolverdnssecconfig.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.UpdateResolverDnssecConfig'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverdnssecconfig-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-updateresolverendpoint-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.UpdateResolverEndpoint API'
+  description: >-
+    The #X Amz Target=Route53Resolver.UpdateResolverEndpoint API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.updateresolverendpoint.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.UpdateResolverEndpoint'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverendpoint-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+- aid: >-
+    amazon-route53-resolver:amazon-route53-resolver-x-amz-target-route53resolver-updateresolverrule-api
+  name: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.UpdateResolverRule API'
+  description: >-
+    The #X Amz Target=Route53Resolver.UpdateResolverRule API from Amazon Route 53 Resolver — 1 operation(s)
+    for #x amz target=route53resolver.updateresolverrule.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - '#X Amz Target=Route53Resolver.UpdateResolverRule'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverrule-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
 common:
+  - type: PostmanWorkspace
+    url: https://www.postman.com/kinlaneapi/amazon-route-53-resolver/overview
   - type: AgenticAccess
     url: agentic-access/amazon-route53-resolver-agentic-access.yml
   - type: TrustCenter
