@@ -1,0 +1,75 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Amazon Route 53 Resolver #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.DisassociateResolverRule API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "#X Amz Target=Route53Resolver.DisassociateResolverRule",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "DisassociateResolverRule",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://route53resolver.{region}.amazonaws.com/#X-Amz-Target=Route53Resolver.DisassociateResolverRule",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Target",
+                "value": ""
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "<p>Removes the association between a specified Resolver rule and a specified VPC.</p> <important> <p>If you disassociate a Resolver rule from a VPC, Resolver stops forwarding DNS queries for the domain name that you specified in the Resolver rule. </p> </important>"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
