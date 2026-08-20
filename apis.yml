@@ -53,7 +53,8 @@ apis:
     — 1 operation(s) for #x amz target=route53resolver.associateresolverendpointipaddress.
   humanURL: https://aws.amazon.com/route53/
   baseURL: https://route53resolver.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=Route53Resolver.AssociateResolverEndpointIpAddress'
   properties:
   - type: OpenAPI
@@ -76,7 +77,8 @@ apis:
     — 1 operation(s) for #x amz target=route53resolver.associateresolverquerylogconfig.
   humanURL: https://aws.amazon.com/route53/
   baseURL: https://route53resolver.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=Route53Resolver.AssociateResolverQueryLogConfig'
   properties:
   - type: OpenAPI
@@ -407,7 +409,8 @@ apis:
     — 1 operation(s) for #x amz target=route53resolver.disassociateresolverendpointipaddress.
   humanURL: https://aws.amazon.com/route53/
   baseURL: https://route53resolver.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=Route53Resolver.DisassociateResolverEndpointIpAddress'
   properties:
   - type: OpenAPI
@@ -430,7 +433,8 @@ apis:
     — 1 operation(s) for #x amz target=route53resolver.disassociateresolverquerylogconfig.
   humanURL: https://aws.amazon.com/route53/
   baseURL: https://route53resolver.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=Route53Resolver.DisassociateResolverQueryLogConfig'
   properties:
   - type: OpenAPI
@@ -541,7 +545,8 @@ apis:
     — 1 operation(s) for #x amz target=route53resolver.getfirewallrulegroupassociation.
   humanURL: https://aws.amazon.com/route53/
   baseURL: https://route53resolver.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=Route53Resolver.GetFirewallRuleGroupAssociation'
   properties:
   - type: OpenAPI
@@ -674,7 +679,8 @@ apis:
     — 1 operation(s) for #x amz target=route53resolver.getresolverquerylogconfigassociation.
   humanURL: https://aws.amazon.com/route53/
   baseURL: https://route53resolver.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=Route53Resolver.GetResolverQueryLogConfigAssociation'
   properties:
   - type: OpenAPI
@@ -697,7 +703,8 @@ apis:
     — 1 operation(s) for #x amz target=route53resolver.getresolverquerylogconfigpolicy.
   humanURL: https://aws.amazon.com/route53/
   baseURL: https://route53resolver.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=Route53Resolver.GetResolverQueryLogConfigPolicy'
   properties:
   - type: OpenAPI
@@ -874,7 +881,8 @@ apis:
     — 1 operation(s) for #x amz target=route53resolver.listfirewallrulegroupassociations.
   humanURL: https://aws.amazon.com/route53/
   baseURL: https://route53resolver.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=Route53Resolver.ListFirewallRuleGroupAssociations'
   properties:
   - type: OpenAPI
@@ -985,7 +993,8 @@ apis:
     — 1 operation(s) for #x amz target=route53resolver.listresolverendpointipaddresses.
   humanURL: https://aws.amazon.com/route53/
   baseURL: https://route53resolver.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=Route53Resolver.ListResolverEndpointIpAddresses'
   properties:
   - type: OpenAPI
@@ -1030,7 +1039,8 @@ apis:
     Resolver — 1 operation(s) for #x amz target=route53resolver.listresolverquerylogconfigassociations.
   humanURL: https://aws.amazon.com/route53/
   baseURL: https://route53resolver.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=Route53Resolver.ListResolverQueryLogConfigAssociations'
   properties:
   - type: OpenAPI
@@ -1163,7 +1173,8 @@ apis:
     — 1 operation(s) for #x amz target=route53resolver.putresolverquerylogconfigpolicy.
   humanURL: https://aws.amazon.com/route53/
   baseURL: https://route53resolver.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=Route53Resolver.PutResolverQueryLogConfigPolicy'
   properties:
   - type: OpenAPI
@@ -1317,7 +1328,8 @@ apis:
     — 1 operation(s) for #x amz target=route53resolver.updatefirewallrulegroupassociation.
   humanURL: https://aws.amazon.com/route53/
   baseURL: https://route53resolver.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=Route53Resolver.UpdateFirewallRuleGroupAssociation'
   properties:
   - type: OpenAPI
