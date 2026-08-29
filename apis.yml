@@ -1444,6 +1444,9 @@ apis:
   - type: FAQ
     url: https://aws.amazon.com/route53/faqs/
 common:
+  - type: CapabilityMap
+    url: capabilities/amazon-route53-resolver-capability-edges.yml
+    name: Amazon Route 53 Resolver Business Capability Map
   - type: PostmanWorkspace
     url: https://www.postman.com/kinlaneapi/amazon-route-53-resolver/overview
   - type: AgenticAccess

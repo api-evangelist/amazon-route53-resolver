@@ -1,0 +1,204 @@
+slug: amazon-route53-resolver
+provider: Amazon Route 53 Resolver
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 21
+edges:
+- tag: '#X Amz Target=Route53Resolver.ListResolverEndpointIpAddresses'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpointipaddresses-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.8
+  evidence: 'ListResolverEndpointIpAddresses ... schemas: IpAddressResponse, SubnetId, Ipv6, IpAddressStatus'
+  reason: Lists IP addresses/subnets of DNS resolver endpoints — plainly compute/network infrastructure
+    management.
+- tag: '#X Amz Target=Route53Resolver.ListResolverEndpoints'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpoints-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.8
+  evidence: ListResolverEndpoints; schemas SecurityGroupIds, ResolverEndpointDirection, IpAddressCount
+    — "DNS resolution between your VPC and your network over a Direct Connect or VPN connection"
+  reason: Operation lists DNS resolver endpoints attached to VPCs/networks — provisioning and inventory
+    of cloud network infrastructure, i.e. IT Infrastructure Management.
+- tag: '#X Amz Target=Route53Resolver.ListResolverRuleAssociations'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-listresolverruleassociations-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.8
+  evidence: ListResolverRuleAssociations; schemas ResolverRuleAssociation, ResolverRuleAssociationStatus
+  reason: Association of DNS forwarding rules to VPCs is network configuration of cloud infrastructure.
+- tag: '#X Amz Target=Route53Resolver.ListResolverRules'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-listresolverrules-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.8
+  evidence: ListResolverRules; schemas TargetAddress, DomainName, Port, ResolverRuleStatus
+  reason: Lists DNS conditional-forwarding rules and their target addresses — network/DNS infrastructure
+    configuration.
+- tag: '#X Amz Target=Route53Resolver.DeleteResolverEndpoint'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverendpoint-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.78
+  evidence: DeleteResolverEndpoint; schemas ResolverEndpoint, SecurityGroupIds, ResolverEndpointDirection,
+    IpAddressCount
+  reason: Manages inbound/outbound DNS resolver endpoints in VPC subnets — provisioning of network infrastructure
+    components.
+- tag: '#X Amz Target=Route53Resolver.DisassociateResolverEndpointIpAddress'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverendpointipaddress-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.78
+  evidence: DisassociateResolverEndpointIpAddress; schemas IpAddressUpdate, SubnetId, ResolverEndpoint
+  reason: Modifies IP addresses/subnets attached to a DNS resolver endpoint — network infrastructure management.
+- tag: '#X Amz Target=Route53Resolver.CreateResolverRule'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-createresolverrule-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: CreateResolverRule; schemas DomainName, TargetAddress, Ip, Port, ResolverRuleStatus
+  reason: Configures DNS forwarding rules for VPC/on-premises resolution — network infrastructure configuration,
+    i.e. IT Infrastructure Management, not a business-domain capability.
+- tag: '#X Amz Target=Route53Resolver.DeleteResolverRule'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverrule-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: DeleteResolverRule; schemas ResolverRule, DomainName, TargetAddress, RuleTypeOption
+  reason: Deletes DNS conditional-forwarding rules — network/DNS infrastructure configuration.
+- tag: '#X Amz Target=Route53Resolver.DisassociateResolverRule'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverrule-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: DisassociateResolverRule; schemas ResolverRuleAssociation, ResolverRuleAssociationStatus
+  reason: Detaches DNS resolver forwarding rules from VPCs — network/DNS infrastructure configuration,
+    not a business capability.
+- tag: '#X Amz Target=Route53Resolver.GetResolverEndpoint'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-getresolverendpoint-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: GetResolverEndpoint; schema ResolverEndpoint, ResolverEndpointDirection, SecurityGroupIds
+  reason: Manages inbound/outbound DNS resolver endpoints between VPC and on-premises networks — clearly
+    network/cloud infrastructure management.
+- tag: '#X Amz Target=Route53Resolver.GetResolverRuleAssociation'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-getresolverruleassociation-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: 'GetResolverRuleAssociation ... schemas: ResolverRuleAssociation, ResolverRuleAssociationStatus
+    — "configure DNS resolution between your VPC and your network over a Direct Connect or VPN connection"'
+  reason: Retrieving DNS resolver rule associations for VPCs is cloud network infrastructure configuration,
+    i.e. IT infrastructure management, not any industry business capability.
+- tag: '#X Amz Target=Route53Resolver.ListResolverConfigs'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-listresolverconfigs-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: 'ListResolverConfigs ... schemas: ResolverConfig, ResolverAutodefinedReverseStatus, ResolverConfigList'
+  reason: Per-VPC DNS resolver configuration listing — cloud/network infrastructure management.
+- tag: '#X Amz Target=Route53Resolver.UpdateResolverEndpoint'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-updateresolverendpoint-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: UpdateResolverEndpoint ... ResolverEndpointDirection, SecurityGroupIds, UpdateIpAddresses
+  reason: Manages inbound/outbound DNS resolver endpoints and their IP addresses — clearly cloud network
+    infrastructure management.
+- tag: '#X Amz Target=Route53Resolver.UpdateResolverRule'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-updateresolverrule-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: UpdateResolverRule ... ResolverRuleConfig, TargetAddress, DomainName
+  reason: DNS forwarding rule configuration for hybrid networks — network infrastructure management.
+- tag: '#X Amz Target=Route53Resolver.CreateResolverEndpoint'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-createresolverendpoint-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.7
+  evidence: CreateResolverEndpoint; schemas ResolverEndpointDirection, SecurityGroupIds, SubnetId, IpAddressCount,
+    ResolverEndpointStatus
+  reason: Provisions inbound/outbound DNS resolver endpoints in VPC subnets — cloud network infrastructure
+    provisioning, i.e. IT Infrastructure Management.
+- tag: '#X Amz Target=Route53Resolver.GetFirewallConfig'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-getfirewallconfig-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.7
+  evidence: GetFirewallConfig; schema FirewallConfig, FirewallFailOpenStatus — 'DNS resolution within
+    the VPC from Route 53 Resolver'
+  reason: AWS cloud networking/DNS firewall configuration is cloud infrastructure management; DNS Firewall
+    config leans infrastructure rather than corporate cybersecurity programme, so mapped to IT Infrastructure
+    Management with moderate confidence.
+- tag: '#X Amz Target=Route53Resolver.GetResolverConfig'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-getresolverconfig-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.7
+  evidence: GetResolverConfig; schema ResolverConfig, ResolverAutodefinedReverseStatus
+  reason: DNS resolver configuration retrieval for VPCs — plainly cloud network infrastructure management.
+- tag: '#X Amz Target=Route53Resolver.GetResolverRule'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-getresolverrule-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.7
+  evidence: GetResolverRule; schema ResolverRule, TargetAddress, DomainName, RuleTypeOption
+  reason: DNS forwarding rule retrieval — conditional forwarding configuration in hybrid cloud networking,
+    i.e. cloud/network infrastructure management.
+- tag: '#X Amz Target=Route53Resolver.ListResolverDnssecConfigs'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-listresolverdnssecconfigs-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.7
+  evidence: 'ListResolverDnssecConfigs ... schemas: ResolverDnssecConfig, ResolverDNSSECValidationStatus'
+  reason: DNSSEC validation configuration for the resolver is DNS/network infrastructure configuration
+    in the cloud platform.
+- tag: '#X Amz Target=Route53Resolver.UpdateFirewallDomains'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-updatefirewalldomains-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.7
+  evidence: POST /#X-Amz-Target=Route53Resolver.UpdateFirewallDomains ... schemas FirewallDomains, FirewallDomainListStatus
+  reason: AWS DNS Firewall domain list management — cloud network infrastructure configuration. Arguably
+    security filtering, but the operation manages DNS infrastructure resources, so IT Infrastructure Management
+    is the honest mapping.
+- tag: '#X Amz Target=Route53Resolver.UpdateResolverConfig'
+  spec_file: amazon-route53-resolver-x-amz-target-route53resolver-updateresolverconfig-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.7
+  evidence: UpdateResolverConfig ... ResolverConfig, ResolverAutodefinedReverseStatus
+  reason: Configures DNS resolver behaviour for a VPC — cloud/network infrastructure management.
