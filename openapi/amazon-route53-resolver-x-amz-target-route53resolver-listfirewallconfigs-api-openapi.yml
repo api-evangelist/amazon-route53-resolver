@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.ListFirewallConfigs API'
+  title: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.ListFirewallConfigs #X Amz Target=Route53Resolver.ListFirewallConfigs #X Amz Target=Route53Resolver.ListFirewallConfigs API'
   description: <p>When you create a VPC using Amazon VPC, you automatically get DNS resolution within the VPC from Route 53 Resolver. By default, Resolver answers DNS queries for VPC domain names such as domain names for EC2 instances or Elastic Load Balancing load balancers. Resolver performs recursive lookups against public name servers for all other domain names.</p> <p>You can also configure DNS resolution between your VPC and your network over a Direct Connect or VPN connection:</p> <p> <b>Forward DNS queries from resolvers on your network to Route 53 Resolver</b> </p> <p>DNS resolvers on your network can forward DNS queries to Resolver in a specified VPC. This allows your DNS resolvers to easily resolve domain names for Amazon Web Services resources such as EC2 instances or records in a Route 53 private hosted zone. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-network-to-vpc">How DNS Resolvers on Your Network Forward DNS Queries to Route 53 Resolver</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p> <b>Conditionally forward queries from a VPC to resolvers on your network</b> </p> <p>You can configure Resolver to forward queries that it receives from EC2 instances in your VPCs to DNS resolvers on your network. To forward selected queries, you create Resolver rules that specify the domain names for the DNS queries that you want to forward (such as example.com), and the IP addresses of the DNS resolvers on your network that you want to forward the queries to. If a query matches multiple rules (example.com, acme.example.com), Resolver chooses the rule with the most specific match (acme.example.com) and forwards the query to the IP addresses that you specified in that rule. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-vpc-to-network">How Route 53 Resolver Forwards DNS Queries from Your VPCs to Your Network</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p>Like Amazon VPC, Resolver is Regional. In each Region where you have VPCs, you can choose whether to forward queries from your VPCs to your network (outbound queries), from your network to your VPCs (inbound queries), or both.</p>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -186,23 +186,31 @@ paths:
       - '#X Amz Target=Route53Resolver.ListFirewallConfigs'
 components:
   schemas:
-    ListFirewallConfigsRequest:
+    ThrottlingException: {}
+    FirewallFailOpenStatus:
+      type: string
+      enum:
+      - ENABLED
+      - DISABLED
+      - USE_LOCAL_RESOURCE_SETTING
+    AccessDeniedException: {}
+    InternalServiceErrorException: {}
+    ValidationException: {}
+    AccountId:
+      type: string
+      minLength: 12
+      maxLength: 32
+    ListFirewallConfigsResponse:
       type: object
-      title: ListFirewallConfigsRequest
       properties:
-        MaxResults:
-          allOf:
-          - $ref: '#/components/schemas/ListFirewallConfigsMaxResult'
-          - description: <p>The maximum number of objects that you want Resolver to return for this request. If more objects are available, in the response, Resolver provides a <code>NextToken</code> value that you can use in a subsequent call to get the next batch of objects.</p> <p>If you don't specify a value for <code>MaxResults</code>, Resolver returns up to 100 objects. </p>
         NextToken:
           allOf:
           - $ref: '#/components/schemas/NextToken'
-          - description: <p>For the first call to this list request, omit this value.</p> <p>When you request a list of objects, Resolver returns at most the number of objects specified in <code>MaxResults</code>. If more objects are available for retrieval, Resolver returns a <code>NextToken</code> value in the response. To retrieve the next batch of objects, use the token that was returned for the prior request in your next request.</p>
-    ThrottlingException: {}
-    ListFirewallConfigsMaxResult:
-      type: integer
-      minimum: 5
-      maximum: 10
+          - description: If objects are still available for retrieval, Resolver returns this token in the response. To retrieve the next batch of objects, provide this token in your next request.
+        FirewallConfigs:
+          allOf:
+          - $ref: '#/components/schemas/FirewallConfigList'
+          - description: 'The configurations for the firewall behavior provided by DNS Firewall for VPCs from Amazon Virtual Private Cloud (Amazon VPC). '
     FirewallConfig:
       type: object
       properties:
@@ -223,55 +231,35 @@ components:
           - $ref: '#/components/schemas/FirewallFailOpenStatus'
           - description: <p>Determines how DNS Firewall operates during failures, for example when all traffic that is sent to DNS Firewall fails to receive a reply. </p> <ul> <li> <p>By default, fail open is disabled, which means the failure mode is closed. This approach favors security over availability. DNS Firewall returns a failure error when it is unable to properly evaluate a query. </p> </li> <li> <p>If you enable this option, the failure mode is open. This approach favors availability over security. DNS Firewall allows queries to proceed if it is unable to properly evaluate them. </p> </li> </ul> <p>This behavior is only enforced for VPCs that have at least one DNS Firewall rule group association. </p>
       description: 'Configuration of the firewall behavior provided by DNS Firewall for a single VPC from Amazon Virtual Private Cloud (Amazon VPC). '
-    ResourceId:
-      type: string
-      minLength: 1
-      maxLength: 64
-    InternalServiceErrorException: {}
+    ListFirewallConfigsMaxResult:
+      type: integer
+      minimum: 5
+      maximum: 10
     NextToken:
       type: string
     FirewallConfigList:
       type: array
       items:
         $ref: '#/components/schemas/FirewallConfig'
-    AccessDeniedException: {}
-    FirewallFailOpenStatus:
+    ResourceId:
       type: string
-      enum:
-      - ENABLED
-      - DISABLED
-      - USE_LOCAL_RESOURCE_SETTING
-    AccountId:
-      type: string
-      minLength: 12
-      maxLength: 32
-    ValidationException: {}
-    ListFirewallConfigsResponse:
+      minLength: 1
+      maxLength: 64
+    ListFirewallConfigsRequest:
       type: object
+      title: ListFirewallConfigsRequest
       properties:
+        MaxResults:
+          allOf:
+          - $ref: '#/components/schemas/ListFirewallConfigsMaxResult'
+          - description: <p>The maximum number of objects that you want Resolver to return for this request. If more objects are available, in the response, Resolver provides a <code>NextToken</code> value that you can use in a subsequent call to get the next batch of objects.</p> <p>If you don't specify a value for <code>MaxResults</code>, Resolver returns up to 100 objects. </p>
         NextToken:
           allOf:
           - $ref: '#/components/schemas/NextToken'
-          - description: If objects are still available for retrieval, Resolver returns this token in the response. To retrieve the next batch of objects, provide this token in your next request.
-        FirewallConfigs:
-          allOf:
-          - $ref: '#/components/schemas/FirewallConfigList'
-          - description: 'The configurations for the firewall behavior provided by DNS Firewall for VPCs from Amazon Virtual Private Cloud (Amazon VPC). '
+          - description: <p>For the first call to this list request, omit this value.</p> <p>When you request a list of objects, Resolver returns at most the number of objects specified in <code>MaxResults</code>. If more objects are available for retrieval, Resolver returns a <code>NextToken</code> value in the response. To retrieve the next batch of objects, use the token that was returned for the prior request in your next request.</p>
   parameters:
     X-Amz-Credential:
       name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
       in: header
       schema:
         type: string
@@ -282,8 +270,20 @@ components:
       schema:
         type: string
       required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Security-Token:
       name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
       in: header
       schema:
         type: string
