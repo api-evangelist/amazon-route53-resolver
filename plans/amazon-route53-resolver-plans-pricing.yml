@@ -10,6 +10,10 @@ provenance:
   grounding: every price_text was found verbatim in the fetched page text
 audience: developer-api
 pricing_basis: usage-other
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-09-20'
 published: true
 note: AWS Route 53 pricing page covering hosted zones, queries, health checks, Resolver endpoints, Profiles,
   and DNS Firewall; GovCloud query rates also listed. Domain registration prices vary by TLD (linked list).
