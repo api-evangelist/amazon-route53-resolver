@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2018-04-01'
   x-release: v4
-  title: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.CreateResolverQueryLogConfig #X Amz Target=Route53Resolver.CreateResolverQueryLogConfig #X Amz Target=Route53Resolver.CreateResolverQueryLogConfig API'
-  description: <p>When you create a VPC using Amazon VPC, you automatically get DNS resolution within the VPC from Route 53 Resolver. By default, Resolver answers DNS queries for VPC domain names such as domain names for EC2 instances or Elastic Load Balancing load balancers. Resolver performs recursive lookups against public name servers for all other domain names.</p> <p>You can also configure DNS resolution between your VPC and your network over a Direct Connect or VPN connection:</p> <p> <b>Forward DNS queries from resolvers on your network to Route 53 Resolver</b> </p> <p>DNS resolvers on your network can forward DNS queries to Resolver in a specified VPC. This allows your DNS resolvers to easily resolve domain names for Amazon Web Services resources such as EC2 instances or records in a Route 53 private hosted zone. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-network-to-vpc">How DNS Resolvers on Your Network Forward DNS Queries to Route 53 Resolver</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p> <b>Conditionally forward queries from a VPC to resolvers on your network</b> </p> <p>You can configure Resolver to forward queries that it receives from EC2 instances in your VPCs to DNS resolvers on your network. To forward selected queries, you create Resolver rules that specify the domain names for the DNS queries that you want to forward (such as example.com), and the IP addresses of the DNS resolvers on your network that you want to forward the queries to. If a query matches multiple rules (example.com, acme.example.com), Resolver chooses the rule with the most specific match (acme.example.com) and forwards the query to the IP addresses that you specified in that rule. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-vpc-to-network">How Route 53 Resolver Forwards DNS Queries from Your VPCs to Your Network</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p>Like Amazon VPC, Resolver is Regional. In each Region where you have VPCs, you can choose whether to forward queries from your VPCs to your network (outbound queries), from your network to your VPCs (inbound queries), or both.</p>
+  title: 'Amazon Route 53 Resolver #X Amz…'
+  description: When you create a VPC using Amazon VPC, you automatically get DNS resolution within the VPC from Route 53 Resolver.
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +23,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/route53resolver-2018-04-01.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -124,7 +125,13 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: CreateResolverQueryLogConfig
-      description: <p>Creates a Resolver query logging configuration, which defines where you want Resolver to save DNS query logs that originate in your VPCs. Resolver can log queries only for VPCs that are in the same Region as the query logging configuration.</p> <p>To specify which VPCs you want to log queries for, you use <code>AssociateResolverQueryLogConfig</code>. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_AssociateResolverQueryLogConfig.html">AssociateResolverQueryLogConfig</a>. </p> <p>You can optionally use Resource Access Manager (RAM) to share a query logging configuration with other Amazon Web Services accounts. The other accounts can then associate VPCs with the configuration. The query logs that Resolver creates for a configuration include all DNS queries that originate in all VPCs that are associated with the configuration.</p>
+      description: 'Creates a Resolver query logging configuration, which defines where you want Resolver to save DNS query logs that originate in your VPCs. Resolver can log queries only for VPCs that are in the same Region as the query logging configuration.
+
+
+        To specify which VPCs you want to log queries for, you use AssociateResolverQueryLogConfig. For more information, see AssociateResolverQueryLogConfig.
+
+
+        You can optionally use Resource Access Manager (RAM) to share a query logging configuration with other Amazon Web Services accounts. The other accounts can then associate VPCs with the configuration. The query logs that Resolver creates for a configuration include all DNS queries that originate in all VPCs that are associated with the configuration.'
       responses:
         '200':
           description: Success
@@ -196,61 +203,74 @@ paths:
           - Route53Resolver.CreateResolverQueryLogConfig
       tags:
       - '#X Amz Target=Route53Resolver.CreateResolverQueryLogConfig'
+      summary: Create resolver query log config
+      x-summary-source: derived
 components:
+  parameters:
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
-    ThrottlingException: {}
+    ResourceId:
+      type: string
+      minLength: 1
+      maxLength: 64
+    InternalServiceErrorException: {}
+    InvalidRequestException: {}
+    TagList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tag'
+      maxItems: 200
+    TagKey:
+      type: string
+      minLength: 1
+      maxLength: 128
     ShareStatus:
       type: string
       enum:
       - NOT_SHARED
       - SHARED_WITH_ME
       - SHARED_BY_ME
-    AccessDeniedException: {}
-    InternalServiceErrorException: {}
-    InvalidRequestException: {}
-    CreatorRequestId:
-      type: string
-      minLength: 1
-      maxLength: 255
-    AccountId:
-      type: string
-      minLength: 12
-      maxLength: 32
-    Rfc3339TimeString:
-      type: string
-      minLength: 20
-      maxLength: 40
-    TagValue:
-      type: string
-      minLength: 0
-      maxLength: 256
-    Tag:
-      type: object
-      required:
-      - Key
-      - Value
-      properties:
-        Key:
-          allOf:
-          - $ref: '#/components/schemas/TagKey'
-          - description: The name for the tag. For example, if you want to associate Resolver resources with the account IDs of your customers for billing purposes, the value of <code>Key</code> might be <code>account-id</code>.
-        Value:
-          allOf:
-          - $ref: '#/components/schemas/TagValue'
-          - description: The value for the tag. For example, if <code>Key</code> is <code>account-id</code>, then <code>Value</code> might be the ID of the customer account that you're creating the resource for.
-      description: One tag that you want to add to the specified resource. A tag consists of a <code>Key</code> (a name for the tag) and a <code>Value</code>.
-    ResolverQueryLogConfigStatus:
-      type: string
-      enum:
-      - CREATING
-      - CREATED
-      - DELETING
-      - FAILED
-    ResourceExistsException: {}
-    DestinationArn:
-      type: string
-      minLength: 1
-      maxLength: 600
     CreateResolverQueryLogConfigRequest:
       type: object
       required:
@@ -275,10 +295,10 @@ components:
           allOf:
           - $ref: '#/components/schemas/TagList'
           - description: A list of the tag keys and values that you want to associate with the query logging configuration.
-    TagKey:
+    CreatorRequestId:
       type: string
       minLength: 1
-      maxLength: 128
+      maxLength: 255
     ResolverQueryLogConfig:
       type: object
       properties:
@@ -323,11 +343,6 @@ components:
           - $ref: '#/components/schemas/Rfc3339TimeString'
           - description: The date and time that the query logging configuration was created, in Unix time format and Coordinated Universal Time (UTC).
       description: In the response to a <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_CreateResolverQueryLogConfig.html">CreateResolverQueryLogConfig</a>, <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DeleteResolverQueryLogConfig.html">DeleteResolverQueryLogConfig</a>, <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverQueryLogConfig.html">GetResolverQueryLogConfig</a>, or <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverQueryLogConfigs.html">ListResolverQueryLogConfigs</a> request, a complex type that contains settings for one query logging configuration.
-    ResourceId:
-      type: string
-      minLength: 1
-      maxLength: 64
-    LimitExceededException: {}
     CreateResolverQueryLogConfigResponse:
       type: object
       properties:
@@ -335,67 +350,61 @@ components:
           allOf:
           - $ref: '#/components/schemas/ResolverQueryLogConfig'
           - description: Information about the <code>CreateResolverQueryLogConfig</code> request, including the status of the request.
-    TagList:
-      type: array
-      items:
-        $ref: '#/components/schemas/Tag'
-      maxItems: 200
-    InvalidParameterException: {}
-    ResourceNotFoundException: {}
+    Tag:
+      type: object
+      required:
+      - Key
+      - Value
+      properties:
+        Key:
+          allOf:
+          - $ref: '#/components/schemas/TagKey'
+          - description: The name for the tag. For example, if you want to associate Resolver resources with the account IDs of your customers for billing purposes, the value of <code>Key</code> might be <code>account-id</code>.
+        Value:
+          allOf:
+          - $ref: '#/components/schemas/TagValue'
+          - description: The value for the tag. For example, if <code>Key</code> is <code>account-id</code>, then <code>Value</code> might be the ID of the customer account that you're creating the resource for.
+      description: One tag that you want to add to the specified resource. A tag consists of a <code>Key</code> (a name for the tag) and a <code>Value</code>.
+    ResolverQueryLogConfigStatus:
+      type: string
+      enum:
+      - CREATING
+      - CREATED
+      - DELETING
+      - FAILED
+    LimitExceededException: {}
+    AccountId:
+      type: string
+      minLength: 12
+      maxLength: 32
+    TagValue:
+      type: string
+      minLength: 0
+      maxLength: 256
+    DestinationArn:
+      type: string
+      minLength: 1
+      maxLength: 600
     Arn:
       type: string
       minLength: 1
       maxLength: 255
-    Count:
-      type: integer
+    ThrottlingException: {}
+    ResourceNotFoundException: {}
+    Rfc3339TimeString:
+      type: string
+      minLength: 20
+      maxLength: 40
+    ResourceExistsException: {}
+    AccessDeniedException: {}
     ResolverQueryLogConfigName:
       type: string
       pattern: (?!^[0-9]+$)([a-zA-Z0-9\-_' ']+)
       minLength: 1
       maxLength: 64
-  parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
+    InvalidParameterException: {}
+    Count:
+      type: integer
   securitySchemes:
     hmac:
       type: apiKey

@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2018-04-01'
   x-release: v4
-  title: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.AssociateResolverQueryLogConfig #X Amz Target=Route53Resolver.AssociateResolverQueryLogConfig #X Amz Target=Route53Resolver.AssociateResolverQueryLogConfig API'
-  description: <p>When you create a VPC using Amazon VPC, you automatically get DNS resolution within the VPC from Route 53 Resolver. By default, Resolver answers DNS queries for VPC domain names such as domain names for EC2 instances or Elastic Load Balancing load balancers. Resolver performs recursive lookups against public name servers for all other domain names.</p> <p>You can also configure DNS resolution between your VPC and your network over a Direct Connect or VPN connection:</p> <p> <b>Forward DNS queries from resolvers on your network to Route 53 Resolver</b> </p> <p>DNS resolvers on your network can forward DNS queries to Resolver in a specified VPC. This allows your DNS resolvers to easily resolve domain names for Amazon Web Services resources such as EC2 instances or records in a Route 53 private hosted zone. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-network-to-vpc">How DNS Resolvers on Your Network Forward DNS Queries to Route 53 Resolver</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p> <b>Conditionally forward queries from a VPC to resolvers on your network</b> </p> <p>You can configure Resolver to forward queries that it receives from EC2 instances in your VPCs to DNS resolvers on your network. To forward selected queries, you create Resolver rules that specify the domain names for the DNS queries that you want to forward (such as example.com), and the IP addresses of the DNS resolvers on your network that you want to forward the queries to. If a query matches multiple rules (example.com, acme.example.com), Resolver chooses the rule with the most specific match (acme.example.com) and forwards the query to the IP addresses that you specified in that rule. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-vpc-to-network">How Route 53 Resolver Forwards DNS Queries from Your VPCs to Your Network</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p>Like Amazon VPC, Resolver is Regional. In each Region where you have VPCs, you can choose whether to forward queries from your VPCs to your network (outbound queries), from your network to your VPCs (inbound queries), or both.</p>
+  title: 'Amazon Route 53 Resolver #X Amz…'
+  description: When you create a VPC using Amazon VPC, you automatically get DNS resolution within the VPC from Route 53 Resolver.
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +23,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/route53resolver-2018-04-01.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -124,7 +125,13 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: AssociateResolverQueryLogConfig
-      description: <p>Associates an Amazon VPC with a specified query logging configuration. Route 53 Resolver logs DNS queries that originate in all of the Amazon VPCs that are associated with a specified query logging configuration. To associate more than one VPC with a configuration, submit one <code>AssociateResolverQueryLogConfig</code> request for each VPC.</p> <note> <p>The VPCs that you associate with a query logging configuration must be in the same Region as the configuration.</p> </note> <p>To remove a VPC from a query logging configuration, see <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DisassociateResolverQueryLogConfig.html">DisassociateResolverQueryLogConfig</a>. </p>
+      description: 'Associates an Amazon VPC with a specified query logging configuration. Route 53 Resolver logs DNS queries that originate in all of the Amazon VPCs that are associated with a specified query logging configuration. To associate more than one VPC with a configuration, submit one AssociateResolverQueryLogConfig request for each VPC.
+
+
+        The VPCs that you associate with a query logging configuration must be in the same Region as the configuration.
+
+
+        To remove a VPC from a query logging configuration, see DisassociateResolverQueryLogConfig.'
       responses:
         '200':
           description: Success
@@ -196,9 +203,90 @@ paths:
           - Route53Resolver.AssociateResolverQueryLogConfig
       tags:
       - '#X Amz Target=Route53Resolver.AssociateResolverQueryLogConfig'
+      summary: Associate resolver query log config
+      x-summary-source: derived
 components:
+  parameters:
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
-    ThrottlingException: {}
+    ResourceId:
+      type: string
+      minLength: 1
+      maxLength: 64
+    InternalServiceErrorException: {}
+    InvalidRequestException: {}
+    ResolverQueryLogConfigAssociationStatus:
+      type: string
+      enum:
+      - CREATING
+      - ACTIVE
+      - ACTION_NEEDED
+      - DELETING
+      - FAILED
+    AssociateResolverQueryLogConfigRequest:
+      type: object
+      required:
+      - ResolverQueryLogConfigId
+      - ResourceId
+      title: AssociateResolverQueryLogConfigRequest
+      properties:
+        ResolverQueryLogConfigId:
+          allOf:
+          - $ref: '#/components/schemas/ResourceId'
+          - description: The ID of the query logging configuration that you want to associate a VPC with.
+        ResourceId:
+          allOf:
+          - $ref: '#/components/schemas/ResourceId'
+          - description: <p>The ID of an Amazon VPC that you want this query logging configuration to log queries for.</p> <note> <p>The VPCs and the query logging configuration must be in the same Region.</p> </note>
+    LimitExceededException: {}
+    AssociateResolverQueryLogConfigResponse:
+      type: object
+      properties:
+        ResolverQueryLogConfigAssociation:
+          allOf:
+          - $ref: '#/components/schemas/ResolverQueryLogConfigAssociation'
+          - description: A complex type that contains settings for a specified association between an Amazon VPC and a query logging configuration.
     ResolverQueryLogConfigAssociation:
       type: object
       properties:
@@ -231,38 +319,12 @@ components:
           - $ref: '#/components/schemas/Rfc3339TimeString'
           - description: The date and time that the VPC was associated with the query logging configuration, in Unix time format and Coordinated Universal Time (UTC).
       description: In the response to an <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_AssociateResolverQueryLogConfig.html">AssociateResolverQueryLogConfig</a>, <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DisassociateResolverQueryLogConfig.html">DisassociateResolverQueryLogConfig</a>, <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverQueryLogConfigAssociation.html">GetResolverQueryLogConfigAssociation</a>, or <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverQueryLogConfigAssociations.html">ListResolverQueryLogConfigAssociations</a>, request, a complex type that contains settings for a specified association between an Amazon VPC and a query logging configuration.
-    ResolverQueryLogConfigAssociationErrorMessage:
-      type: string
-    AccessDeniedException: {}
-    InternalServiceErrorException: {}
-    InvalidRequestException: {}
+    ThrottlingException: {}
+    ResourceNotFoundException: {}
     Rfc3339TimeString:
       type: string
       minLength: 20
       maxLength: 40
-    AssociateResolverQueryLogConfigResponse:
-      type: object
-      properties:
-        ResolverQueryLogConfigAssociation:
-          allOf:
-          - $ref: '#/components/schemas/ResolverQueryLogConfigAssociation'
-          - description: A complex type that contains settings for a specified association between an Amazon VPC and a query logging configuration.
-    AssociateResolverQueryLogConfigRequest:
-      type: object
-      required:
-      - ResolverQueryLogConfigId
-      - ResourceId
-      title: AssociateResolverQueryLogConfigRequest
-      properties:
-        ResolverQueryLogConfigId:
-          allOf:
-          - $ref: '#/components/schemas/ResourceId'
-          - description: The ID of the query logging configuration that you want to associate a VPC with.
-        ResourceId:
-          allOf:
-          - $ref: '#/components/schemas/ResourceId'
-          - description: <p>The ID of an Amazon VPC that you want this query logging configuration to log queries for.</p> <note> <p>The VPCs and the query logging configuration must be in the same Region.</p> </note>
-    ResourceExistsException: {}
     ResolverQueryLogConfigAssociationError:
       type: string
       enum:
@@ -270,64 +332,11 @@ components:
       - DESTINATION_NOT_FOUND
       - ACCESS_DENIED
       - INTERNAL_SERVICE_ERROR
-    ResourceId:
-      type: string
-      minLength: 1
-      maxLength: 64
-    LimitExceededException: {}
+    ResourceExistsException: {}
+    AccessDeniedException: {}
     InvalidParameterException: {}
-    ResourceNotFoundException: {}
-    ResolverQueryLogConfigAssociationStatus:
+    ResolverQueryLogConfigAssociationErrorMessage:
       type: string
-      enum:
-      - CREATING
-      - ACTIVE
-      - ACTION_NEEDED
-      - DELETING
-      - FAILED
-  parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
   securitySchemes:
     hmac:
       type: apiKey

@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2018-04-01'
   x-release: v4
-  title: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.GetFirewallRuleGroupAssociation #X Amz Target=Route53Resolver.GetFirewallRuleGroupAssociation #X Amz Target=Route53Resolver.GetFirewallRuleGroupAssociation API'
-  description: <p>When you create a VPC using Amazon VPC, you automatically get DNS resolution within the VPC from Route 53 Resolver. By default, Resolver answers DNS queries for VPC domain names such as domain names for EC2 instances or Elastic Load Balancing load balancers. Resolver performs recursive lookups against public name servers for all other domain names.</p> <p>You can also configure DNS resolution between your VPC and your network over a Direct Connect or VPN connection:</p> <p> <b>Forward DNS queries from resolvers on your network to Route 53 Resolver</b> </p> <p>DNS resolvers on your network can forward DNS queries to Resolver in a specified VPC. This allows your DNS resolvers to easily resolve domain names for Amazon Web Services resources such as EC2 instances or records in a Route 53 private hosted zone. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-network-to-vpc">How DNS Resolvers on Your Network Forward DNS Queries to Route 53 Resolver</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p> <b>Conditionally forward queries from a VPC to resolvers on your network</b> </p> <p>You can configure Resolver to forward queries that it receives from EC2 instances in your VPCs to DNS resolvers on your network. To forward selected queries, you create Resolver rules that specify the domain names for the DNS queries that you want to forward (such as example.com), and the IP addresses of the DNS resolvers on your network that you want to forward the queries to. If a query matches multiple rules (example.com, acme.example.com), Resolver chooses the rule with the most specific match (acme.example.com) and forwards the query to the IP addresses that you specified in that rule. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-vpc-to-network">How Route 53 Resolver Forwards DNS Queries from Your VPCs to Your Network</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p>Like Amazon VPC, Resolver is Regional. In each Region where you have VPCs, you can choose whether to forward queries from your VPCs to your network (outbound queries), from your network to your VPCs (inbound queries), or both.</p>
+  title: 'Amazon Route 53 Resolver #X Amz…'
+  description: When you create a VPC using Amazon VPC, you automatically get DNS resolution within the VPC from Route 53 Resolver.
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +23,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/route53resolver-2018-04-01.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -172,19 +173,114 @@ paths:
           - Route53Resolver.GetFirewallRuleGroupAssociation
       tags:
       - '#X Amz Target=Route53Resolver.GetFirewallRuleGroupAssociation'
+      summary: Get firewall rule group association
+      x-summary-source: derived
 components:
+  parameters:
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
-    ThrottlingException: {}
+    MutationProtectionStatus:
+      type: string
+      enum:
+      - ENABLED
+      - DISABLED
+    InternalServiceErrorException: {}
+    ResourceId:
+      type: string
+      minLength: 1
+      maxLength: 64
+    GetFirewallRuleGroupAssociationRequest:
+      type: object
+      required:
+      - FirewallRuleGroupAssociationId
+      title: GetFirewallRuleGroupAssociationRequest
+      properties:
+        FirewallRuleGroupAssociationId:
+          allOf:
+          - $ref: '#/components/schemas/ResourceId'
+          - description: 'The identifier of the <a>FirewallRuleGroupAssociation</a>. '
+    CreatorRequestId:
+      type: string
+      minLength: 1
+      maxLength: 255
     Name:
       type: string
       pattern: (?!^[0-9]+$)([a-zA-Z0-9\-_' ']+)
       maxLength: 64
-    AccessDeniedException: {}
-    InternalServiceErrorException: {}
+    StatusMessage:
+      type: string
+      maxLength: 255
+    Priority:
+      type: integer
+    Arn:
+      type: string
+      minLength: 1
+      maxLength: 255
     ServicePrinciple:
       type: string
       minLength: 1
       maxLength: 512
+    ThrottlingException: {}
+    ResourceNotFoundException: {}
+    Rfc3339TimeString:
+      type: string
+      minLength: 20
+      maxLength: 40
+    FirewallRuleGroupAssociationStatus:
+      type: string
+      enum:
+      - COMPLETE
+      - DELETING
+      - UPDATING
+    AccessDeniedException: {}
+    GetFirewallRuleGroupAssociationResponse:
+      type: object
+      properties:
+        FirewallRuleGroupAssociation:
+          allOf:
+          - $ref: '#/components/schemas/FirewallRuleGroupAssociation'
+          - description: 'The association that you requested. '
     FirewallRuleGroupAssociation:
       type: object
       properties:
@@ -241,99 +337,6 @@ components:
           - $ref: '#/components/schemas/Rfc3339TimeString'
           - description: The date and time that the association was last modified, in Unix time format and Coordinated Universal Time (UTC).
       description: 'An association between a firewall rule group and a VPC, which enables DNS filtering for the VPC. '
-    CreatorRequestId:
-      type: string
-      minLength: 1
-      maxLength: 255
-    Rfc3339TimeString:
-      type: string
-      minLength: 20
-      maxLength: 40
-    MutationProtectionStatus:
-      type: string
-      enum:
-      - ENABLED
-      - DISABLED
-    ResourceId:
-      type: string
-      minLength: 1
-      maxLength: 64
-    Priority:
-      type: integer
-    StatusMessage:
-      type: string
-      maxLength: 255
-    ResourceNotFoundException: {}
-    Arn:
-      type: string
-      minLength: 1
-      maxLength: 255
-    FirewallRuleGroupAssociationStatus:
-      type: string
-      enum:
-      - COMPLETE
-      - DELETING
-      - UPDATING
-    GetFirewallRuleGroupAssociationRequest:
-      type: object
-      required:
-      - FirewallRuleGroupAssociationId
-      title: GetFirewallRuleGroupAssociationRequest
-      properties:
-        FirewallRuleGroupAssociationId:
-          allOf:
-          - $ref: '#/components/schemas/ResourceId'
-          - description: 'The identifier of the <a>FirewallRuleGroupAssociation</a>. '
-    GetFirewallRuleGroupAssociationResponse:
-      type: object
-      properties:
-        FirewallRuleGroupAssociation:
-          allOf:
-          - $ref: '#/components/schemas/FirewallRuleGroupAssociation'
-          - description: 'The association that you requested. '
-  parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
   securitySchemes:
     hmac:
       type: apiKey

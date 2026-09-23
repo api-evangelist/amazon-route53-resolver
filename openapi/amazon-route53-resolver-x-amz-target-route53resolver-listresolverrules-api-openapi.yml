@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2018-04-01'
   x-release: v4
-  title: 'Amazon Route 53 Resolver #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.AssociateFirewallRuleGroup #X Amz Target=Route53Resolver.ListResolverRules #X Amz Target=Route53Resolver.ListResolverRules #X Amz Target=Route53Resolver.ListResolverRules API'
-  description: <p>When you create a VPC using Amazon VPC, you automatically get DNS resolution within the VPC from Route 53 Resolver. By default, Resolver answers DNS queries for VPC domain names such as domain names for EC2 instances or Elastic Load Balancing load balancers. Resolver performs recursive lookups against public name servers for all other domain names.</p> <p>You can also configure DNS resolution between your VPC and your network over a Direct Connect or VPN connection:</p> <p> <b>Forward DNS queries from resolvers on your network to Route 53 Resolver</b> </p> <p>DNS resolvers on your network can forward DNS queries to Resolver in a specified VPC. This allows your DNS resolvers to easily resolve domain names for Amazon Web Services resources such as EC2 instances or records in a Route 53 private hosted zone. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-network-to-vpc">How DNS Resolvers on Your Network Forward DNS Queries to Route 53 Resolver</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p> <b>Conditionally forward queries from a VPC to resolvers on your network</b> </p> <p>You can configure Resolver to forward queries that it receives from EC2 instances in your VPCs to DNS resolvers on your network. To forward selected queries, you create Resolver rules that specify the domain names for the DNS queries that you want to forward (such as example.com), and the IP addresses of the DNS resolvers on your network that you want to forward the queries to. If a query matches multiple rules (example.com, acme.example.com), Resolver chooses the rule with the most specific match (acme.example.com) and forwards the query to the IP addresses that you specified in that rule. For more information, see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-vpc-to-network">How Route 53 Resolver Forwards DNS Queries from Your VPCs to Your Network</a> in the <i>Amazon Route 53 Developer Guide</i>.</p> <p>Like Amazon VPC, Resolver is Regional. In each Region where you have VPCs, you can choose whether to forward queries from your VPCs to your network (outbound queries), from your network to your VPCs (inbound queries), or both.</p>
+  title: 'Amazon Route 53 Resolver #X Amz…'
+  description: When you create a VPC using Amazon VPC, you automatically get DNS resolution within the VPC from Route 53 Resolver.
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +23,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/route53resolver-2018-04-01.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -190,69 +191,125 @@ paths:
           - Route53Resolver.ListResolverRules
       tags:
       - '#X Amz Target=Route53Resolver.ListResolverRules'
+      summary: List resolver rules
+      x-summary-source: derived
 components:
+  parameters:
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
-    Ip:
+    DomainName:
       type: string
-      minLength: 7
-      maxLength: 36
-    MaxResults:
-      type: integer
-      minimum: 1
-      maximum: 100
-    ThrottlingException: {}
-    ResolverRuleStatus:
+      minLength: 1
+      maxLength: 256
+    ResourceId:
       type: string
-      enum:
-      - COMPLETE
-      - DELETING
-      - UPDATING
-      - FAILED
-    ResolverRules:
-      type: array
-      items:
-        $ref: '#/components/schemas/ResolverRule'
-    TargetAddress:
+      minLength: 1
+      maxLength: 64
+    InternalServiceErrorException: {}
+    InvalidRequestException: {}
+    ListResolverRulesResponse:
       type: object
       properties:
-        Ip:
+        NextToken:
           allOf:
-          - $ref: '#/components/schemas/Ip'
-          - description: One IPv4 address that you want to forward DNS queries to.
-        Port:
+          - $ref: '#/components/schemas/NextToken'
+          - description: 'If more than <code>MaxResults</code> Resolver rules match the specified criteria, you can submit another <code>ListResolverRules</code> request to get the next group of results. In the next request, specify the value of <code>NextToken</code> from the previous response. '
+        MaxResults:
           allOf:
-          - $ref: '#/components/schemas/Port'
-          - description: The port at <code>Ip</code> that you want to forward DNS queries to.
-        Ipv6:
+          - $ref: '#/components/schemas/MaxResults'
+          - description: The value that you specified for <code>MaxResults</code> in the request.
+        ResolverRules:
           allOf:
-          - $ref: '#/components/schemas/Ipv6'
-          - description: ' One IPv6 address that you want to forward DNS queries to. '
-      description: In a <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_CreateResolverRule.html">CreateResolverRule</a> request, an array of the IPs that you want to forward DNS queries to.
+          - $ref: '#/components/schemas/ResolverRules'
+          - description: The Resolver rules that were created using the current Amazon Web Services account and that match the specified filters, if any.
     ShareStatus:
       type: string
       enum:
       - NOT_SHARED
       - SHARED_WITH_ME
       - SHARED_BY_ME
+    FilterValue:
+      type: string
+      minLength: 1
+      maxLength: 600
+    CreatorRequestId:
+      type: string
+      minLength: 1
+      maxLength: 255
+    AccountId:
+      type: string
+      minLength: 12
+      maxLength: 32
     FilterName:
       type: string
       minLength: 1
       maxLength: 64
-    TargetList:
-      type: array
-      items:
-        $ref: '#/components/schemas/TargetAddress'
-      minItems: 1
     Name:
       type: string
       pattern: (?!^[0-9]+$)([a-zA-Z0-9\-_' ']+)
       maxLength: 64
+    StatusMessage:
+      type: string
+      maxLength: 255
     Port:
       type: integer
       minimum: 0
       maximum: 65535
-    InternalServiceErrorException: {}
-    InvalidRequestException: {}
+    FilterValues:
+      type: array
+      items:
+        $ref: '#/components/schemas/FilterValue'
+    InvalidNextTokenException: {}
+    Arn:
+      type: string
+      minLength: 1
+      maxLength: 255
+    Ip:
+      type: string
+      minLength: 7
+      maxLength: 36
+    ThrottlingException: {}
     ListResolverRulesRequest:
       type: object
       title: ListResolverRulesRequest
@@ -269,22 +326,17 @@ components:
           allOf:
           - $ref: '#/components/schemas/Filters'
           - description: <p>An optional specification to return a subset of Resolver rules, such as all Resolver rules that are associated with the same Resolver endpoint.</p> <note> <p>If you submit a second or subsequent <code>ListResolverRules</code> request and specify the <code>NextToken</code> parameter, you must use the same values for <code>Filters</code>, if any, as in the previous request.</p> </note>
-    CreatorRequestId:
-      type: string
-      minLength: 1
-      maxLength: 255
-    DomainName:
-      type: string
-      minLength: 1
-      maxLength: 256
-    AccountId:
-      type: string
-      minLength: 12
-      maxLength: 32
     Rfc3339TimeString:
       type: string
       minLength: 20
       maxLength: 40
+    ResolverRuleStatus:
+      type: string
+      enum:
+      - COMPLETE
+      - DELETING
+      - UPDATING
+      - FAILED
     Filter:
       type: object
       properties:
@@ -297,20 +349,41 @@ components:
           - $ref: '#/components/schemas/FilterValues'
           - description: When you're using a <code>List</code> operation and you want the operation to return a subset of objects, such as Resolver endpoints or Resolver rules, the value of the parameter that you want to use to filter objects. For example, to list only inbound Resolver endpoints, specify <code>Direction</code> for <code>Name</code> and specify <code>INBOUND</code> for <code>Values</code>.
       description: <p>For Resolver list operations (<a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverEndpoints.html">ListResolverEndpoints</a>, <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverRules.html">ListResolverRules</a>, <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverRuleAssociations.html">ListResolverRuleAssociations</a>, <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverQueryLogConfigs.html">ListResolverQueryLogConfigs</a>, <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverQueryLogConfigAssociations.html">ListResolverQueryLogConfigAssociations</a>), and <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverDnssecConfigs.html">ListResolverDnssecConfigs</a>), an optional specification to return a subset of objects.</p> <p>To filter objects, such as Resolver endpoints or Resolver rules, you specify <code>Name</code> and <code>Values</code>. For example, to list only inbound Resolver endpoints, specify <code>Direction</code> for <code>Name</code> and specify <code>INBOUND</code> for <code>Values</code>. </p>
-    FilterValue:
-      type: string
-      minLength: 1
-      maxLength: 600
-    Ipv6:
-      type: string
-      minLength: 7
-      maxLength: 39
-    Filters:
+    TargetList:
       type: array
       items:
-        $ref: '#/components/schemas/Filter'
-    NextToken:
+        $ref: '#/components/schemas/TargetAddress'
+      minItems: 1
+    TargetAddress:
+      type: object
+      properties:
+        Ip:
+          allOf:
+          - $ref: '#/components/schemas/Ip'
+          - description: One IPv4 address that you want to forward DNS queries to.
+        Port:
+          allOf:
+          - $ref: '#/components/schemas/Port'
+          - description: The port at <code>Ip</code> that you want to forward DNS queries to.
+        Ipv6:
+          allOf:
+          - $ref: '#/components/schemas/Ipv6'
+          - description: ' One IPv6 address that you want to forward DNS queries to. '
+      description: In a <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_CreateResolverRule.html">CreateResolverRule</a> request, an array of the IPs that you want to forward DNS queries to.
+    RuleTypeOption:
       type: string
+      enum:
+      - FORWARD
+      - SYSTEM
+      - RECURSIVE
+    ResolverRules:
+      type: array
+      items:
+        $ref: '#/components/schemas/ResolverRule'
+    MaxResults:
+      type: integer
+      minimum: 1
+      maximum: 100
     ResolverRule:
       type: object
       properties:
@@ -371,87 +444,17 @@ components:
           - $ref: '#/components/schemas/Rfc3339TimeString'
           - description: The date and time that the Resolver rule was last updated, in Unix time format and Coordinated Universal Time (UTC).
       description: For queries that originate in your VPC, detailed information about a Resolver rule, which specifies how to route DNS queries out of the VPC. The <code>ResolverRule</code> parameter appears in the response to a <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_CreateResolverRule.html">CreateResolverRule</a>, <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_DeleteResolverRule.html">DeleteResolverRule</a>, <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_GetResolverRule.html">GetResolverRule</a>, <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_ListResolverRules.html">ListResolverRules</a>, or <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_UpdateResolverRule.html">UpdateResolverRule</a> request.
-    RuleTypeOption:
-      type: string
-      enum:
-      - FORWARD
-      - SYSTEM
-      - RECURSIVE
-    ResourceId:
-      type: string
-      minLength: 1
-      maxLength: 64
-    StatusMessage:
-      type: string
-      maxLength: 255
-    ListResolverRulesResponse:
-      type: object
-      properties:
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/NextToken'
-          - description: 'If more than <code>MaxResults</code> Resolver rules match the specified criteria, you can submit another <code>ListResolverRules</code> request to get the next group of results. In the next request, specify the value of <code>NextToken</code> from the previous response. '
-        MaxResults:
-          allOf:
-          - $ref: '#/components/schemas/MaxResults'
-          - description: The value that you specified for <code>MaxResults</code> in the request.
-        ResolverRules:
-          allOf:
-          - $ref: '#/components/schemas/ResolverRules'
-          - description: The Resolver rules that were created using the current Amazon Web Services account and that match the specified filters, if any.
-    FilterValues:
+    Filters:
       type: array
       items:
-        $ref: '#/components/schemas/FilterValue'
-    InvalidParameterException: {}
-    Arn:
+        $ref: '#/components/schemas/Filter'
+    Ipv6:
       type: string
-      minLength: 1
-      maxLength: 255
-    InvalidNextTokenException: {}
-  parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
+      minLength: 7
+      maxLength: 39
+    NextToken:
+      type: string
+    InvalidParameterException: {}
   securitySchemes:
     hmac:
       type: apiKey
