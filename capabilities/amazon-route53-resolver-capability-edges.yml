@@ -3,6 +3,7 @@ provider: Amazon Route 53 Resolver
 generated_by: planning/capability-mapping/scripts/classify_capabilities.py
 model: claude-opus-5
 frame:
+- Software & Technology
 - Telecommunications
 min_confidence: 0.7
 capability_model:
@@ -11,7 +12,7 @@ capability_model:
   attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
     CC BY 4.0
   notice: NOTICE
-edge_count: 21
+edge_count: 22
 edges:
 - tag: '#X Amz Target=Route53Resolver.ListResolverEndpointIpAddresses'
   spec_file: amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpointipaddresses-api-openapi.yml
@@ -91,6 +92,17 @@ edges:
   evidence: UpdateResolverRule ... ResolverRuleConfig, TargetAddress, DomainName
   reason: DNS forwarding rule configuration for hybrid networks — network infrastructure management.
   recovered_from: sweep-20260829T005356Z-edges.json
+- tag: Amazon Route 53 Resolver
+  spec_file: amazon-route53-resolver-amazon-route-53-resolver-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: CreateResolverEndpoint  Create resolver endpoint; 'you automatically get DNS resolution within
+    the VPC from Route 53 Resolver'
+  reason: Operations provision DNS resolver endpoints, forwarding rules and query-log configs for VPC/hybrid
+    networks — management of network infrastructure. Firewall rule-group operations hint at security,
+    but the dominant surface is network infrastructure configuration.
 - tag: '#X Amz Target=Route53Resolver.CreateResolverEndpoint'
   spec_file: amazon-route53-resolver-x-amz-target-route53resolver-createresolverendpoint-api-openapi.yml
   capability_id: BC-600.50
