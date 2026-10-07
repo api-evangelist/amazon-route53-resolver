@@ -56,6 +56,8 @@ apis:
   - type: FAQ
     url: https://aws.amazon.com/route53/faqs/
 common:
+- type: Pricing
+  url: https://aws.amazon.com/route53/pricing/
 - type: Plans
   url: plans/amazon-route53-resolver-plans-pricing.yml
 - type: Website
