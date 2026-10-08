@@ -56,6 +56,10 @@ apis:
   - type: FAQ
     url: https://aws.amazon.com/route53/faqs/
 common:
+- type: RateLimits
+  url: rate-limits/amazon-route53-resolver-rate-limits.yml
+- type: FinOps
+  url: finops/amazon-route53-resolver-finops.yml
 - type: Pricing
   url: https://aws.amazon.com/route53/pricing/
 - type: Plans
