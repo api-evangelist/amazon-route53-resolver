@@ -153,3 +153,167 @@ rate_limit_statements:
 - There is a default limit of 20 domain name registrations per account.
 - Need more than 500 hosted zones or more than 10,000 records in a hosted zone? Please contact us .
 - Need more than 200 health checks? Please contact us .
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - hybrid
+  - metered
+  - subscription
+  units:
+  - compute
+  - feature
+  - request
+  plans:
+  - name: Hosted Zones (first 25)
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Hosted Zones (additional)
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Standard Queries (AWS Regions)
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - request
+    periods:
+    - other
+  - name: Latency-Based Routing Queries
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - request
+    periods:
+    - other
+  - name: Geolocation and Geoproximity Queries
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - request
+    periods:
+    - other
+  - name: IP-Based Routing Queries
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - request
+    periods:
+    - other
+  - name: Traffic Flow
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Basic health checks (AWS endpoints)
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Basic health checks (Non-AWS endpoints)
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Optional health check features (AWS)
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - feature
+    periods:
+    - month
+  - name: Optional health check features (Non-AWS)
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - feature
+    periods:
+    - month
+  - name: Resolver Endpoints
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: Recursive DNS Queries To and From On-Premises Networks
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - request
+    periods:
+    - other
+  - name: Global Resolver regional hourly (first two regions)
+    access: other
+    model: metered
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: Global Resolver additional regions
+    access: other
+    model: metered
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: Route 53 Profiles
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: Resolver DNS Firewall Foundational queries
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - request
+    periods:
+    - other
+  - name: DNS Firewall domain names
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Resolver DNS Firewall Advanced
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
