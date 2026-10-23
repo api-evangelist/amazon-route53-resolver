@@ -13,383 +13,383 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-associatefirewallrulegroup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-associatefirewallrulegroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-associatefirewallrulegroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-associatefirewallrulegroup-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverendpointipaddress-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverendpointipaddress-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverendpointipaddress-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverendpointipaddress-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverquerylogconfig-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverquerylogconfig-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverquerylogconfig-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverquerylogconfig-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverrule-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-createfirewalldomainlist-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createfirewalldomainlist-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-createfirewalldomainlist-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createfirewalldomainlist-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrule-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrulegroup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrulegroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrulegroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrulegroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-createresolverendpoint-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createresolverendpoint-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-createresolverendpoint-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createresolverendpoint-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-createresolverquerylogconfig-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createresolverquerylogconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-createresolverquerylogconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createresolverquerylogconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-createresolverrule-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-createresolverrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewalldomainlist-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewalldomainlist-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewalldomainlist-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewalldomainlist-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrule-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrulegroup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrulegroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrulegroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrulegroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverendpoint-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverendpoint-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverendpoint-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverendpoint-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverquerylogconfig-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverquerylogconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverquerylogconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverquerylogconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverrule-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-disassociatefirewallrulegroup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociatefirewallrulegroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-disassociatefirewallrulegroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociatefirewallrulegroup-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverendpointipaddress-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverendpointipaddress-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverendpointipaddress-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverendpointipaddress-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverquerylogconfig-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverquerylogconfig-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverquerylogconfig-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverquerylogconfig-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverrule-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallconfig-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getfirewalldomainlist-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewalldomainlist-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getfirewalldomainlist-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewalldomainlist-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroupassociation-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroupassociation-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroupassociation-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroupassociation-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegrouppolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegrouppolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegrouppolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegrouppolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverconfig-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverdnssecconfig-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverdnssecconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverdnssecconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverdnssecconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverendpoint-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverendpoint-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverendpoint-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverendpoint-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfig-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfig-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigassociation-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigassociation-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigassociation-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigassociation-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigpolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigpolicy-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigpolicy-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrule-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverruleassociation-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverruleassociation-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverruleassociation-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverruleassociation-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrulepolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrulepolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrulepolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrulepolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-importfirewalldomains-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-importfirewalldomains-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-importfirewalldomains-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-importfirewalldomains-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallconfigs-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallconfigs-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallconfigs-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallconfigs-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomainlists-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomainlists-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomainlists-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomainlists-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomains-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomains-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomains-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomains-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroupassociations-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroupassociations-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroupassociations-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroupassociations-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroups-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroups-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroups-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroups-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrules-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrules-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrules-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrules-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverconfigs-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverconfigs-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverconfigs-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverconfigs-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverdnssecconfigs-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverdnssecconfigs-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverdnssecconfigs-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverdnssecconfigs-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpointipaddresses-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpointipaddresses-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpointipaddresses-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpointipaddresses-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpoints-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpoints-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpoints-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpoints-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigassociations-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigassociations-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigassociations-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigassociations-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigs-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigs-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigs-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigs-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverruleassociations-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverruleassociations-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverruleassociations-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverruleassociations-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverrules-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverrules-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listresolverrules-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverrules-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listtagsforresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-listtagsforresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-putfirewallrulegrouppolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-putfirewallrulegrouppolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-putfirewallrulegrouppolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-putfirewallrulegrouppolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-putresolverquerylogconfigpolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-putresolverquerylogconfigpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-putresolverquerylogconfigpolicy-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-putresolverquerylogconfigpolicy-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-putresolverrulepolicy-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-putresolverrulepolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-putresolverrulepolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-putresolverrulepolicy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-tagresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-tagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-untagresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-untagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallconfig-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewalldomains-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewalldomains-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewalldomains-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewalldomains-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrule-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrule-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrulegroupassociation-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrulegroupassociation-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrulegroupassociation-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrulegroupassociation-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverconfig-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverdnssecconfig-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverdnssecconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverdnssecconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverdnssecconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverendpoint-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverendpoint-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverendpoint-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverendpoint-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverrule-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-route53-resolver.opencollection.json:
     method: derived
     evidence: openapi/amazon-route53-resolver
@@ -2343,127 +2343,7 @@ artifacts:
   json-structure/amazon-route53-resolver-openapi-validation-structure.json:
     method: unknown
     evidence: no authorship recorded
-  kin/checks-2026-09-24T161608.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T125852.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T133943.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T143147.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T154045.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-26T215308.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T094438.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T103455.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T123021.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T132314.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T140727.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-28T221322.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T213958.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T230545.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T203505.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T220315.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-31T223420.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T063623.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T210448.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T222808.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T224043.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T161828.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T174231.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T062714.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T212454.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T224856.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T055819.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T072335.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T144739.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T195450.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T211839.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T011047.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T224210.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T200636.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T213054.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T214843.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T232836.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T204815.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T222408.yml:
+  kin/checks-2026-10-11T110117.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-12T062655.yml:
@@ -2547,197 +2427,26 @@ artifacts:
   kin/score-2026-09-24T161608.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T210408.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T232841.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T000835.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T024842.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-11T110117.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   openapi/_original/amazon-route53-resolver-openapi.yml:
     method: harvested
     evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
       to the provider's source is unverified
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-associatefirewallrulegroup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverendpointipaddress-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverquerylogconfig-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverrule-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-createfirewalldomainlist-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrule-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrulegroup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-createresolverendpoint-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-createresolverquerylogconfig-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-createresolverrule-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewalldomainlist-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrule-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrulegroup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverendpoint-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverquerylogconfig-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverrule-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociatefirewallrulegroup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverendpointipaddress-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverquerylogconfig-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverrule-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallconfig-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewalldomainlist-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroupassociation-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegrouppolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverconfig-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverdnssecconfig-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverendpoint-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfig-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigassociation-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigpolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrule-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverruleassociation-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrulepolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-importfirewalldomains-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallconfigs-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomainlists-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomains-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroupassociations-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroups-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrules-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverconfigs-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverdnssecconfigs-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpointipaddresses-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpoints-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigassociations-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigs-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverruleassociations-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverrules-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-listtagsforresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-putfirewallrulegrouppolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-putresolverquerylogconfigpolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-putresolverrulepolicy-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-tagresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-untagresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallconfig-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewalldomains-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrule-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrulegroupassociation-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverconfig-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverdnssecconfig-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverendpoint-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverrule-api-openapi.yml:
+  openapi/amazon-route53-resolver-amazon-route-53-resolver-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   plans/amazon-route53-resolver-plans-pricing.yml:
@@ -2747,194 +2456,194 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-associatefirewallrulegroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-associatefirewallrulegroup-api
+    method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverendpointipaddress-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverendpointipaddress-api
+  : method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverquerylogconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverquerylogconfig-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-associateresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-createfirewalldomainlist-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createfirewalldomainlist-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrule-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrulegroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createfirewallrulegroup-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-createresolverendpoint-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createresolverendpoint-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-createresolverquerylogconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createresolverquerylogconfig-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-createresolverrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-createresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewalldomainlist-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewalldomainlist-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrule-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrulegroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deletefirewallrulegroup-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverendpoint-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverendpoint-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverquerylogconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverquerylogconfig-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-deleteresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-disassociatefirewallrulegroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociatefirewallrulegroup-api
+    method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverendpointipaddress-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverendpointipaddress-api
+  : method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverquerylogconfig-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverquerylogconfig-api
+  : method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-disassociateresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallconfig-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-getfirewalldomainlist-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewalldomainlist-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroup-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroupassociation-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegroupassociation-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegrouppolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getfirewallrulegrouppolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-getresolverconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverconfig-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-getresolverdnssecconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverdnssecconfig-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-getresolverendpoint-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverendpoint-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfig-api
+    method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigassociation-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigassociation-api
+  : method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigpolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverquerylogconfigpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-getresolverruleassociation-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverruleassociation-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrulepolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-getresolverrulepolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-importfirewalldomains-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-importfirewalldomains-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallconfigs-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallconfigs-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomainlists-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomainlists-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomains-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewalldomains-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroupassociations-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroupassociations-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroups-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrulegroups-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrules-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listfirewallrules-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-listresolverconfigs-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverconfigs-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-listresolverdnssecconfigs-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverdnssecconfigs-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpointipaddresses-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpointipaddresses-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpoints-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverendpoints-api
+    method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigassociations-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigassociations-api
+  : method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigs-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverquerylogconfigs-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-listresolverruleassociations-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverruleassociations-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-listresolverrules-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listresolverrules-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-listtagsforresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-putfirewallrulegrouppolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-putfirewallrulegrouppolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-putresolverquerylogconfigpolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-putresolverquerylogconfigpolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-putresolverrulepolicy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-putresolverrulepolicy-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-tagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-untagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallconfig-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewalldomains-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewalldomains-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrule-api
+    method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrulegroupassociation-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updatefirewallrulegroupassociation-api
+  : method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverconfig-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverdnssecconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverdnssecconfig-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverendpoint-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverendpoint-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverrule-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-route53-resolver-x-amz-target-route53resolver-updateresolverrule-api
+    method: unknown
+    evidence: no authorship recorded
   rate-limits/amazon-route53-resolver-rate-limits.yml:
     method: generated
     evidence: declared in the artifact
