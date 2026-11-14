@@ -2,6 +2,7 @@
 generated: '2026-09-20'
 method: searched
 source: https://aws.amazon.com/route53/pricing/
+name: Amazon Route 53 Resolver API Plans
 sources:
 - https://aws.amazon.com/route53/pricing/
 provenance:
@@ -154,7 +155,7 @@ rate_limit_statements:
 - Need more than 500 hosted zones or more than 10,000 records in a hosted zone? Please contact us .
 - Need more than 200 health checks? Please contact us .
 x-canonical:
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   vocabulary: engine/economics/plans-canonical.yml
   models:
   - hybrid

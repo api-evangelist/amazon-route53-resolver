@@ -11,6 +11,12 @@ artifacts:
   capabilities/amazon-route53-resolver-capability-edges.yml:
     method: unknown
     evidence: no authorship recorded
+  certification/status.yml:
+    method: unknown
+    evidence: no authorship recorded
+  cli/amazon-route53-resolver-cli.yml:
+    method: searched
+    evidence: declared in the artifact
   collections/amazon-route53-resolver-x-amz-target-route53resolver-associatefirewallrulegroup-api.opencollection.json:
     method: unknown
     evidence: no authorship recorded
@@ -395,6 +401,21 @@ artifacts:
   collections/amazon-route53-resolver.postman_collection.json:
     method: derived
     evidence: openapi/amazon-route53-resolver
+  compliance/amazon-route53-resolver-compliance.yml:
+    method: harvested
+    evidence: declared in the artifact
+  conformance/amazon-route53-resolver-conformance.yml:
+    method: derived
+    evidence: declared in the artifact
+  conventions/amazon-route53-resolver-conventions.yml:
+    method: derived
+    evidence: declared in the artifact
+  data-model/amazon-route53-resolver-data-model.yml:
+    method: derived
+    evidence: declared in the artifact
+  errors/amazon-route53-resolver-problem-types.yml:
+    method: derived
+    evidence: declared in the artifact
   examples/amazon-route53-resolver-openapi-associate-firewall-rule-group-request-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -839,6 +860,9 @@ artifacts:
   front-door-ai/2026-09-17.yml:
     method: unknown
     evidence: no authorship recorded
+  hosts/amazon-route53-resolver-hosts.yml:
+    method: derived
+    evidence: declared in the artifact
   integrations/_index.yml:
     method: generated
     evidence: carries an API Evangelist house phrase
@@ -846,6 +870,54 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   json-ld/amazon-route53-resolver-context-context.jsonld:
+    method: unknown
+    evidence: no authorship recorded
+  json-ld/amazon-route53-resolver-context.jsonld:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-batch-create-firewall-rule-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-create-firewall-rule-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-create-outpost-resolver-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-create-resolver-endpoint-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-create-resolver-rule-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-delete-firewall-rule-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-delete-outpost-resolver-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-get-outpost-resolver-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-list-firewall-rule-types-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-list-firewall-rule-types-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-list-firewall-rules-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-list-firewall-rules-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-list-outpost-resolvers-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-list-outpost-resolvers-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-list-resolver-query-log-config-associations-request-schema.json:
     method: unknown
     evidence: no authorship recorded
   json-schema/amazon-route53-resolver-openapi-access-denied-exception-schema.json:
@@ -1596,6 +1668,15 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   json-schema/amazon-route53-resolver-openapi-validation-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-update-firewall-rule-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-update-outpost-resolver-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-route53-resolver-update-resolver-endpoint-request-schema.json:
     method: unknown
     evidence: no authorship recorded
   json-structure/amazon-route53-resolver-openapi-access-denied-exception-structure.json:
@@ -2351,7 +2432,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-02T082323.yml:
+  kin/checks-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -2420,10 +2501,18 @@ artifacts:
   kin/score-2026-11-02T082323.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  openapi/_original/amazon-route53-resolver-openapi.yml:
-    method: harvested
-    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
-      to the provider's source is unverified
+  kin/score-2026-11-06T143934.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  llms/amazon-route53-resolver-llms-provenance.yml:
+    method: unknown
+    evidence: no authorship recorded
+  llms/amazon-route53-resolver-llms.txt:
+    method: unknown
+    evidence: no authorship recorded
+  mcp/amazon-route53-resolver-mcp.yml:
+    method: derived
+    evidence: declared in the artifact
   openapi/amazon-route53-resolver-amazon-route-53-resolver-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
@@ -2436,6 +2525,12 @@ artifacts:
   openapi/amazon-route53-resolver-outpost-resolver-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
+  packages/amazon-route53-resolver-packages.yml:
+    method: unknown
+    evidence: no authorship recorded
+  patterns/amazon-route53-resolver-patterns.yml:
+    method: derived
+    evidence: declared in the artifact
   plans/amazon-route53-resolver-plans-pricing.yml:
     method: searched
     evidence: declared in the artifact
@@ -2637,6 +2732,9 @@ artifacts:
   rules/amazon-route53-resolver-jsonschema-spectral-rules.yml:
     method: generated
     evidence: declared in the artifact
+  rules/amazon-route53-resolver-rules.yml:
+    method: generated
+    evidence: declared in the artifact
   rules/amazon-route53-resolver-spectral-rules.yml:
     method: generated
     evidence: declared in the artifact
@@ -2653,8 +2751,27 @@ artifacts:
     method: generated
     evidence: declared in the artifact
   smithy/route53resolver-2018-04-01.json:
+    method: harvested
+    evidence: byte-identical to https://raw.githubusercontent.com/aws/api-models-aws/3cd98287b471c106254abd89279cc87308d38bfd/models/route53resolver/service/2018-04-01/route53resolver-2018-04-01.json
+      (sha256 05351824ddd9, fetched 2026-11-11T21:14:45+00:00)
+  terms/amazon-route53-resolver-terms-of-service.yml:
+    method: harvested
+    evidence: declared in the artifact
+  vendors/amazon-route53-resolver-vendors.yml:
     method: unknown
     evidence: no authorship recorded
   vocabulary/amazon-route53-resolver-vocabulary.yaml:
+    method: unknown
+    evidence: no authorship recorded
+  vocabulary/amazon-route53-resolver-vocabulary.yml:
+    method: derived
+    evidence: declared in the artifact
+  well-known/amazon-route53-resolver-midway-auth-openid-configuration.json:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-route53-resolver-security.txt:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-route53-resolver-well-known.yml:
     method: unknown
     evidence: no authorship recorded

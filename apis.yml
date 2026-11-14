@@ -1,8 +1,9 @@
 name: Amazon Route 53 Resolver
-description: Amazon Route 53 Resolver provides DNS resolution for hybrid cloud environments, enabling
-  DNS queries between your VPCs and on-premises networks. It allows you to configure DNS forwarding rules,
-  manage resolver endpoints, and set up conditional forwarding to resolve domain names across your hybrid
-  infrastructure seamlessly.
+
+description: Amazon Route 53 Resolver provides DNS resolution for hybrid cloud environments, enabling DNS queries between your VPCs and on-premises
+  networks. It allows you to configure DNS forwarding rules, manage resolver endpoints, and set up conditional forwarding to resolve domain names
+  across your hybrid infrastructure seamlessly.
+
 deliveryModel:
   model: saas
   open_source: false
@@ -15,7 +16,9 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 specificationVersion: '0.23'
+
 accessModel:
   pricing: paid
   onboarding: unknown
@@ -28,70 +31,75 @@ accessModel:
   - plans
   - authentication
   - security
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   method: derived
 image: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
+
 url: https://raw.githubusercontent.com/api-evangelist/amazon-route53-resolver/refs/heads/main/apis.yml
+
 created: '2024-01-15'
+
 modified: '2026-09-16'
-apis:
-- aid: amazon-route53-resolver:amazon-route53-resolver-amazon-route-53-resolver-api
-  name: Amazon Route 53 Resolver Amazon Route 53 Resolver API
-  description: >-
-    The Amazon Route 53 Resolver API from Amazon Route 53 Resolver — 63 operation(s) for amazon route
-    53 resolver.
-  humanURL: https://aws.amazon.com/route53/
-  baseURL: https://route53resolver.amazonaws.com
-  tags:
-  - Amazon Route 53 Resolver
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-route53-resolver-amazon-route-53-resolver-api-openapi.yml
-  - type: Documentation
-    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
-  - type: Pricing
-    url: https://aws.amazon.com/route53/pricing/
-  - type: GettingStarted
-    url: https://aws.amazon.com/route53/getting-started/
-  - type: FAQ
-    url: https://aws.amazon.com/route53/faqs/
-- aid: amazon-route53-resolver:amazon-route53-resolver-firewall-rule-api
-  name: Amazon Route 53 Resolver Route53 Resolver Firewall Rule API
-  description: >-
-    The Route53 Resolver Firewall Rule API from Amazon Route 53 Resolver — 3 operation(s) for route53
-    resolver firewall rule.
-  humanURL: https://aws.amazon.com/route53/
-  baseURL: https://route53resolver.amazonaws.com
-  tags:
-  - Route53 Resolver Firewall Rule
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-route53-resolver-firewall-rule-api-openapi.yml
-- aid: amazon-route53-resolver:amazon-route53-resolver-operations-api
-  name: Amazon Route 53 Resolver Route53 Resolver Operations API
-  description: >-
-    The Route53 Resolver Operations API from Amazon Route 53 Resolver — 1 operation(s) for route53 resolver
-    operations.
-  humanURL: https://aws.amazon.com/route53/
-  baseURL: https://route53resolver.amazonaws.com
-  tags:
-  - Route53 Resolver Operations
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-route53-resolver-operations-api-openapi.yml
-- aid: amazon-route53-resolver:amazon-route53-resolver-outpost-resolver-api
-  name: Amazon Route 53 Resolver Route53 Resolver Outpost Resolver API
-  description: >-
-    The Route53 Resolver Outpost Resolver API from Amazon Route 53 Resolver — 5 operation(s) for route53
-    resolver outpost resolver.
-  humanURL: https://aws.amazon.com/route53/
-  baseURL: https://route53resolver.amazonaws.com
-  tags:
-  - Route53 Resolver Outpost Resolver
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-route53-resolver-outpost-resolver-api-openapi.yml
+
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+  url: https://apievangelist.com
+
+tags:
+- Amazon Web Services
+- DNS
+- Hybrid Cloud
+- Networking
+tags_raw:
+- AWS
+- DNS
+- Hybrid Cloud
+- Networking
+
 common:
+- type: Spectral
+  url: rules/amazon-route53-resolver-spectral-rules.yml
+- type: Spectral
+  url: rules/amazon-route53-resolver-rules.yml
+- type: Spectral
+  url: rules/amazon-route53-resolver-jsonschema-spectral-rules.yml
+- type: JSONLD
+  url: json-ld/amazon-route53-resolver-context.jsonld
+- type: Vocabulary
+  url: vocabulary/amazon-route53-resolver-vocabulary.yml
+- type: DataModel
+  url: data-model/amazon-route53-resolver-data-model.yml
+- type: CLI
+  url: cli/amazon-route53-resolver-cli.yml
+- type: Idempotency
+  url: conventions/amazon-route53-resolver-conventions.yml
+- type: Conventions
+  url: conventions/amazon-route53-resolver-conventions.yml
+- type: Compliance
+  url: https://aws.amazon.com/compliance/
+- type: ErrorCatalog
+  url: errors/amazon-route53-resolver-problem-types.yml
+- type: Conformance
+  url: conformance/amazon-route53-resolver-conformance.yml
+- type: LLMsTxt
+  url: llms/amazon-route53-resolver-llms.txt
+- type: SecurityTxt
+  url: well-known/amazon-route53-resolver-security.txt
+- type: WellKnown
+  url: well-known/amazon-route53-resolver-well-known.yml
+- type: Hosts
+  url: hosts/amazon-route53-resolver-hosts.yml
+- type: Vendors
+  url: vendors/amazon-route53-resolver-vendors.yml
+- type: Security
+  url: https://aws.amazon.com/security/?nc2=h_dsc_aa_sec
+- type: Sandbox
+  url: https://console.aws.amazon.com/console/home/?nc2=h_si&src=header-signin
+- type: Newsroom
+  url: https://aws.amazon.com/media/?nc2=h_sol_ind_med
+- type: GettingStarted
+  url: https://developer.amazon.com/frustration-free-setup
 - type: RateLimits
   url: rate-limits/amazon-route53-resolver-rate-limits.yml
 - type: FinOps
@@ -1441,6 +1449,101 @@ common:
   url: vocabulary/amazon-route53-resolver-vocabulary.yaml
 - type: Integrations
   url: https://aws.amazon.com/partners/
+- type: UsageTerms
+  url: terms/amazon-route53-resolver-terms-of-service.yml
+- type: Attestations
+  url: compliance/amazon-route53-resolver-compliance.yml
+
+apis:
+- aid: amazon-route53-resolver:amazon-route53-resolver-amazon-route-53-resolver-api
+  name: Amazon Route 53 Resolver Amazon Route 53 Resolver API
+  description: The Amazon Route 53 Resolver API from Amazon Route 53 Resolver — 63 operation(s) for amazon route 53 resolver.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - Amazon Route 53 Resolver
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-route53-resolver-amazon-route-53-resolver-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
+  - type: Pricing
+    url: https://aws.amazon.com/route53/pricing/
+  - type: GettingStarted
+    url: https://aws.amazon.com/route53/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/route53/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-create-resolver-endpoint-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-create-firewall-rule-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-update-firewall-rule-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-update-resolver-endpoint-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-create-resolver-rule-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-list-resolver-query-log-config-associations-request-schema.json
+- aid: amazon-route53-resolver:amazon-route53-resolver-firewall-rule-api
+  name: Amazon Route 53 Resolver Route53 Resolver Firewall Rule API
+  description: The Route53 Resolver Firewall Rule API from Amazon Route 53 Resolver — 3 operation(s) for route53 resolver firewall rule.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - Route53 Resolver Firewall Rule
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-route53-resolver-firewall-rule-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-create-firewall-rule-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-update-firewall-rule-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-list-firewall-rules-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-delete-firewall-rule-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-list-firewall-rules-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-batch-create-firewall-rule-response-schema.json
+- aid: amazon-route53-resolver:amazon-route53-resolver-operations-api
+  name: Amazon Route 53 Resolver Route53 Resolver Operations API
+  description: The Route53 Resolver Operations API from Amazon Route 53 Resolver — 1 operation(s) for route53 resolver operations.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - Route53 Resolver Operations
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-route53-resolver-operations-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-list-firewall-rule-types-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-list-firewall-rule-types-response-schema.json
+- aid: amazon-route53-resolver:amazon-route53-resolver-outpost-resolver-api
+  name: Amazon Route 53 Resolver Route53 Resolver Outpost Resolver API
+  description: The Route53 Resolver Outpost Resolver API from Amazon Route 53 Resolver — 5 operation(s) for route53 resolver outpost resolver.
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: https://route53resolver.amazonaws.com
+  tags:
+  - Route53 Resolver Outpost Resolver
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-route53-resolver-outpost-resolver-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-create-outpost-resolver-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-list-outpost-resolvers-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-list-outpost-resolvers-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-update-outpost-resolver-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-delete-outpost-resolver-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-route53-resolver-get-outpost-resolver-request-schema.json
+
 integrations:
 - name: Partner Programs
 - name: Resources
@@ -1450,19 +1553,12 @@ integrations:
 - name: AWS Partner Central
 - name: Partner Paths
 - name: co-sell with AWS
-maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
-  url: https://apievangelist.com
-tags:
-- Amazon Web Services
-- DNS
-- Hybrid Cloud
-- Networking
-tags_raw:
-- AWS
-- DNS
-- Hybrid Cloud
-- Networking
+
 x-parent: amazon-web-services
+
 x-relationship: product
+x-enrichment:
+  date: '2026-11-11'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v6
